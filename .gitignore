@@ -1,0 +1,6 @@
+.transcription_deps/
+video_transcripts/audio/
+video_transcripts/metadata/*.html
+__pycache__/
+*.wav
+*.mp3
