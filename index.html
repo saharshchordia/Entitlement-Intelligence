@@ -3,161 +3,108 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jurupa Valley City Council - IOS / Trucking CUP Feasibility Memo</title>
+<title>Entitlement Intelligence</title>
 <style>
-:root{--paper:#f6f3ec;--ink:#172033;--muted:#566173;--card:#fffdf8;--line:#d8d1c3;--blue:#163d73;--red:#a7392f;--green:#4f6b2a;--amber:#a76414;--mono:Consolas,"IBM Plex Mono",monospace;--sans:Arial,Helvetica,sans-serif}
+:root{--bg:#f7f4ed;--ink:#172033;--muted:#5f6877;--panel:#fffdf8;--line:#d8d1c3;--blue:#173f73;--teal:#176f78;--red:#a63c31;--green:#58712d;--amber:#a76414;--mono:Consolas,"IBM Plex Mono",monospace;--sans:Arial,Helvetica,sans-serif}
 *{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.55}
-.wrap{max-width:1180px;margin:0 auto;padding:42px 28px 80px}
-h1,h2,h3,h4,.sans{font-family:var(--sans)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.55}
+.wrap{max-width:1160px;margin:0 auto;padding:44px 28px 72px}
+header{border-bottom:3px solid var(--ink);padding-bottom:24px;margin-bottom:26px}
+.kicker{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--teal);font-weight:700;margin-bottom:10px}
+h1,h2,h3,.sans{font-family:var(--sans)}
+h1{font-size:42px;line-height:1.05;margin:0 0 12px;font-weight:900}
+p{color:var(--muted);font-size:16px;margin:0;max-width:860px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:28px}
+.card{background:var(--panel);padding:22px}
+.meta{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:9px}
+h2{font-size:19px;margin:0 0 8px}
+.card p{font-size:14px;margin-bottom:16px}
 a{color:#056b8f;text-decoration:none;border-bottom:1px solid rgba(5,107,143,.35)}
 a:hover{border-bottom-color:#056b8f}
-.mast{display:flex;justify-content:space-between;gap:24px;align-items:flex-end;border-bottom:3px solid var(--ink);padding-bottom:22px;flex-wrap:wrap}
-.kicker{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:#056b8f;font-weight:700;margin-bottom:8px}
-h1{font-size:clamp(30px,4vw,48px);line-height:1.05;margin:0;font-weight:900}
-h1 span{color:var(--blue)}
-.meta{font-family:var(--mono);font-size:11px;color:var(--muted);line-height:1.8;text-align:right}
-.verdict{display:grid;grid-template-columns:130px 1fr;gap:24px;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--blue);margin:30px 0 18px;padding:26px}
-.stamp{font-family:var(--sans);font-weight:900;text-transform:uppercase;letter-spacing:.05em;color:var(--red);border:2px solid var(--red);padding:12px;text-align:center;line-height:1.25;align-self:start}
-.verdict h2{margin:0 0 8px;font-size:21px}
-.verdict p{margin:0 0 9px;color:var(--muted);font-size:15.5px}
-.caveat{background:#f7e9cd;border:1px solid #dfc792;border-left:5px solid var(--amber);padding:17px 22px;color:#5b3e0c;margin:0 0 32px}
-.caveat b{display:block;font-family:var(--sans);font-size:12px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:5px;color:var(--amber)}
-.shead{display:flex;gap:12px;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:8px;margin:42px 0 16px}
-.num{font-family:var(--mono);font-size:12px;color:#056b8f;font-weight:700}
-h3{font-size:22px;margin:0}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:24px}
-.stat{background:var(--card);padding:18px}
-.stat .v{font-family:var(--sans);font-weight:900;font-size:31px;color:var(--blue);line-height:1}
-.stat .v.red{color:var(--red)}.stat .v.green{color:var(--green)}.stat .v.amber{color:var(--amber)}
-.stat .l{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-top:8px}
-table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);font-size:14px}
-table.summary-table{font-size:13px}
-th{background:var(--ink);color:var(--paper);font-family:var(--sans);font-size:11px;text-transform:uppercase;letter-spacing:.08em;text-align:left;padding:11px 12px}
+.button{display:inline-block;font-family:var(--sans);font-weight:700;border:1px solid var(--ink);color:var(--ink);padding:8px 11px;margin-right:8px;margin-top:4px;background:#fff}
+.button.primary{background:var(--ink);color:#fff}
+.tag{display:inline-block;font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.05em;padding:2px 7px;margin-right:4px;background:#eee8dc;color:var(--muted)}
+.tag.green{background:#e5edd6;color:var(--green)}.tag.amber{background:#f4e2c5;color:var(--amber)}.tag.red{background:#f1ddd8;color:var(--red)}.tag.blue{background:#dfe8f2;color:var(--blue)}
+section{margin-top:34px}
+table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);font-size:14px}
+th{background:var(--ink);color:var(--bg);font-family:var(--sans);font-size:11px;text-transform:uppercase;letter-spacing:.08em;text-align:left;padding:11px 12px}
 td{border-top:1px solid var(--line);padding:10px 12px;color:var(--muted);vertical-align:top}
 td:first-child{font-family:var(--mono);font-size:12px;color:var(--ink);white-space:nowrap}
-.links{font-family:var(--mono);font-size:11px;line-height:1.7}
-.evidence-note{font-size:12px;color:#6c5b3e;margin-top:6px}
-.tag{display:inline-block;font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.05em;padding:2px 7px;border-radius:2px;margin-right:4px;background:#eee8dc;color:var(--muted)}
-.tag.red{background:#f1ddd8;color:var(--red)}.tag.green{background:#e5edd6;color:var(--green)}.tag.amber{background:#f4e2c5;color:var(--amber)}.tag.blue{background:#dfe8f2;color:var(--blue)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
-.cell{background:var(--card);padding:18px 20px}
-.cell h4{font-size:15px;margin:0 0 6px}
-.cell p{font-size:14px;color:var(--muted);margin:0}
-.casegrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
-.case{background:var(--card);padding:18px 20px}
-.case .outcome{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:8px}
-.case h4{font-size:15px;margin:0 0 6px}
-.case p{font-size:14px;color:var(--muted);margin:0 0 10px}
-footer{margin-top:50px;border-top:2px solid var(--ink);padding-top:18px;font-family:var(--mono);font-size:11px;color:var(--muted)}
-@media(max-width:780px){.verdict{grid-template-columns:1fr}.meta{text-align:left}td:first-child{white-space:normal}}
+footer{margin-top:42px;border-top:2px solid var(--ink);padding-top:16px;font-family:var(--mono);font-size:11px;color:var(--muted)}
+@media(max-width:760px){h1{font-size:34px}td:first-child{white-space:normal}}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header class="mast">
-    <div>
-      <div class="kicker">Entitlement Risk Memo · City Council Focus</div>
-      <h1>Jurupa Valley<br><span>IOS / Trucking / M-H Eligibility</span></h1>
-    </div>
-    <div class="meta">
-      Window: 2021 through Aug. 9, 2026<br>
-      Body focus: City Council ultimate actions and direction<br>
-      Compiled: Aug. 9, 2026<br>
-      Status: Execution draft
-    </div>
+  <header>
+    <div class="kicker">Research Library · Static Pages</div>
+    <h1>Entitlement Intelligence</h1>
+    <p>Published entitlement memos, source tables, transcript materials, workbook outputs, and repeatable research methodology for industrial land-use diligence.</p>
   </header>
 
-  <section class="verdict">
-    <div class="stamp">Bottom<br>Line</div>
-    <div>
-      <h2>Jurupa Valley has not treated IOS/truck storage as ordinary light-industrial optionality.</h2>
-      <p><strong>The Council-level pattern is restrictive:</strong> truck-intensive uses were narrowed to Manufacturing Heavy (M-H) with a CUP, while truck/trailer storage yards, heavy equipment storage, auto auctions, salvage yards, and contractor storage yards were removed from I-P, M-SC, and M-M.</p>
-      <p><strong>Approvals exist, but they are not casual:</strong> large logistics approvals generally came through EIRs, development agreements, zone changes, specific plans, MMRPs, and statements of overriding considerations.</p>
-      <p><strong>The closest IOS-like evidence cuts against a blanket premium:</strong> FC Pallets was reportedly denied despite seeking M-H rezoning and CUP/SDP/variance relief, and the I-15 RV/self-storage project moved from an approval package to a Council denial resolution.</p>
-    </div>
+  <div class="grid">
+    <article class="card">
+      <div class="meta">Jackson County, GA · I-85</div>
+      <h2>Industrial Entitlement Landscape</h2>
+      <p><span class="tag green">Published</span><span class="tag blue">County + municipal pass</span> Jackson County market memo with Commerce, Jefferson, Pendergrass, and county entitlement evidence.</p>
+      <a class="button primary" href="Jackson-County-Industrial-Intelligence/Jackson_County_I85_Industrial_Entitlement_Landscape.html">Open memo</a>
+      <a class="button" href="outputs/jackson-county-industrial-intelligence/Jackson_County_I85_Industrial_Entitlement_Landscape.xlsx">Workbook</a>
+    </article>
+
+    <article class="card">
+      <div class="meta">Flowery Branch, GA · I-985</div>
+      <h2>Industrial Entitlement Landscape</h2>
+      <p><span class="tag green">Published</span><span class="tag amber">AI-assisted hardening</span> Flowery Branch market memo with local action records, project status, and source audit.</p>
+      <a class="button primary" href="Flowery-Branch-I985-Industrial-Intelligence/Flowery_Branch_I985_Industrial_Entitlement_Landscape.html">Open memo</a>
+      <a class="button" href="outputs/flowery-branch-i985-industrial-intelligence/Flowery_Branch_I985_Industrial_Entitlement_Landscape.xlsx">Workbook</a>
+    </article>
+
+    <article class="card">
+      <div class="meta">Jurupa Valley, CA · Council Focus</div>
+      <h2>IOS / Trucking / M-H Eligibility</h2>
+      <p><span class="tag green">Published</span><span class="tag red">Transcript-backed</span> City Council memo using video transcripts, official minutes, agenda packets, and entitlement burden evidence.</p>
+      <a class="button primary" href="Jurupa_Valley_City_Council_IOS_Trucking_Memo.html">Open memo</a>
+      <a class="button" href="jurupa_council_case_source_audit.csv">Source audit</a>
+    </article>
+
+    <article class="card">
+      <div class="meta">Methodology</div>
+      <h2>Repeatable Research Process</h2>
+      <p><span class="tag blue">AI-executable</span> Playbook, data model diagrams, and Postgres/Supabase schema for scaling the entitlement intelligence portfolio.</p>
+      <a class="button primary" href="research-methodology/municipal_entitlement_hardening_playbook.md">Playbook</a>
+      <a class="button" href="research-methodology/data_model_and_diagrams.md">Data model</a>
+    </article>
+  </div>
+
+  <section>
+    <h2>Published Artifacts</h2>
+    <table>
+      <thead><tr><th>Market</th><th>Memo</th><th>Evidence Tables</th><th>Preview Outputs</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Jackson County</td>
+          <td><a href="Jackson-County-Industrial-Intelligence/Jackson_County_I85_Industrial_Entitlement_Landscape.html">HTML memo</a></td>
+          <td><a href="Jackson-County-Industrial-Intelligence/jackson_county_industrial_entitlement_findings.csv">findings</a> · <a href="Jackson-County-Industrial-Intelligence/jackson_county_gap_matrix.csv">gap matrix</a> · <a href="Jackson-County-Industrial-Intelligence/jackson_county_source_audit.csv">source audit</a></td>
+          <td><a href="outputs/jackson-county-industrial-intelligence/Executive_Summary.png">executive summary</a> · <a href="outputs/jackson-county-industrial-intelligence/Recent_Cases.png">recent cases</a></td>
+        </tr>
+        <tr>
+          <td>Flowery Branch</td>
+          <td><a href="Flowery-Branch-I985-Industrial-Intelligence/Flowery_Branch_I985_Industrial_Entitlement_Landscape.html">HTML memo</a></td>
+          <td><a href="Flowery-Branch-I985-Industrial-Intelligence/flowery_branch_i985_industrial_entitlement_findings.csv">findings</a> · <a href="Flowery-Branch-I985-Industrial-Intelligence/flowery_branch_i985_gap_matrix.csv">gap matrix</a> · <a href="Flowery-Branch-I985-Industrial-Intelligence/flowery_branch_i985_source_audit.csv">source audit</a></td>
+          <td><a href="outputs/flowery-branch-i985-industrial-intelligence/Executive_Summary.png">executive summary</a> · <a href="outputs/flowery-branch-i985-industrial-intelligence/Recent_Cases.png">recent cases</a></td>
+        </tr>
+        <tr>
+          <td>Jurupa Valley</td>
+          <td><a href="Jurupa_Valley_City_Council_IOS_Trucking_Memo.html">HTML memo</a></td>
+          <td><a href="jurupa_city_council_ios_trucking_2021_2026_findings.csv">findings</a> · <a href="jurupa_transcript_case_summaries.csv">transcript summaries</a> · <a href="jurupa_council_case_source_audit.csv">source audit</a></td>
+          <td><a href="video_transcripts/summaries/jurupa_cross_case_transcript_findings.md">cross-case transcript findings</a></td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 
-  <div class="caveat">
-    <b>Source note</b>
-    This memo now cross-checks Council video transcripts against official Agenda Center minutes, agendas, packets, CEQAnet records, and City updates where available. Older minutes extracted cleanly; several 2025-2026 minutes PDFs are image-heavy, so those rows use agenda packets and transcripts as the primary reasoning layer until cleaner OCR or adopted text is available.
-  </div>
-
-  <div class="shead"><span class="num">01</span><h3>Council Signals</h3></div>
-  <div class="stats">
-    <div class="stat"><div class="v">15</div><div class="l">Council-focused<br>findings</div></div>
-    <div class="stat"><div class="v red">M-H</div><div class="l">Only path for<br>truck-intensive uses</div></div>
-    <div class="stat"><div class="v red">2</div><div class="l">Strong denial<br>signals</div></div>
-    <div class="stat"><div class="v green">3</div><div class="l">Large logistics<br>Council approval paths</div></div>
-    <div class="stat"><div class="v amber">2021</div><div class="l">Policy regime<br>break</div></div>
-    <div class="stat"><div class="v">2026</div><div class="l">YTD Council<br>packet scan</div></div>
-  </div>
-
-  <div class="shead"><span class="num">02</span><h3>Applicant / Outcome Table</h3></div>
-  <table class="summary-table">
-    <thead><tr><th>Date</th><th>Applicant / Group</th><th>Use / Ask</th><th>Comprehensive Insight</th><th>Capital / Underwriting Read</th><th>Evidence Links</th></tr></thead>
-    <tbody>
-      <tr><td>2021-01-21</td><td>City of Jurupa Valley</td><td>Moratorium/initiation for truck-intensive uses.</td><td><span class="tag red">Restriction initiated</span> The city treated truck-intensive applications as a land-use problem tied to traffic congestion, air quality, infrastructure wear, and residential impacts. Council paused expansion and establishment while staff studied where these uses should be allowed and what standards should apply.</td><td>This is the origin of the restrictive regime. Any nonconforming or legacy truck-use thesis should carry legislative-risk reserves before hard site work: code/zoning/General Plan analysis, public opposition, truck-impact standards, and no assumption that informal operations create durable value.</td><td><div class="links"><a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Minutes/_01212021-328">minutes</a> · <a href="video_transcripts/summaries/JV008_truck_initiation_summary.md">summary</a> · <a href="video_transcripts/transcripts/JV008_truck_intensive_use_initiation_2021-01-21_raw_transcript.txt">transcript</a> · <a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Agenda/_01212021-328">agenda</a></div></td></tr>
-      <tr><td>2021-10-07</td><td>City Council / Planning Commission</td><td>Truck-intensive use ordinance study session.</td><td><span class="tag amber">Policy formation</span> Council and Planning Commission focused on affected industrial zones, sensitive-use conflicts, North Pyrite concerns, and whether truck uses could be controlled through standards rather than treated as broadly permissible industrial activity.</td><td>The restriction was deliberate, not accidental. Light-industrial IOS claims face a hard policy backdrop and need evidence on neighborhood compatibility, air/noise, street wear, routing, screening, and enforceable operations before site-level spend is justified.</td><td><div class="links"><a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Minutes/_10072021-399">minutes</a> · <a href="video_transcripts/summaries/JV007_truck_study_session_summary.md">summary</a> · <a href="video_transcripts/transcripts/JV007_truck_intensive_use_study_session_2021-10-07_raw_transcript.txt">transcript</a> · <a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Agenda/_10072021-399">agenda</a></div></td></tr>
-      <tr><td>2021-12-02</td><td>City of Jurupa Valley</td><td>Truck-intensive use ordinance: M-H + CUP; removed from I-P, M-SC, M-M.</td><td><span class="tag red">Approved restriction</span> Council narrowed truck-intensive uses to Manufacturing Heavy and stripped the pathway from M-SC, M-M, and I-P. Stakeholder pushback and existing CUP issues did not stop the city from keeping the moratorium in place while the code changed.</td><td>Core underwriting rule: non-M-H IOS/truck storage is not ordinary light-industrial optionality. Non-M-H parcels need entitlement repositioning; even M-H parcels need CUP findings, truck-impact analysis, circulation, buffering, compatibility evidence, and operational controls.</td><td><div class="links"><a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Minutes/_12022021-413">minutes</a> · <a href="video_transcripts/summaries/JV006_truck_ordinance_final_summary.md">summary</a> · <a href="video_transcripts/transcripts/JV006_truck_intensive_use_ordinance_final_2021-12-02_raw_transcript.txt">transcript</a> · <a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Agenda/_12022021-413">agenda</a></div></td></tr>
-      <tr><td>2022-01-20</td><td>Aqua Mansa Commerce Park</td><td>Industrial project follow-on public financing/maintenance action.</td><td><span class="tag green">Approved follow-on</span> The project still needed a later public-finance and maintenance action after land-use approval: Council annexed the territory into the landscape and lighting district after all assessment ballots favored the levy. The case is most useful as evidence that industrial approvals can carry continuing public-improvement obligations.</td><td>Useful mainly as post-approval cost evidence. Major industrial projects can keep producing district, assessment, maintenance, drainage, landscaping, and public-agency obligations after core land-use approval, so basis should include continuing public-improvement and maintenance burdens.</td><td><div class="links"><a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Minutes/_01202022-422">minutes</a> · <a href="https://ceqanet.lci.ca.gov/2020010137/6">CEQAnet</a> · <a href="video_transcripts/summaries/JV010_agua_mansa_summary.md">summary</a> · <a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Agenda/_01202022-422">agenda</a></div></td></tr>
-      <tr><td>2023-09-21</td><td>EM Ranch Owner, LLC</td><td>The District at Jurupa Valley development agreement.</td><td><span class="tag green">Approved DA</span> Council pulled the development agreement from consent for further discussion, considered community-benefit modifications, and then approved the agreement. The key signal is that even successful large projects can become a negotiation over public benefits and economics late in the process.</td><td>Large logistics/specific-plan optionality is feasible only through negotiated, public-facing packages. Budget for DA negotiation, community benefits, public infrastructure, CFDs/financing districts, phasing, mitigation, and the risk that Council reopens economics even late in the process.</td><td><div class="links"><a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Minutes/_09212023-638">minutes</a> · <a href="https://ceqanet.lci.ca.gov/2022040044/5">CEQAnet</a> · <a href="video_transcripts/summaries/JV011_district_summary.md">summary</a> · <a href="video_transcripts/transcripts/JV011_the_district_at_jurupa_valley_2023-09-21_raw_transcript.txt">transcript</a> · <a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Agenda/_09212023-638">agenda</a></div></td></tr>
-      <tr><td>2024-01-18</td><td>Proficiency Capital / Proficiency Rubidoux LLC</td><td>Rubidoux Commerce Park, approx. 1.18M sf industrial/logistics.</td><td><span class="tag green">Approved heavy lift</span> Council approved both the zone change and development agreement for a 1.18M sf, five-building industrial park. This is a positive logistics precedent, but the approval depended on a full legislative and discretionary package, not a simple industrial-use interpretation.</td><td>Approval precedent, but only for a sponsor willing to fund a full legislative/discretionary path. Underwrite EIR/CEQA findings, zone change, development agreement, parcel/site approvals, public improvements, drainage, utilities, circulation, mitigation, and long entitlement cycle risk.</td><td><div class="links"><a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Minutes/_01182024-692">minutes</a> · <a href="https://ceqanet.lci.ca.gov/2020110449/6">CEQAnet</a> · <a href="video_transcripts/summaries/JV009_rubidoux_summary.md">summary</a> · <a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Agenda/_01182024-692">agenda</a> · <a href="video_transcripts/transcripts/JV009_rubidoux_commerce_park_2024-01-18_raw_transcript.txt">transcript</a><div class="evidence-note">Transcript chapter is noisy; minutes are primary.</div></div></td></tr>
-      <tr><td>2024-09-05</td><td>Richland Planned Communities, Inc.</td><td>Rio Vista Specific Plan with light industrial/business park capacity.</td><td><span class="tag green">Approved heavy lift</span> Council approved a plan-level package with an EIR, findings, statement of overriding considerations, MMRP, GPA, specific plan, tentative tract maps, DA/community-benefit changes, and major industrial/business park capacity. Critically, warehouse distribution/logistics were still prohibited despite the industrial acreage.</td><td>Industrial capacity can be approved, but this is not an IOS shortcut. Basis needs room for specific plan, DA, EIR/MMRP/SOC, public-benefit payments, open-space/cultural-resource commitments, CFDs, park timing, public infrastructure, phasing, and restricted industrial use language.</td><td><div class="links"><a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Minutes/_09052024-766">minutes</a> · <a href="video_transcripts/summaries/JV012_rio_vista_summary.md">summary</a> · <a href="video_transcripts/transcripts/JV012_rio_vista_specific_plan_2024-09-05_raw_transcript.txt">transcript</a> · <a href="https://ceqanet.lci.ca.gov/2018121005/4">CEQAnet</a> · <a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Agenda/_09052024-766">agenda</a></div></td></tr>
-      <tr><td>2025-07-17</td><td>Francisco Cortez / FC Pallets</td><td>Pallet yard legalization/expansion; sought Business Park to Heavy Industrial, M-SC to M-H, CUP, variance, SDP.</td><td><span class="tag red">Denied</span> M-H rezoning, CUP, variance, and SDP did not overcome fire/code history, residential proximity, unpermitted expansion, ROW impacts, and findings problems. This is the closest IOS-like denial precedent and shows that a heavy entitlement package cannot cure a weak operating record or bad compatibility facts.</td><td>Strongest IOS-like denial precedent. Budget high sunk-cost risk: GPA/CZ/CUP/variance/SDP plus fire access, water/hydrants, paving, stormwater, screening, circulation, ROW cleanup, and code-compliance remediation. Even that package may not fix a bad fact pattern.</td><td><div class="links"><a href="video_transcripts/summaries/JV001_fc_pallets_summary.md">summary</a> · <a href="video_transcripts/transcripts/JV001_fc_pallets_2025-07-17_raw_transcript.txt">transcript</a> · <a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Agenda/_07172025-854?packet=true">packet</a> · <a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Minutes/_07172025-854">minutes</a> · <a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Agenda/_07172025-854?html=true">agenda</a></div></td></tr>
-      <tr><td>2026-02-05 / 2026-02-19</td><td>Steve Galvez</td><td>I-15 RV/self-storage on 86.8 acres; GPA, CZ, TPM, CUP, SDP, MND.</td><td><span class="tag red">Denied</span> The project advanced with a full discretionary package and substantial site obligations, including access-road and frontage work, fire access, drainage/flood grading, fencing, landscaping, and conservation commitments. The ultimate denial shows that even a mature staff-level package can fail at Council.</td><td>Entitlement spend did not de-risk the use. Treat RV/self-storage as weak IOS-adjacent optionality unless the site has unusually strong findings. Budget GPA, CZ, TPM, CUP, SDP, MND, access/frontage improvements, fire access, grading/drainage, screening, landscaping, and open-space obligations with denial risk still live.</td><td><div class="links"><a href="video_transcripts/summaries/JV003_i15_hearing_summary.md">summary</a> · <a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Agenda/_02052026-918?packet=true">Feb. 5 packet</a> · <a href="video_transcripts/transcripts/JV003_i_15_rv_self_storage_hearing_2026-02-05_raw_transcript.txt">transcript</a> · <a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Agenda/_02192026-926?packet=true">Feb. 19 packet</a> · <a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Minutes/_02192026-926">Feb. 19 minutes</a></div></td></tr>
-      <tr><td>2026-08-06</td><td>Leslie Starks</td><td>Private bus dispatch facility in M-SC.</td><td><span class="tag amber">Narrow path</span> Council considered a targeted code amendment to allow private bus dispatch in M-SC with CUP and standards. This is not a general reopening of M-SC for truck-intensive outdoor storage; it is a narrow fleet-use pathway that would still be controlled through a CUP.</td><td>Two-step burden: first code amendment, then site CUP. Underwrite fleet count, parking, circulation, noise/idling, screening, operating standards, traffic review, and the possibility that Council narrows the use further through standards.</td><td><div class="links"><a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Agenda/_08062026-964?packet=true">packet</a> · <a href="video_transcripts/summaries/JV004_bus_dispatch_summary.md">summary</a> · <a href="video_transcripts/transcripts/JV004_bus_dispatch_facility_2026-08-06_raw_transcript.txt">transcript</a> · <a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Agenda/_08062026-964?html=true">agenda</a></div></td></tr>
-      <tr><td>2026-08-06</td><td>Fehr & Peers / City</td><td>Citywide Freight Analysis Plan and Mobility Element Update.</td><td><span class="tag blue">Policy active</span> The city is still investing in freight planning, so truck movement, routes, and mobility standards remain active Council policy terrain. This is less a project precedent than a signal that truck-heavy uses may face more formal circulation and offsite-improvement expectations over time.</td><td>Forward-looking risk factor. Future truck-related projects may face freight-route, frontage, offsite circulation, VMT/freight, or mobility-element requirements; this should be a diligence item for any IOS or fleet-heavy site.</td><td><div class="links"><a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Agenda/_08062026-964?packet=true">packet</a> · <a href="video_transcripts/summaries/JV005_freight_plan_summary.md">summary</a> · <a href="video_transcripts/transcripts/JV005_freight_analysis_plan_2026-08-06_raw_transcript.txt">transcript</a> · <a href="https://www.jurupavalley.org/AgendaCenter/ViewFile/Agenda/_08062026-964?html=true">agenda</a></div></td></tr>
-    </tbody>
-  </table>
-
-  <div class="shead"><span class="num">03</span><h3>Capital Readiness</h3></div>
-  <table>
-    <thead><tr><th>Cost Bucket</th><th>When It Shows Up</th><th>Underwriting Implication</th></tr></thead>
-    <tbody>
-      <tr><td>Legislative entitlement</td><td>Non-M-H IOS/truck storage, large logistics, storage projects needing GPA/CZ, specific plans, or code amendments.</td><td>Budget for time, consultants, legal, hearings, political risk, and no certainty of approval.</td></tr>
-      <tr><td>CEQA / environmental</td><td>Rubidoux, Aqua Mansa, The District, Rio Vista, and large industrial/logistics projects.</td><td>EIR/MND/MMRP work can be a major pre-closing or pre-construction cost and can trigger mitigation or overriding findings.</td></tr>
-      <tr><td>Development agreement / exactions</td><td>Large Council-approved logistics/specific-plan cases.</td><td>Expect negotiated obligations, fees, public benefits, infrastructure timing, and conditions that affect land basis.</td></tr>
-      <tr><td>Site hardening</td><td>Truck yards, pallet yards, bus dispatch, RV/self-storage, heavy equipment yards.</td><td>Likely needs paving or hardscape, stormwater treatment, drainage, fire lanes, hydrants/water supply, lighting, fencing/screening, and controlled access.</td></tr>
-      <tr><td>Traffic / freight / offsite improvements</td><td>Truck-intensive uses, logistics, dispatch, freight-plan-sensitive corridors.</td><td>Truck route compliance, driveway geometry, frontage work, signal/road fees, queuing controls, and offsite circulation improvements can change feasibility.</td></tr>
-      <tr><td>Compliance cleanup</td><td>Unpermitted pallet yards or legacy IOS uses.</td><td>Existing unpermitted use is not free value; it may create fire/safety, code-enforcement, debris, ROW, and remediation costs before approval is even possible.</td></tr>
-    </tbody>
-  </table>
-
-  <div class="shead"><span class="num">04</span><h3>Feasibility Conclusions</h3></div>
-  <div class="grid">
-    <div class="cell"><h4>IOS / truck storage in light industrial</h4><p>Weak feasibility. The 2021 ordinance removed truck-intensive uses from I-P, M-SC, and M-M and retained only M-H with CUP. Treat light-industrial IOS claims as speculative unless current code shows an adopted exception.</p></div>
-    <div class="cell"><h4>M-H with CUP</h4><p>Necessary but not sufficient. FC Pallets shows that a path involving M-H rezoning, CUP, variance, and SDP can still fail when findings, safety, ROW, or compatibility are problematic.</p></div>
-    <div class="cell"><h4>Large logistics</h4><p>Feasible only through heavy lift. Rubidoux, Aqua Mansa, The District, and Rio Vista point to EIRs, DAs, CZs, specific plans, SOCs, and mitigation, not lightweight approvals.</p></div>
-    <div class="cell"><h4>Fleet / bus dispatch</h4><p>Emerging but narrow. Leslie Starks' bus dispatch path required Council to consider a text amendment to allow private bus dispatch in M-SC with CUP and standards.</p></div>
-    <div class="cell"><h4>RV / self-storage</h4><p>Mixed to unfavorable. I-15 RV/self-storage moved to denial despite a full GPA/CZ/TPM/CUP/SDP package. Self-storage should not be used as an IOS proxy without site-specific proof.</p></div>
-    <div class="cell"><h4>EV charging contrast</h4><p>EVCS remains the cleaner entitlement story: local code provides expedited nondiscretionary building-permit review, while trucking-adjacent uses require legislative/discretionary paths.</p></div>
-  </div>
-
-  <div class="shead"><span class="num">05</span><h3>Evidence Files</h3></div>
-  <table>
-    <thead><tr><th>File</th><th>Purpose</th></tr></thead>
-    <tbody>
-      <tr><td><a href="jurupa_city_council_ios_trucking_2021_2026_findings.csv">jurupa_city_council_ios_trucking_2021_2026_findings.csv</a></td><td>Primary Council-focused findings table for 2021 through Aug. 9, 2026.</td></tr>
-      <tr><td><a href="jurupa_city_council_approval_steps_capital_readiness.csv">jurupa_city_council_approval_steps_capital_readiness.csv</a></td><td>Approval-step and capital-readiness table for entitlement burden, site work, mitigation, and sunk-risk assessment.</td></tr>
-      <tr><td><a href="jurupa_city_council_ytd_2026_ios_trucking_hits.csv">jurupa_city_council_ytd_2026_ios_trucking_hits.csv</a></td><td>Raw 2026 YTD Council agenda/packet keyword hits from the official Agenda Center.</td></tr>
-      <tr><td><a href="jurupa_city_council_links_ytd_2026.csv">jurupa_city_council_links_ytd_2026.csv</a></td><td>Official 2026 YTD Council agenda/packet link inventory.</td></tr>
-      <tr><td><a href="jurupa_video_transcription_plan.md">jurupa_video_transcription_plan.md</a></td><td>Step-by-step plan to pull Swagit videos, isolate relevant agenda items, transcribe clips, and code Council decision context.</td></tr>
-      <tr><td><a href="jurupa_video_transcription_targets.csv">jurupa_video_transcription_targets.csv</a></td><td>Prioritized target list of City Council videos for FC Pallets, I-15 RV/self-storage, bus dispatch, truck-intensive ordinance, Rubidoux, Aqua Mansa, The District, and Rio Vista.</td></tr>
-      <tr><td><a href="video_transcripts/metadata/jurupa_video_clip_manifest.csv">video_transcripts/metadata/jurupa_video_clip_manifest.csv</a></td><td>Video clip manifest with Swagit video IDs, item labels, time windows, and transcript output files.</td></tr>
-      <tr><td><a href="jurupa_transcript_case_summaries.csv">jurupa_transcript_case_summaries.csv</a></td><td>Case-by-case transcript summary table covering applicant/use, decision posture, approval steps, capital burden signals, and underwriting implications.</td></tr>
-      <tr><td><a href="jurupa_council_case_source_audit.csv">jurupa_council_case_source_audit.csv</a></td><td>Audited Council-summary table with official minutes, agenda, packet, video, summary, and transcript links for each case.</td></tr>
-      <tr><td><a href="video_transcripts/summaries/jurupa_cross_case_transcript_findings.md">video_transcripts/summaries/jurupa_cross_case_transcript_findings.md</a></td><td>Cross-case synthesis of Council themes from the transcript review.</td></tr>
-      <tr><td><a href="video_transcripts/transcripts/JV001_fc_pallets_2025-07-17_raw_transcript.txt">video_transcripts/transcripts/JV001_fc_pallets_2025-07-17_raw_transcript.txt</a></td><td>Raw transcript for the FC Pallets denial hearing, the strongest IOS-like precedent in the set.</td></tr>
-      <tr><td><a href="video_transcripts/transcripts/JV003_i_15_rv_self_storage_hearing_2026-02-05_raw_transcript.txt">video_transcripts/transcripts/JV003_i_15_rv_self_storage_hearing_2026-02-05_raw_transcript.txt</a></td><td>Raw transcript for the I-15 RV/self-storage hearing before denial moved forward.</td></tr>
-      <tr><td><a href="video_transcripts/transcripts/JV006_truck_intensive_use_ordinance_final_2021-12-02_raw_transcript.txt">video_transcripts/transcripts/JV006_truck_intensive_use_ordinance_final_2021-12-02_raw_transcript.txt</a></td><td>Raw transcript for the final 2021 truck-intensive use ordinance action.</td></tr>
-      <tr><td><a href="jurupa_valley_logistics_eir_da_burden_evidence.csv">jurupa_valley_logistics_eir_da_burden_evidence.csv</a></td><td>Large logistics approval/denial burden evidence: EIRs, DAs, CZs, SOCs, MMRPs and denials.</td></tr>
-      <tr><td><a href="jurupa_valley_ios_trucking_cup_findings.csv">jurupa_valley_ios_trucking_cup_findings.csv</a></td><td>Broader Jurupa IOS/trucking feasibility findings, including non-Council items.</td></tr>
-    </tbody>
-  </table>
-
   <footer>
-    Jurupa Valley City Council IOS / Trucking / M-H Eligibility Memo. Not legal advice. Confirm current code, final minutes, and parcel zoning before underwriting.
+    Entitlement Intelligence. Static research package; confirm current zoning, final minutes, ordinances, and parcel status before underwriting or legal reliance.
   </footer>
 </div>
 </body>

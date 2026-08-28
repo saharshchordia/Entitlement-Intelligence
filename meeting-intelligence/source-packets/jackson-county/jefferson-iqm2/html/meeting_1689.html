@@ -1,0 +1,664 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="en" lang="en">
+<head id="HeadMain"><title>
+	2025/11/24 06:00 PM City Council Voting Session - Web Outline - City of Jefferson, Georgia
+</title><meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+    <!-- this fixes a minor rendering issue with tables on the ipad -->
+    <meta content="width=device-width, initial-scale=1.0;" name="viewport" />
+
+    <!-- Agency specific meta tags -->
+    <meta name='google-site-verification' content='v8iNp5ToI5384_S9_Exw0F10KJ__b35Fs7jqvTvb0TY' />
+<meta name='msvalidate.01' content='8C654B10898A718CB62BCB19E52589CD' />
+
+
+    <!-- open search discovery -->
+    <link rel="search" type="application/opensearchdescription+xml" href="/Services/GetFederatedSearch.aspx" title="IQM2 search" />
+
+    <!-- Icon -->
+    <link href="/favicon.ico?v=2018" rel="icon" />
+
+    <!-- CSS Links -->
+    <link type="text/css" href="/App_Themes/Main.css?v=86" rel="Stylesheet" /><link type="text/css" href="/lib/jquery-ui.css" rel="stylesheet" />
+ 
+  <script>
+      !function () { var a, b, c, d = window, e = document, f = arguments, g = "script", h = ["config", "track", "trackForm", "trackClick", "identify", "visit", "push", "call"], i = function () { var a, b = this, c = function (a) { b[a] = function () { return b._e.push([a].concat(Array.prototype.slice.call(arguments, 0))), b } }; for (b._e = [], a = 0; a < h.length; a++) c(h[a]) }; for (d.__woo = d.__woo || {}, a = 0; a < f.length; a++) d.__woo[f[a]] = d[f[a]] = d[f[a]] || new i; b = e.createElement(g), b.async = 1, b.src = "//static.woopra.com/js/w.js", c = e.getElementsByTagName(g)[0], c.parentNode.insertBefore(b, c) }("woopra");
+
+      woopra.config({
+          domain: "iqm2.com",
+          cookie_name:"accelaTracker"
+      });
+      woopra.track("mp_pv", {
+          domain: window.location.hostname,
+          title: document.title,
+          url: window.location.href,
+          uri: window.location.pathname,
+          hash: window.location.hash,
+          error: null
+      });
+  </script>
+    <!-- IQM2 Scripts -->
+    <script type="text/javascript" src="/lib/jquery.js"></script>
+    <script type="text/javascript" language="javascript" src="/App_Themes/Global.js?v=8_10_48"></script>
+    <script type="text/javascript" src="/lib/MinuteTraq.PopupWindow.js"></script>
+    <script type="text/javascript" src="/lib/jquery-ui.js"></script>
+    <link href="https://unpkg.com/video.js@7.21.1/dist/video-js.css" rel="stylesheet" /><link href="/Scripts/videojs-live-dvr/videojs-dvrseekbar.css" rel="stylesheet" />
+    <script src="https://unpkg.com/video.js@7.21.1/dist/video.js"></script>
+    <script src='https://unpkg.com/videojs-flash@2.1.0/dist/videojs-flash.min.js'></script>
+    <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+    <script src="/Scripts/videojs-live-dvr/videojs-dvrseekbar.min.js"></script>
+    <script type='text/javascript' src='/Scripts/player.js'></script>
+    <script type="text/javascript" src="/Scripts/js.cookie-2.0.3.min.js"></script>
+    <!-- RSS Feeds (Site) -->
+    
+
+    <!-- Generated CSS Link -->
+    
+  
+    <!-- External CSS / Script Links -->
+    <link type='text/css' href='/Lib/GetCustomCSS.ashx?timestamp=637812931590000000' rel='Stylesheet' /><link type='text/css' href='/Citizens/GetImage.aspx?ID=1006' rel='Stylesheet' /><script type='text/javascript' src='/Citizens/GetImage.aspx?ID=1007'></script>
+    
+   
+    <!--[if IE 7]>
+	   <style type="text/css">
+        .Section H2 { display:inline;}
+        .RowTop div { display:inline;}
+   </style>
+	
+	<![endif]-->
+    
+    <script type="text/javascript" src="/Lib/MinuteTraq.Search.js?v=8_10_66"></script>
+    
+    <script type="text/javascript">
+        
+        // configure tracker
+        
+        $(function () {
+            
+            
+            FixFooterPosition();
+            $(window).on('resize', FixFooterPosition);
+
+            var h = $("#Banner").height();
+            //  var w = $("body").width();
+
+            var sCoords = "0,0,5000," + h;
+
+            $("#lnkBanner").attr("coords", sCoords);
+            var hideTopBanner = Cookies.get('hideTopBanner');
+            var appStyles = {display:'block'};
+            if (hideTopBanner) {
+                appStyles.display = 'none';
+            }
+            $('#topbarAppBanner').css(appStyles);
+            $('.close-topbar-app-banner').bind('click', function () {
+                $('#topbarAppBanner').css('display', 'none');
+                Cookies.set('hideTopBanner', true);
+            });
+            $('.link-wrapper-banner').bind('click', function () {
+                woopra.track('portal-wegovern-banner', {
+                    agency: Cookies.get('AgencyName'),
+                    username: Cookies.get('WebUserName')
+                });
+                return true;
+            });
+        });
+
+        function FixFooterPosition() {
+            //hack for the footer, display at bottom of screen if page is short
+            if ($("form").height() < $(window).height() - 100) {
+                $("#Footer").css("position", "absolute");
+                $("#Footer").css("bottom", "0");
+            }
+            else {
+                $("#Footer").css("position", "");
+            }
+        }
+
+    </script>
+    <style type="text/css" media="screen">
+        #topbarAppBanner {
+            min-height: 40px;
+            z-index: 1000;
+        }
+        .top-banner-app-inner{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            height: 40px;
+            border: 1px solid rgba(10,10,10,.5);
+            box-shadow: 0px 0px 16px 0px #303030;
+            background-color: #456ca7;
+        }
+        .close-topbar-app-banner {
+            position: absolute;
+            display: block;
+            top: 25px;
+            right: 5%;
+            font-size: 1em;
+            color: #e3e3e3
+        }
+        .app-link{
+            display: block;
+            margin: 0 auto;
+            width: 40%;
+        }
+        .wegovern-banner-logo {
+            left: 22px;
+            position: relative;
+            padding-top: 1px;
+        }
+
+        @media screen and (max-width: 981px ){
+            .inside-banner-link {
+                position: relative;
+                top: -15px;
+                left: 30px;
+                color: #e3e3e3;
+                white-space: nowrap;
+            }
+        }
+        @media screen and (min-width: 1595px){
+            .inside-banner-link {
+                position: relative;
+                top: -15px;
+                left: 30px;
+                color: #e3e3e3;
+                white-space: nowrap;
+            }
+        }
+        @media screen and (max-width: 1594px){
+            .inside-banner-link {
+                position: relative;
+                top: -30px;
+                left: 75px;
+                color: #e3e3e3;
+                white-space: nowrap;
+            }
+        }
+        @media screen and (min-width:1100px){
+            .app-link{
+                display: block;
+                margin: 0 auto;
+                width: 40%;
+            }
+            .close-topbar-app-banner {
+                right: 5%;
+            }
+        }
+        @media screen and (max-width:1099px){
+            .app-link {
+                display: block;
+                margin: 0 auto;
+                width: 65%;
+            }
+            .close-topbar-app-banner {
+                right: 5%;
+            }
+            .inside-banner-link {
+                position: relative;
+                top: -15px;
+                left: 30px;
+                color: #e3e3e3;
+                white-space: nowrap;
+            }
+        }
+    </style>
+    
+
+    <!-- Page Level Header Stuff -->
+    
+
+    <!-- JQuery & UI -->
+    <link type="text/css" href="/lib/jquery-ui.css" rel="stylesheet" />
+	<script type="text/javascript" src="/lib/jquery-ui.js"></script>
+	<script type="text/javascript" src="/lib/jquery.caret.js"></script>
+
+    <script type="text/javascript" src="/lib/MinuteTraq.UserComment.js"></script>
+    
+    <script type="text/javascript">
+        
+        function showSpeakerSignup(meetingid) 
+        {
+            PopupWindowShow("/Citizens/SpeakerSignup.aspx?ID=" + meetingid);
+        }
+        
+        $(function () {
+           
+            $('.tracked').bind('click', function () {
+                var $link = $(this);
+
+                if (woopra) {
+                    woopra.track("download", {
+                        url: window.location.href,
+                        type: $link.attr('data-type')
+                    });
+                }
+            });
+            $(".ShowMoreSpeakersButton").click(function ()
+            {
+                var link = $(this);
+                link.css("display", "none");
+                var hidden = link.parent().find(".HiddenSpeakers");
+                hidden.slideDown();
+                return false;
+            });
+
+            $(".ShowFewerSpeakersButton").click(function () {
+                var link = $(this);
+                var hidden = link.parent().parent().find(".HiddenSpeakers");
+                hidden.slideUp();
+
+                var showMoreLink = link.parent().parent().find(".ShowMoreSpeakersButton");
+                showMoreLink.css("display", "");
+                return false;
+            });
+        });
+
+      
+    </script>
+    <style>
+        a.lastClicked {
+            background-color: khaki;
+            color: #000;
+        }
+        #MeetingDetail * {
+            max-width:685px;
+        }
+    </style>
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+    <meta http-equiv="EXPIRES" content="0">
+</head>
+
+<body id="MainLayout">
+    
+    <form method="post" action="./Detail_Meeting.aspx?ID=1689" id="aspnetForm" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="1aLi3AD+6O05as8moR7oums9/JvEmiTLqAovaBy6b+SweXGpiNNJoa0KKqtSdud3jGPXzaqnSKyElGMQ+QGOGCeZiIAM5Zrid9qT3s6/N6Pnrge/H7HMM8+hC7YQl/sj0i5F7ocB7QT80oXoavVF5tZYHhqueDNSMvE2HCKUxHG46eDFrJAyLVKDO3+N1ZAm871/fbKLFnb3XWR9MIYTPg==" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="1BACF619" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="etW1y/F+LFZzxlYnvEyICaVYGKxtVhq33Swdnjyvut/Z2HDkJFk61Tw3YlUSL0Hwa/sxKJsCKjrPN4tvXn9xZANUNAQf1vv0UnS5E5gftvfn84i1dbSDevyUaqeEcuBEDWx+HGvQhHije8a0O55lYf6qLEBfoMm/pGddCqapR6pGayUo+e8OdJxbclar9Dr0fFYnakzFtYR3ed7cA1mB+i4XJdKT/3GTzXqZvG24B0xbyDZGyswUV+yZMaKaUWJt2ovcSCUFKbtmmmcRu2t5OckIBGqVJX7SAzzEqChsA0FldZvnAFKfuk8lQtYR+zd6" />
+</div>
+        <div style="display: none">
+            <input type="submit" name="ctl00$btnRefreshPageAfterLogin" value="Button" id="btnRefreshPageAfterLogin" class="btnRefreshPage" />
+            <input name="ctl00$hfShowPopupOnLoad" type="hidden" id="hfShowPopupOnLoad" class="hfShowPopup" />
+        </div>
+        <span id="lblScript"></span>
+  
+    <div id="MainWindow">
+    
+            <div id="Banner" role="banner"  >
+                <img usemap="#bannerMap" src="/Citizens/GetImage.aspx?ID=1008&TimeStamp=637812931590000000" alt="IQM2 Meeting Portal" />
+                <map name="bannerMap">
+                    <area href="/Citizens/Default.aspx" id="lnkBanner" shape="rect" alt="Home" Target="_self" />
+                </map>
+
+                <div id="LogoHeaderTextHolder">
+                    
+                                                                       
+                </div>
+            </div>
+            
+            <div id="ToolStrip" role="navigation" aria-label="site">
+                <div id="Tabs">
+                    <div class="Shadow"></div>
+                    <a href="http://www.cityofjeffersonga.com/" id="lnkMainSite" class="Tab LeftTab"><div><span>&laquo;Back to Main Site</span></div></a>
+                    <a href="/Citizens/default.aspx" class="Tab NormalTab"><div><span id="tabWelcome">Welcome</span></div></a>
+                    <a href="/Citizens/calendar.aspx" class="Tab NormalTab"><div><span id="tabMeetings">Meetings</span></div></a>                
+                    <a href="/Citizens/" style="display:none" class="Tab NormalTab"><div dropdown="Browse"><span>Browse</span></div></a>
+                                        
+                    <a href="/Citizens/Media.aspx" id="lnkMedia" class="Tab NormalTab"><div><span id="tabMedia">Media</span></div></a>                    
+                    <a href="/Citizens/LegalNotice.aspx" id="lnkNotices" class="Tab NormalTab"><div id="tabNotices"><span>Notices</span></div></a>                                        
+                    <a href="/Citizens/Board" class="Tab NormalTab"><div><span id="tabContactUs">Boards+</span></div></a>                                                        
+                </div>
+                <div id="TopExtraBoxTransparentBG"></div>
+                <div id="TopExtraBox">  
+                    <div id="TopLine">
+                        
+                     <a href="../MasterPages/#" id="lnkLogin" onclick="javascript:return PopupWindowShow(&#39;/Citizens/Login.aspx&#39;);">Log in</a><span id="spnThatOneStupidBar"> | </span><a href="mailto:support@granicus.com" id="lnkHelp">Help</a> <span id="spnHelpBar">|</span> <a href="../MasterPages/#" id="lnkRegister" onclick="javascript:return PopupWindowShow(&#39;/Citizens/MyAccount.aspx&#39;);">Register</a>                                                
+                    </div> 
+                    <div id="BottomLine">                       
+                          
+                    </div>                            
+                   <input name="ctl00$txtQuickSearch" type="text" id="txtQuickSearch" value="Search" title="Search" />
+                   <input type="image" name="ctl00$btnQuickSearch" id="btnQuickSearch" alt="Search" src="/Lib/images/search.png" style="cursor:pointer" />                   
+                </div>     
+            </div>
+                     
+            <table class="LayoutTable" role="presentation">
+                <tr>
+                    <td id="tdLeftPanel" class="LeftPanel">
+                        
+                        <div role="navigation" aria-label="Meeting Group">
+                            
+                        </div>
+                        
+                        <div class="DetailBox">
+                            <img src="/Citizens/images/Print.gif" border="0" alt="Print" />
+                            <a href="/Citizens/Detail_Meeting.aspx?ID=1689&Print=Yes" id="lnkPrint" class="PrintButton" target="_blank">Print This Page</a>                           
+                        </div>
+                        
+                        
+                                                
+                       <!-- <div class="QuickLink">
+                            <img src="/Lib/buttonexample.png" alt="Quick Link 1" />
+                            <a href="#">Quick Link #1</a>
+                        </div>
+                        <div class="QuickLink">
+                            <img src="/Lib/buttonexample.png" alt="Quick Link 2"  />
+                            <a href="#">Quick Link #2</a>
+                        </div>     -->
+                                      
+                    </td>
+
+                    <td id="MainContentHolder">
+                        <div style="width:100%;height:100%;position:relative;margin:0;padding:0;border:0;">
+                            <div id="MainContentLeftShadow">                           
+                            </div>   
+                          
+                            <div class="MainContentPlaceholder" role="main">
+                                
+                                
+
+    <style>
+        a.lastClicked {
+            background-color: khaki;
+            color: #000;
+        }
+    </style>
+    <script>
+        $('#divOutlineScroller a').click(function (e) {
+            $('a.lastClicked').removeClass('lastClicked');
+            $(e.currentTarget).addClass('lastClicked');
+        });
+    </script>
+    
+
+    <div       
+        >        
+        <div id="CC" style="background: Black; color: White; display:none;"></div>
+           
+        <div id="ContentPlaceholder1_pnlStart" style="width:100%;">
+	
+            <table border="0" width="100%" id="table1" cellpadding="5" role="presentation">
+                <tr>
+                    <td colspan="2" align="center" class="MeetingHeading">
+                        <span id="ContentPlaceholder1_lblMeetingGroup">City Council</span><br />
+                        <span id="ContentPlaceholder1_lblMeetingType">Voting Session</span><br />
+                        <span id="ContentPlaceholder1_lblMeetingDate">11/24/2025 6:00 PM</span>
+                        <br /> Jefferson Station Community Room <div class='MeetingAddress'>Jefferson Station&nbsp;&nbsp;&nbsp;Community Room&nbsp;&nbsp;&nbsp;Jefferson, GA  30549</div>
+                       
+                        <span id="ContentPlaceholder1_lblMeetingStatus"></span>
+                        <input type="hidden" name="ctl00$ContentPlaceholder1$txtMeetingID" id="ContentPlaceholder1_txtMeetingID" value="1689" />
+                        <input type="hidden" name="ctl00$ContentPlaceholder1$txtMinutesID" id="ContentPlaceholder1_txtMinutesID" value="1472" />
+                        <input type="hidden" name="ctl00$ContentPlaceholder1$txtAgendaID" id="ContentPlaceholder1_txtAgendaID" value="1559" />
+                        <input type="hidden" name="ctl00$ContentPlaceholder1$txtFileFormat" id="ContentPlaceholder1_txtFileFormat" value="pdf" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">
+                        
+                    </td>
+                </tr>
+                <tr id="ContentPlaceholder1_trMeetingDetail">
+		<td id="ContentPlaceholder1_tdMainContent" align="left" valign="top" colspan="2" role="main" class=""> 
+                        <div id="ContentPlaceholder1_pnlDownloads" class="MeetingDownloads" style="width:100%;">
+			
+                            <strong>Downloads:</strong><br />
+                            <img id="ContentPlaceholder1_imgPublicAgendaFile" src="images/PublicAgenda.jpg" />
+                            <a id="ContentPlaceholder1_hlPublicAgendaFile" class="tracked Link" data-type="agenda" href="FileOpen.aspx?Type=14&amp;ID=1559&amp;Inline=True" target="_blank">Agenda</a>
+                            <img id="ContentPlaceholder1_imgFullAgendaFile" src="images/FullAgenda.jpg" />
+                            <a id="ContentPlaceholder1_hlFullAgendaFile" class="tracked Link" data-type="agenda_packet" href="FileOpen.aspx?Type=1&amp;ID=1559&amp;Inline=True" target="_blank">Agenda Packet</a>
+                            
+                            
+                            
+                            
+                            
+                            <br />
+                            <img id="ContentPlaceholder1_imgPublicMinutesFile" src="images/PublicMinutes.jpg" />
+                            <a id="ContentPlaceholder1_hlPublicMinutesFile" class="Link" data-type="minutes" href="FileOpen.aspx?Type=15&amp;ID=1472&amp;Inline=True" target="_blank">Minutes</a>
+                            <img id="ContentPlaceholder1_imgFullMinutesFile" src="images/FullMinutes.jpg" />
+                            <a id="ContentPlaceholder1_hlFullMinutesFile" class="Link" data-type="minutes_package" href="FileOpen.aspx?Type=12&amp;ID=1472&amp;Inline=True" target="_blank">Minutes Packet</a>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <a href='javascript:void(0);' style='cursor:hand' Class='Link' OnClick='javascript:OpenWindow("/Citizens/SplitView.aspx?Mode=Video&MeetingID=1689&MinutesID=1472&FileFormat=pdf&Format=Minutes&MediaFileFormat=mpeg4");' &MediaFileFormat=mpeg4')><img src='images/VideoIcon_Off.gif' border='0' alt='Video (Windows Media)' /></a> <a href='javascript:void(0);' style='cursor:hand' Class='Link' OnClick='javascript:OpenWindow("/Citizens/SplitView.aspx?Mode=Video&MeetingID=1689&MinutesID=1472&FileFormat=pdf&Format=Minutes&MediaFileFormat=mpeg4");' &MediaFileFormat=mpeg4')>Audio</a>
+                            
+                            
+                        
+		</div>
+                        
+                        <span id="ContentPlaceholder1_lblOutline"><table id='MeetingDetail' class='MeetingDetail' cellpadding='0' cellspacing='0'>
+<tr><td class='Num'><strong>1. </strong></td><td class='Title' colspan='10'><strong>Call to Order</strong></td></tr>
+
+<tr><td></td><td class='Num'><strong>1. </strong></td><td class='Title' colspan='9'><strong>Pledge of Allegiance</strong></td></tr>
+
+<tr><td></td><td class='Num'>2. </td><td class='Title' colspan='9'>Roll Call</td></tr>
+
+<tr><td class='Num'><strong>2. </strong></td><td class='Title' colspan='10'><a target='_top' class='Link'  href='Detail_Motion.aspx?Frame=&MeetingID=1689&MinutesID=1472&MediaPosition=4722.551&ID=17558&Type=70&CssClass= style='cursor: hand'><strong>Approval of Agenda</strong></a></td></tr>
+
+<tr><td></td><td class='Num'>1. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_Motion.aspx?Frame=&MeetingID=1689&MinutesID=1472&MediaPosition=4722.551&ID=17673&Type=60&CssClass= style='cursor: hand'>Motion to approve with the amendment to remove item 12</a></td></tr>
+
+<tr><td class='Num'><strong>3. </strong></td><td class='Title' colspan='10'><strong>Minutes Approval</strong></td></tr>
+
+<tr><td></td><td class='Num'>1. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_Motion.aspx?Frame=&MeetingID=1689&MinutesID=1472&MediaPosition=0.000&ID=17560&Type=30&AcceptMinutesID=1468&CssClass= style='cursor: hand'>Minutes of Oct 13, 2025 6:00 PM</a></td></tr>
+
+<tr><td></td><td class='Num'>2. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_Motion.aspx?Frame=&MeetingID=1689&MinutesID=1472&MediaPosition=0.000&ID=17561&Type=30&AcceptMinutesID=1470&CssClass= style='cursor: hand'>Minutes of Oct 27, 2025 6:00 PM</a></td></tr>
+
+<tr><td class='Num'><strong>4. </strong></td><td class='Title' colspan='10'><strong>Public Comments</strong></td></tr>
+
+<tr><td class='Num'><strong>5. </strong></td><td class='Title' colspan='10'><strong>Planning and Development</strong></td></tr>
+
+<tr><td></td><td class='Num'>1. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_LegiFile.aspx?Frame=&MeetingID=1689&MediaPosition=1065.447&ID=4279&CssClass='>2025-80 : CU-25-J07 Conditional Use: Caleb Musser, applicant and property owner, seeks a conditional use permit for automobile services in an LI, Light Industrial zoning district on 7.14 acres (Map/Parcel 069/ 033B) fronting on the east side of Athens Highway (U.S. Highway 129 Business) approximately 1,000 feet south of Galilee Church Road. [planning staff recommendation: approval] [planning commission recommendation: approval]</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>a. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6857&MeetingID=1689'>CU-25-J07 Staff Report</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>b. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6858&MeetingID=1689'>Ordinance CU-25-J07</a></td></tr>
+
+<tr><td></td><td class='Num'>2. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_LegiFile.aspx?Frame=&MeetingID=1689&MediaPosition=1098.447&ID=4280&CssClass='>2025-81 : R-25-J05 Rush Truck Centers of Georgia, Inc., by Brian Brumfield of Eberly & Associates, applicant, JM Business Park IV, LLC, property owner, seeks rezoning from LI (Light Industrial District) conditional per Ordinance R-17-J10 to LI (Light Industrial District) conditional to modify existing conditions of approval for 14.63 acres fronting on the north side of Hog Mountain Road, the east side of Valentine Industrial Parkway, and the south side of Interstate 85 (Map/Parcel 079/003B). Proposed use: truck service (CU-25-J06). [planning staff recommendation: approval] ] [planning commission recommendation: approval]</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>a. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6859&MeetingID=1689'>R-25-J05 LI Modification Staff Report</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>b. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6860&MeetingID=1689'>Ordinance R-25-J05</a></td></tr>
+
+<tr><td></td><td class='Num'>3. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_LegiFile.aspx?Frame=&MeetingID=1689&MediaPosition=4722.551&ID=4282&CssClass='>2025-83 : Major amendment of the City of Jefferson Comprehensive Plan to revise the land use element including future land use plan map. Proposed amendments to the comprehensive plan would include add future land use classifications to the land use element for mixed land uses, and to change the classifications of certain properties on the future land use plan map. [planning staff recommendation: adopt Resolution 25-27 authorizing the transmittal of the major plan amendment for required regional and state review] [planning commission recommendation: approval of some map changes; no action on others]</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>a. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6863&MeetingID=1689'>Planning Staff Recommended Land Use Plan Changes 11-6-25</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>b. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6864&MeetingID=1689'>Resolution 25-27 Transmitting Comprehensive Plan 2025 Major Amendment</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>c. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6869&MeetingID=1689'>10-09-25 Highway 129 - CSP 32</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>d. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6870&MeetingID=1689'>11-05-25 FLUM Exhibit</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>e. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6872&MeetingID=1689'>Slide1</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>f. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6873&MeetingID=1689'>Hwy82 - CSP4 - COLOR Alt - 082025</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>g. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6874&MeetingID=1689'>Hwy82 FLUM Letter 092325</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>h. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6875&MeetingID=1689'>Hwy82 - CSP4 - COLOR - 082025</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>i. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6876&MeetingID=1689'>Slide3</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>j. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6877&MeetingID=1689'>Slide4</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>k. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6890&MeetingID=1689'>Response Letter - Proposed Changes Land Use Map - Jefferson City Schools</a></td></tr>
+
+<tr><td></td><td class='Num'>4. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_LegiFile.aspx?Frame=&MeetingID=1689&MediaPosition=0.000&ID=4287&CssClass='>2025-79 : Proposed changes Item 1 through 9</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>a. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6881&MeetingID=1689'>1-9</a></td></tr>
+
+<tr><td></td><td class='Num'>5. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_Motion.aspx?Frame=&MeetingID=1689&MinutesID=1472&MediaPosition=4722.551&ID=17674&Type=60&CssClass= style='cursor: hand'>Motion to approve map amendment number 1</a></td></tr>
+
+<tr><td></td><td class='Num'>6. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_Motion.aspx?Frame=&MeetingID=1689&MinutesID=1472&MediaPosition=4722.551&ID=17675&Type=60&CssClass= style='cursor: hand'>Motion to deny map amendment number 2</a></td></tr>
+
+<tr><td></td><td class='Num'>7. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_Motion.aspx?Frame=&MeetingID=1689&MinutesID=1472&MediaPosition=4722.551&ID=17676&Type=60&CssClass= style='cursor: hand'>Motion to approve map amendment number 3</a></td></tr>
+
+<tr><td></td><td class='Num'>8. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_Motion.aspx?Frame=&MeetingID=1689&MinutesID=1472&MediaPosition=4722.551&ID=17677&Type=60&CssClass= style='cursor: hand'>Motion to approve map amendment number 4</a></td></tr>
+
+<tr><td></td><td class='Num'>9. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_Motion.aspx?Frame=&MeetingID=1689&MinutesID=1472&MediaPosition=4722.551&ID=17678&Type=60&CssClass= style='cursor: hand'>Motion to approve map amendment number 5</a></td></tr>
+
+<tr><td></td><td class='Num'>10. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_Motion.aspx?Frame=&MeetingID=1689&MinutesID=1472&MediaPosition=4722.551&ID=17679&Type=60&CssClass= style='cursor: hand'>Motion to approve map amendment number 6</a></td></tr>
+
+<tr><td></td><td class='Num'>11. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_Motion.aspx?Frame=&MeetingID=1689&MinutesID=1472&MediaPosition=4722.551&ID=17680&Type=60&CssClass= style='cursor: hand'>Motion to appove map amendment number 7</a></td></tr>
+
+<tr><td></td><td class='Num'>12. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_Motion.aspx?Frame=&MeetingID=1689&MinutesID=1472&MediaPosition=4722.551&ID=17681&Type=60&CssClass= style='cursor: hand'>Motion to approve map amendment number 8</a></td></tr>
+
+<tr><td></td><td class='Num'>13. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_Motion.aspx?Frame=&MeetingID=1689&MinutesID=1472&MediaPosition=4722.551&ID=17682&Type=60&CssClass= style='cursor: hand'>Motion to Deny map amendment number 9</a></td></tr>
+
+<tr><td></td><td class='Num'>14. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_LegiFile.aspx?Frame=&MeetingID=1689&MediaPosition=4722.551&ID=4288&CssClass='>2025-84 : Proposed plan map changes #14, #15, #16, #18, #19, #21</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>a. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6882&MeetingID=1689'>14,15,16,18,19,21</a></td></tr>
+
+<tr><td></td><td class='Num'>15. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_LegiFile.aspx?Frame=&MeetingID=1689&MediaPosition=4722.551&ID=4289&CssClass='>2025-85 : Proposed plan map changes #17 and #20</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>a. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6883&MeetingID=1689'>17,20</a></td></tr>
+
+<tr><td></td><td class='Num'>16. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_LegiFile.aspx?Frame=&MeetingID=1689&MediaPosition=4722.551&ID=4290&CssClass='>2025-86 : Proposed land use plan map change # 12</a></td></tr>
+
+<tr><td></td><td class='Num'>17. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_LegiFile.aspx?Frame=&MeetingID=1689&MediaPosition=4722.551&ID=4291&CssClass='>2025-87 : Proposed land use plan map #11</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>a. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6884&MeetingID=1689'>11</a></td></tr>
+
+<tr><td></td><td class='Num'>18. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_LegiFile.aspx?Frame=&MeetingID=1689&MediaPosition=4722.551&ID=4292&CssClass='>2025-88 : Proposed future land use map change #10</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>a. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6885&MeetingID=1689'>10</a></td></tr>
+
+<tr><td></td><td class='Num'>19. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_LegiFile.aspx?Frame=&MeetingID=1689&MediaPosition=4722.551&ID=4293&CssClass='>2025-89 : Proposed land use plan map change #13</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>a. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6886&MeetingID=1689'>13</a></td></tr>
+
+<tr><td></td><td class='Num'>20. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_LegiFile.aspx?Frame=&MeetingID=1689&MediaPosition=4722.551&ID=4294&CssClass='>2025-90 : Proposed future land upe plan #22</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>a. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6887&MeetingID=1689'>22</a></td></tr>
+
+<tr><td></td><td class='Num'>21. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_LegiFile.aspx?Frame=&MeetingID=1689&MediaPosition=4722.551&ID=4295&CssClass='>Proposed future land use plan # 23</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>a. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6888&MeetingID=1689'>23</a></td></tr>
+
+<tr><td></td><td class='Num'>22. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_LegiFile.aspx?Frame=&MeetingID=1689&MediaPosition=4722.551&ID=4296&CssClass='>Proposed future land use plan map change #24</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>a. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6889&MeetingID=1689'>24</a></td></tr>
+
+<tr><td class='Num'><strong>6. </strong></td><td class='Title' colspan='10'><strong>Finance</strong></td></tr>
+
+<tr><td></td><td class='Num'>1. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_LegiFile.aspx?Frame=&MeetingID=1689&MediaPosition=0.000&ID=4286&CssClass='>Monthly Reports</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>a. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6878&MeetingID=1689'>2025 LOST Comparison</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>b. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6879&MeetingID=1689'>October 2025 Council Summary</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>c. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6880&MeetingID=1689'>October 2025 Council Report</a></td></tr>
+
+<tr><td class='Num'><strong>7. </strong></td><td class='Title' colspan='10'><strong>Administration</strong></td></tr>
+
+<tr><td></td><td class='Num'>1. </td><td class='Title' colspan='9'><a target='_top' class='Link'  href='Detail_LegiFile.aspx?Frame=&MeetingID=1689&MediaPosition=0.000&ID=4297&CssClass='>Focus and Executie</a></td></tr>
+
+<tr><td></td><td></td><td class='Num'>a. </td><td class='Title' colspan='8'><a target='_blank' class='Link'  href='FileOpen.aspx?Type=4&ID=6891&MeetingID=1689'>City of Jefferson Work Plan 2024 - 2025 - Strategic Plan</a></td></tr>
+
+<tr><td class='Num'><strong>8. </strong></td><td class='Title' colspan='10'><a target='_top' class='Link'  href='Detail_Motion.aspx?Frame=&MeetingID=1689&MinutesID=1472&MediaPosition=4722.551&ID=17609&Type=70&CssClass= style='cursor: hand'><strong>Public Comments</strong></a></td></tr>
+
+<tr><td class='Num'><strong>9. </strong></td><td class='Title' colspan='10'><strong>Other Business</strong></td></tr>
+
+<tr><td class='Num'><strong>10. </strong></td><td class='Title' colspan='10'><a target='_top' class='Link'  href='Detail_Motion.aspx?Frame=&MeetingID=1689&MinutesID=1472&MediaPosition=4722.551&ID=17611&Type=70&CssClass= style='cursor: hand'><strong>Executive Session - Property Aquistion</strong></a></td></tr>
+
+<tr><td class='Num'><strong>11. </strong></td><td class='Title' colspan='10'><strong>Adjourn</strong></td></tr>
+
+</table>
+</span>
+                    </td>
+	</tr>
+	
+            </table>
+        
+</div>
+        
+        
+        <br />
+        <hr class="Dotted" />
+        <br />
+    </div>
+    
+    <!-- Dialog Definition (Do Not Display in Page) -->
+    <div style="display: none;">
+    
+        <div id="UserComment" class="UserComment">
+            <input type="hidden" id="ItemID" />
+            <input type="hidden" id="ItemType" />
+            <table><tr><td colspan="2" style="text-align: center;"><textarea rows="10" cols="10"></textarea></td></tr>
+            <tr>
+                <td class="Status"><img src='/Lib/Images/ui-anim_basic_16x16.gif' alt='Loading' />&nbsp;&nbsp;Loading - Please Wait...</td>
+                <td class="Help"><a href="#" onclick="javascript: ShowHelp(); return false;"><img src="images/Help.png" alt="Help" /></a></td>
+            </tr></table>            
+        </div>
+        
+        <div id="frmHelp">
+            <p><strong>Shortcut Keys:</strong></p>
+            <p><strong>Alt + S</strong> - Save</p>
+            <p><strong>Ctrl + S</strong> - Save (may not be compatible in all browsers)</p>
+            <p><strong>Alt + C</strong> - Save and Close</p>
+            <p><strong>Ctrl + Enter</strong> - Save and Close</p>
+            <p><strong>Escape</strong> - Closes the form (same as Cancel)</p>
+            <p><strong>Alt + Up Arrow</strong> - Previous Item (Saves if changed)</p>
+            <p><strong>Alt + Down Arrow</strong> - Next Item (Saves if changed)</p>
+        </div>
+    
+    </div>
+
+   
+    
+                            </div>
+                        </div>                                                           
+                    </td>
+                </tr>               
+            </table>                                
+        </div>
+        
+    <div id="Footer" role="contentinfo">
+        <br />
+        <span id="lblPoweredBy">
+            Powered by <a href="https://granicus.com/" target="_blank" >Granicus</a>
+        </span>
+    </div>
+
+    
+    <!-- Analytics Stuff (Start) *********************************** -->
+<script async src='https://www.googletagmanager.com/gtag/js?id=UA-70364301-2'></script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+  gtag('config', 'UA-70364301-2');</script>
+<!-- Analytics Stuff (End)   *********************************** -->
+    
+        <!-- Popup Menus -->
+        <div id="mnuBrowse" class="PopupMenu" dropdown="Browse">
+            <ul>
+                <li><a href="#">Legislative Files</a></li>
+                <li><a href="#">Legal Notices</a></li>
+                <li><a href="#">Some other Sort of Thing</a></li>
+            </ul>
+        </div>
+
+    
+
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){woopra.identify({ email:"", name:"Anonymous User", agency:"JeffersonCityGA", userlogin:"Anonymous"}).push(); })//]]>
+</script>
+</form>
+</body>
+</html>
+
+
