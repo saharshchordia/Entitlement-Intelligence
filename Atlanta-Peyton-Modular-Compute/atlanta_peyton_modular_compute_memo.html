@@ -1,0 +1,520 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atlanta Peyton Road Modular Compute Zoning Memo</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --navy: #17324d;
+      --navy-deep: #10263b;
+      --teal: #0f766e;
+      --teal-soft: #eaf7f4;
+      --amber: #a85d09;
+      --amber-soft: #fff7e8;
+      --red: #b42318;
+      --red-soft: #fff1f0;
+      --ink: #1c2733;
+      --muted: #607080;
+      --line: #d7e0e7;
+      --soft: #f4f7f9;
+      --paper: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Aptos, "Segoe UI", Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.58;
+      background: #edf2f5;
+    }
+    main {
+      width: min(980px, calc(100% - 40px));
+      margin: 28px auto 64px;
+      padding: 0 54px 64px;
+      background: var(--paper);
+      box-shadow: 0 12px 38px rgba(16, 38, 59, .09);
+      counter-reset: memo-section;
+    }
+    .masthead {
+      margin: 0 -54px;
+      padding: 42px 54px 34px;
+      color: #fff;
+      background: var(--navy-deep);
+      border-bottom: 5px solid var(--teal);
+    }
+    .eyebrow {
+      margin: 0 0 13px;
+      color: #a9d9d4;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.2;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+    h1 {
+      margin: 0;
+      color: #fff;
+      font-size: 38px;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    .subtitle { margin: 8px 0 0; color: #d8e5ec; font-size: 18px; }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+      margin: 26px 0 0;
+    }
+    .meta-grid div { border-top: 1px solid rgba(255,255,255,.22); padding-top: 10px; }
+    .meta-grid dt { margin: 0 0 3px; color: #9fb3c2; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+    .meta-grid dd { margin: 0; color: #fff; font-size: 13px; font-weight: 650; }
+    .contents {
+      position: sticky;
+      top: 0;
+      z-index: 5;
+      display: flex;
+      gap: 4px;
+      margin: 0 -54px 34px;
+      padding: 9px 48px;
+      overflow-x: auto;
+      background: rgba(255,255,255,.97);
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 4px 12px rgba(16,38,59,.05);
+      scrollbar-width: thin;
+    }
+    .contents a {
+      flex: 0 0 auto;
+      padding: 6px 8px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 750;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .contents a:hover { color: var(--teal); background: var(--teal-soft); }
+    h2 {
+      counter-increment: memo-section;
+      margin: 42px 0 15px;
+      padding-top: 17px;
+      border-top: 1px solid var(--line);
+      color: var(--navy-deep);
+      font-size: 21px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+    h2::before {
+      content: counter(memo-section, decimal-leading-zero) "  ";
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 850;
+      vertical-align: 3px;
+    }
+    h3 { margin: 25px 0 9px; color: var(--navy); font-size: 17px; }
+    p { margin: 0 0 14px; }
+    a { color: #0b5f8a; text-decoration-thickness: 1px; text-underline-offset: 2px; overflow-wrap: anywhere; }
+    code { padding: 1px 5px; background: #eef3f6; border: 1px solid #d8e2e9; border-radius: 3px; font-family: Consolas, Monaco, monospace; }
+    .decision-panel {
+      margin: 14px 0 24px;
+      overflow: hidden;
+      border: 1px solid #bfd5d2;
+      border-top: 4px solid var(--teal);
+      background: #fbfefd;
+    }
+    .decision-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 13px 16px;
+      background: var(--teal-soft);
+      color: var(--navy-deep);
+      font-weight: 800;
+    }
+    .decision-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .decision-item { padding: 15px 16px 17px; border-right: 1px solid var(--line); }
+    .decision-item:last-child { border-right: 0; }
+    .decision-label { display: block; margin-bottom: 5px; color: var(--muted); font-size: 10px; font-weight: 800; text-transform: uppercase; }
+    .decision-value { display: block; color: var(--navy-deep); font-size: 13px; font-weight: 750; line-height: 1.35; }
+    .status { display: inline-block; padding: 3px 7px; border-radius: 3px; font-size: 11px; font-weight: 800; line-height: 1.2; }
+    .status.favorable { color: #075e55; background: #d9f2ed; }
+    .status.confirm { color: #804300; background: #ffebc5; }
+    .status.blocker { color: #8f1d14; background: #ffdeda; }
+    .good { color: #08705f; font-weight: 750; }
+    .watch { color: var(--amber); font-weight: 750; }
+    .bad { color: var(--red); font-weight: 750; }
+    .small { color: var(--muted); font-size: 12px; }
+    table { width: 100%; margin: 16px 0 25px; border-collapse: collapse; font-size: 13px; line-height: 1.45; }
+    thead { display: table-header-group; }
+    th, td { padding: 10px 11px; vertical-align: top; text-align: left; border-bottom: 1px solid var(--line); }
+    th { color: var(--navy-deep); background: #edf3f6; border-top: 1px solid #c5d2dc; font-size: 11px; font-weight: 850; text-transform: uppercase; }
+    tbody tr:nth-child(even) td { background: #fafcfd; }
+    tbody tr { break-inside: avoid; page-break-inside: avoid; }
+    ul, ol { margin: 9px 0 20px 22px; padding: 0; }
+    li { margin: 6px 0; padding-left: 2px; }
+    ol li::marker { color: var(--teal); font-weight: 800; }
+    .source-list { font-size: 12px; color: var(--muted); }
+    .source-list li { margin-bottom: 8px; }
+    @media (max-width: 760px) {
+      body { background: #fff; }
+      main { width: 100%; margin: 0; padding: 0 20px 44px; box-shadow: none; }
+      .masthead { margin: 0 -20px; padding: 30px 20px 26px; }
+      h1 { font-size: 32px; }
+      .meta-grid, .decision-grid { grid-template-columns: 1fr 1fr; }
+      .decision-item:nth-child(2) { border-right: 0; }
+      .decision-item:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+      .contents { margin: 0 -20px 28px; padding: 8px 14px; }
+      table { display: block; overflow-x: auto; white-space: normal; }
+    }
+    @media (max-width: 480px) {
+      .meta-grid, .decision-grid { grid-template-columns: 1fr; }
+      .decision-item { border-right: 0; border-bottom: 1px solid var(--line); }
+      .decision-item:last-child { border-bottom: 0; }
+    }
+    @page { size: Letter; margin: .58in; }
+    @media print {
+      body { background: #fff; font-size: 10.5pt; }
+      main { width: auto; max-width: none; margin: 0; padding: 0; box-shadow: none; }
+      .masthead { margin: 0 0 26px; padding: 28px 32px 23px; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      .contents { display: none; }
+      h2 { break-after: avoid; page-break-after: avoid; }
+      h2, h3, .decision-panel { break-inside: avoid; page-break-inside: avoid; }
+      a { color: var(--ink); text-decoration: none; }
+      .source-list a::after { content: ""; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <p class="eyebrow">Modular Compute Zoning Feasibility</p>
+    <h1>2770 Peyton Road NW</h1>
+    <p class="subtitle">Atlanta, Georgia</p>
+    <dl class="meta-grid">
+      <div><dt>Prepared</dt><dd>August 31, 2026</dd></div>
+      <div><dt>Parcel</dt><dd>17 0256 LL0402</dd></div>
+      <div><dt>Use Case</dt><dd>Lower-impact modular compute</dd></div>
+      <div><dt>Review Stage</dt><dd>Preliminary due diligence</dd></div>
+    </dl>
+  </header>
+  <nav class="contents" aria-label="Memo sections">
+    <a href="#executive-read">Executive</a><a href="#site-snapshot">Site</a><a href="#modular-compute-classification">Classification</a><a href="#local-rules-that-matter">Rules</a><a href="#moratorium-and-application-gate">Application Gate</a><a href="#power-and-utility-path">Power</a><a href="#noise-and-water">Noise &amp; Water</a><a href="#local-planning-evidence">Planning Evidence</a><a href="#key-local-players-to-talk-to">Local Players</a><a href="#recommended-filing-posture">Filing Posture</a><a href="#selected-sources">Sources</a>
+  </nav>
+
+  <h2 id="executive-read">Executive Read</h2>
+  <div class="decision-panel">
+    <div class="decision-title"><span>Executive Assessment</span><span class="status confirm">Favorable with classification risk</span></div>
+    <div class="decision-grid">
+      <div class="decision-item"><span class="decision-label">Base Zoning</span><span class="decision-value">I-1 Light Industrial</span></div>
+      <div class="decision-item"><span class="decision-label">Site Context</span><span class="decision-value">Industrial future land use; no mapped overlay</span></div>
+      <div class="decision-item"><span class="decision-label">Primary Gate</span><span class="decision-value">Data-center classification and possible SUP</span></div>
+      <div class="decision-item"><span class="decision-label">Power Posture</span><span class="decision-value">1-2 MW initial; 5-10 MW envelope</span></div>
+    </div>
+  </div>
+  <p><strong>Zoning feasibility is directionally favorable for a modular compute project at 2770 Peyton Rd NW, but classification discipline matters.</strong> The site maps as I-1 Light Industrial with Industrial future land use, no mapped zoning overlay, no mapped building moratorium, no mapped historic constraint, and no point-intersecting rezoning or special-use permit case. That is a materially better baseline than mixed-use, BeltLine, transit-adjacent, or residential-edge sites.</p>
+  <p>The main risk is not the base zoning district. The risk is Atlanta's political and code treatment of "data centers." In the City Utilities record, Chair Dustin Hillis stated that no data center would be built in Atlanta without Council approval and referenced a special-use-permit requirement even for properly zoned sites. A modular compute project should therefore be packaged around low water use, low noise, no crypto mining, no public-facing campus, limited traffic, screened equipment, and a phased electrical load profile.</p>
+
+  <ul>
+    <li><strong>Zoning posture:</strong> I-1 Light Industrial is a plausible district for enclosed compute, equipment, warehousing, light industrial, utility, and business-service style uses.</li>
+    <li><strong>Most important gating question:</strong> whether Atlanta classifies the project as a "data center" despite modular form factor, no water cooling, and lower power demand.</li>
+    <li><strong>Least-pushback / most-power band:</strong> target an initial utility request at or below 2 MW and a near-term total cap around 5-10 MW if distribution capacity is available without a visible substation or transmission upgrade.</li>
+    <li><strong>Do not lead with:</strong> 25+ MW demand, 100 MW entitlement language, evaporative cooling, crypto/blockchain mining, round-the-clock outdoor equipment noise, or a use description that reads like a conventional hyperscale data center.</li>
+  </ul>
+
+  <h2 id="site-snapshot">Site Snapshot</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th>Current Finding</th>
+        <th>Zoning Feasibility Takeaway</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Official address / parcel</td>
+        <td>2770 Peyton Rd NW, Fulton County parcel 17 0256 LL0402.</td>
+        <td><span class="good">Confirmed for this memo.</span> Any title, survey, or assemblage change should still be checked against parcel boundaries.</td>
+      </tr>
+      <tr>
+        <td>Parcel profile</td>
+        <td>2770 Peyton Rd NW, parcel 17 0256 LL0402, owner City of Atlanta, approximately 12.2 acres in Fulton County parcel data.</td>
+        <td>City ownership may help with economic-development access, but also increases political visibility.</td>
+      </tr>
+      <tr>
+        <td>Base zoning</td>
+        <td>I-1 Light Industrial.</td>
+        <td><span class="good">Favorable baseline.</span> I-1 is the right family of zoning for an enclosed, industrial-service use if impacts are controlled.</td>
+      </tr>
+      <tr>
+        <td>Future land use</td>
+        <td>Industrial.</td>
+        <td><span class="good">Consistent.</span> No immediate comprehensive-plan conflict appeared at the point queried.</td>
+      </tr>
+      <tr>
+        <td>Overlay / moratorium / historic</td>
+        <td>No point-intersecting zoning overlay, building moratorium, historic district, landmark site, MRPA buffer, rezoning case, or SUP case found in official Atlanta GIS layers.</td>
+        <td><span class="good">Clean map read.</span> This is the strongest zoning-feasibility fact in the file.</td>
+      </tr>
+      <tr>
+        <td>Political geography</td>
+        <td>Council District 9, NPU-D, Riverside neighborhood.</td>
+        <td>Talk early with District 9, NPU-D, and Riverside leaders before a formal application or public narrative forms.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 id="modular-compute-classification">Modular Compute Classification</h2>
+  <p>Atlanta's adopted data-center definition is functional: a facility engaged in storage, management, processing, or transmission of digital data that houses computer or network equipment, servers, appliances, or associated components. That definition may capture modular compute even if the project is smaller, phased, lower-power, and built without water cooling.</p>
+  <p>The strongest argument is not "this is not compute." The stronger argument is "this is an I-1 compatible modular compute facility with low external impacts, no water cooling, no crypto mining, limited traffic, and a modest phased load." The key diligence item is a written OZD use determination confirming whether the SUP requirement applies.</p>
+
+  <h2 id="local-rules-that-matter">Local Rules That Matter</h2>
+  <p>Current zoning is favorable because I-1 Light Industrial and Industrial future land use match the general character of an enclosed equipment and light-industrial operation. That does not eliminate data-center-specific controls, overlay checks, building/fire review, stormwater, utility coordination, noise, lighting, screening, or any Council/SUP path triggered by use classification.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Rule / Topic</th>
+        <th>What It Means</th>
+        <th>Application To Peyton</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>I-1 Light Industrial</td>
+        <td>I-1 allows industrial, warehousing, business-service, office/lab, utility, and similar uses, but industrial operations must not create adverse effects beyond property boundaries, including excessive noise or vibration.</td>
+        <td>Likely compatible if operations are enclosed and impact-controlled. A zoning verification request should frame the use in I-1 terms rather than as a hyperscale data center.</td>
+      </tr>
+      <tr>
+        <td>BeltLine Overlay data-center prohibition</td>
+        <td>Atlanta prohibits data centers as principal or accessory uses in the BeltLine Overlay.</td>
+        <td>Official point query did not show a zoning overlay at the Peyton parcel. If parcel boundaries or an assemblage touch an overlay, this must be rechecked.</td>
+      </tr>
+      <tr>
+        <td>High-capacity-transit data-center restriction</td>
+        <td>Atlanta restricts data centers within 2,640 feet of high-capacity transit stops. Ordinary bus stops are not necessarily high-capacity transit for this purpose.</td>
+        <td>The site has nearby MARTA bus stops, but no mapped rail/streetcar/BRT high-capacity stop was identified at the point. Confirm with city staff in a zoning verification.</td>
+      </tr>
+      <tr>
+        <td>Upper Westside Overlay data-center standards</td>
+        <td>Some Atlanta overlay districts add concurrency, active-use, design, and proportionality requirements for data centers.</td>
+        <td>Not shown as applicable at the queried point. If the ultimate parcel differs, overlay status is a first-order gating item.</td>
+      </tr>
+      <tr>
+        <td>Special-use permit / rezoning</td>
+        <td>No point-intersecting active SUP or rezoning case was found for the parcel in official GIS. Separately, the City Utilities chair stated on August 25, 2026 that data centers now require Council approval through a special-use-permit path.</td>
+        <td>No current case appears to be on file. If OZD classifies modular compute as a data center, assume discretionary review even on I-1.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 id="moratorium-and-application-gate">Moratorium And Application Gate</h2>
+  <p>No point-intersecting building moratorium, active rezoning, or active SUP case appeared in the official Atlanta GIS layers for 2770 Peyton Rd NW. The practical application gate is different: if Atlanta classifies the use as a data center, the City Utilities record indicates Council/SUP review should be expected even where the base zoning is otherwise compatible.</p>
+  <p>The cleanest diligence sequence is to ask OZD for a written use determination before public filing, while the project is still described as modular compute with no water cooling, a low initial electrical request, enclosed operations, and no crypto mining.</p>
+
+  <h2 id="power-and-utility-path">Power And Utility Path</h2>
+  <p>There is no Atlanta MW/kW zoning safe harbor found in the reviewed record. Power thresholds matter because larger loads make the project look more like a conventional data center, require more utility engineering, and increase the chance of political questions about grid capacity, ratepayer cost shifting, backup generation, and offsite infrastructure.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Requested Load</th>
+        <th>Likely Utility / Political Texture</th>
+        <th>Recommended Framing</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>&lt;250 kW</td>
+        <td>Lowest friction, but probably too small for the intended modular compute plan.</td>
+        <td>Useful for temporary testing or office/light-industrial support load.</td>
+      </tr>
+      <tr>
+        <td>250-500 kW</td>
+        <td>Still relatively quiet. Georgia Power rate materials reference 250 kW as a real-time-pricing eligibility threshold for certain customers.</td>
+        <td>Good pilot band if the goal is to prove the use before asking for larger service.</td>
+      </tr>
+      <tr>
+        <td>500 kW-2 MW</td>
+        <td>Begins to read as a serious commercial load. Georgia Power large-business tariffs generally start above 500 kW.</td>
+        <td><span class="good">Best first-phase band.</span> Ask whether existing distribution can serve without major offsite upgrades.</td>
+      </tr>
+      <tr>
+        <td>2-10 MW</td>
+        <td>Commercially meaningful but still materially below the 100 MW level used in Georgia Power large-load policy and recent Atlanta data-center negotiations.</td>
+        <td><span class="good">Best total near-term cap.</span> Position as phased modular compute with no water cooling and a hard noise plan.</td>
+      </tr>
+      <tr>
+        <td>10-25 MW</td>
+        <td>Harder. Likely to require more utility engineering, potential feeder or substation work, and more attention from city stakeholders.</td>
+        <td>Use only if Georgia Power confirms a short, mostly existing-infrastructure path.</td>
+      </tr>
+      <tr>
+        <td>25-99 MW</td>
+        <td>High scrutiny. It will likely be perceived as a data-center-scale project even if branded as modular compute.</td>
+        <td>Avoid for a low-pushback zoning strategy.</td>
+      </tr>
+      <tr>
+        <td>100 MW+</td>
+        <td>Georgia Power applies explicit large-load customer protections at 100 MW and above, including upfront infrastructure cost, long-term contracts, collateral, minimum bills, and termination payments. Recent Atlanta draft zoning for a different site also used 100 MW as a facility cap.</td>
+        <td><span class="bad">Highest pushback band.</span> This is the wrong posture for a "sneak through moratoriums" strategy.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Recommended ask:</strong> start with a 1-2 MW phase and a 5-10 MW planning envelope, expressly conditioned on no water cooling, no crypto mining, no new transmission line, no visible substation if avoidable, and no property-line noise exceedance. That is the strongest "most power for least pushback" posture found from the available zoning and utility record.</p>
+
+  <h2 id="noise-and-water">Noise And Water</h2>
+  <p><strong>Noise:</strong> I-1 use language itself cares about impacts beyond property boundaries, including excessive noise and vibration. Recent Atlanta data-center negotiations outside this site also referenced compliance with the Atlanta Noise Ordinance. For modular compute, commission a pre-application acoustic memo covering fans, transformers, backup power, HVAC, tonal noise, nighttime operations, and nearest residential receptors.</p>
+  <p><strong>Water:</strong> The user's stated no-water-cooling fact is highly valuable. On August 17 and August 25, 2026, Council and City Utilities read a data-center ordinance that would require closed-loop or substantially non-consumptive cooling and prohibit routine potable-water cooling for data centers served by Atlanta municipal water. Even if not yet final for this site, "no water cooling" should be front-page positioning.</p>
+
+  <h2 id="local-planning-evidence">Local Planning Evidence</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Planning Record</th>
+        <th>Signal</th>
+        <th>Use In Strategy</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Data-center zoning restrictions</td>
+        <td>City Council approved ordinances defining data centers and restricting them near high-capacity transit and in the BeltLine Overlay.</td>
+        <td>Shows Atlanta is comfortable regulating data centers through zoning, especially where land-use opportunity cost is high.</td>
+      </tr>
+      <tr>
+        <td>West End / Adair Park debate</td>
+        <td>Public reporting and neighborhood sources show resistance to data centers near MARTA and mixed-use redevelopment areas. Mayor Dickens criticized data centers as potentially poor urban land use in those contexts.</td>
+        <td>Peyton's industrial context is better, but the project should avoid sounding like a land-banking hyperscale campus.</td>
+      </tr>
+      <tr>
+        <td>Data Center Task Force referral</td>
+        <td>Council referred the Data Center Task Force resolution back to committee by a 13-1 vote. In discussion, a councilmember said Atlanta should not be an anti-data-center city, but should get data centers right.</td>
+        <td>There is a lane for a responsible compute project, but it needs to look deliberately controlled: smaller phased load, no water cooling, noise proof, and written commitments.</td>
+      </tr>
+      <tr>
+        <td>Water-cooling ordinance referral</td>
+        <td>Council referred the water-cooling ordinance to City Utilities without objection. The item targets data centers in Atlanta or served by Atlanta water and would restrict routine potable-water cooling.</td>
+        <td>No-water-cooling is not a side benefit; it is a core zoning-feasibility argument.</td>
+      </tr>
+      <tr>
+        <td>Neighborhood planning concerns</td>
+        <td>A Sylvan Hills resident urged the task force to examine where data centers belong, infrastructure support, community impacts, capital markets/public finance, and enforceable commitments on jobs, water efficiency, energy use, and community benefits.</td>
+        <td>For Peyton, bring enforceable facts instead of promises: max load/phasing, no water cooling, acoustic limits, screening, emergency operations, and utility-capacity letters.</td>
+      </tr>
+      <tr>
+        <td>Council/SUP posture</td>
+        <td>Chair Dustin Hillis said no data center would be built in Atlanta without Council approval, because data centers must seek special-use permits even if properly zoned. He also said no data-center SUP applications had been filed since that legislation passed.</td>
+        <td>This is the key feasibility issue. Ask OZD in writing whether the proposed modular compute use is a data center and whether the SUP requirement applies.</td>
+      </tr>
+      <tr>
+        <td>Pending policy work</td>
+        <td>The committee held both the water-cooling ordinance and Data Center Task Force resolution. The task-force item was held while the sponsor coordinates with the administration on parallel task-force efforts.</td>
+        <td>Rules are still moving. Filing as "generic data center" is high friction; filing as low-impact modular compute with a clear code interpretation is the cleaner path.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 id="key-local-players-to-talk-to">Key Local Players To Talk To</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Local Player</th>
+        <th>Role / Relevance</th>
+        <th>Diligence Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dustin Hillis, Atlanta City Council District 9 / City Utilities Chair</td>
+        <td>The site is in District 9, and Hillis is central to utility policy discussions.</td>
+        <td>Ask whether a no-water-cooling, 1-10 MW modular compute project in I-1 would trigger the same concerns as a conventional data center.</td>
+      </tr>
+      <tr>
+        <td>James "Jim" Martin, NPU-D Chair and zoning contact</td>
+        <td>NPU-D is the neighborhood planning unit for Riverside and is the first practical local-read channel.</td>
+        <td>Ask for an informal reaction to an enclosed, low-noise industrial compute use before public entitlement steps.</td>
+      </tr>
+      <tr>
+        <td>Riverside Neighborhood Association</td>
+        <td>Boots-on-the-ground neighborhood sentiment will matter even if the base zoning is favorable.</td>
+        <td>Test noise, truck traffic, screening, hours, security lighting, and community-benefit concerns early.</td>
+      </tr>
+      <tr>
+        <td>Atlanta Office of Zoning and Development / Keyetta Holmes, Zoning Administrator</td>
+        <td>Controls zoning interpretation, verification, and use-classification path.</td>
+        <td>Request a written zoning verification or use determination using the final operations narrative.</td>
+      </tr>
+      <tr>
+        <td>Nate Hoelzel, City Planning NPU planner</td>
+        <td>Staff bridge into NPU-D and community process.</td>
+        <td>Ask what NPU presentation path would be expected if no rezoning or SUP is filed.</td>
+      </tr>
+      <tr>
+        <td>Mary Norwood / Atlanta Zoning Committee staff</td>
+        <td>Zoning Committee is where broader land-use and data-center amendments move.</td>
+        <td>Ask whether pending or expected data-center amendments would reach I-1 modular compute on this parcel.</td>
+      </tr>
+      <tr>
+        <td>Invest Atlanta</td>
+        <td>The parcel is City-owned and in mapped incentive areas, making public ownership and economic-development framing relevant.</td>
+        <td>Ask whether a modular compute/light-industrial project aligns with city economic-development priorities for the corridor.</td>
+      </tr>
+      <tr>
+        <td>Georgia Power economic development / large-load account team</td>
+        <td>Electrical deliverability may drive the real schedule more than zoning.</td>
+        <td>Ask for a phased capacity screen: 2 MW now, 5 MW next, 10 MW planning case, with no new transmission and minimal offsite upgrades.</td>
+      </tr>
+      <tr>
+        <td>Georgia Public Service Commission / Commissioner Peter Hubbard</td>
+        <td>PSC policy is active on data-center cost-shifting and large-load customer protections.</td>
+        <td>Track whether Georgia Power large-load rules or future proceedings affect projects below 100 MW.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 id="recommended-filing-posture">Recommended Filing Posture</h2>
+  <table>
+    <thead><tr><th>Action</th><th>Owner</th><th>Required Output</th><th>Decision Unlocked</th></tr></thead>
+    <tbody>
+      <tr><td>Confirm the site against deed, survey, and Fulton Parcel ID.</td><td>Title / land-use counsel</td><td>Verified parcel package</td><td>Confirms the land area and ownership being analyzed.</td></tr>
+      <tr><td>Prepare the operating facts, including no water cooling, no crypto mining, limited traffic, screened equipment, and a 1-2 MW first phase.</td><td>Project sponsor / engineer</td><td>One-page operations narrative</td><td>Creates the factual basis for classification.</td></tr>
+      <tr><td>Request an I-1 use determination and ask directly whether the data-center definition and SUP apply.</td><td>Zoning counsel / Atlanta OZD</td><td>Written use determination</td><td>Defines the entitlement path.</td></tr>
+      <tr><td>Model property-line sound and commit to compliance.</td><td>Acoustic consultant</td><td>Pre-application acoustic memo</td><td>Addresses the principal operating-impact issue.</td></tr>
+      <tr><td>Screen 2 MW, 5 MW, and 10 MW service cases.</td><td>Project sponsor / Georgia Power</td><td>Distribution-capacity response</td><td>Sets a credible power envelope before filing.</td></tr>
+      <tr><td>Test the concept with District 9, NPU-D, and Riverside.</td><td>Local land-use team</td><td>Pre-filing stakeholder read</td><td>Identifies political concerns before a public application.</td></tr>
+      <tr><td>Use a consistent lower-impact modular-compute narrative.</td><td>Project sponsor / counsel</td><td>Approved external description</td><td>Protects credibility across city, utility, and neighborhood discussions.</td></tr>
+    </tbody>
+  </table>
+
+  <h2 id="selected-sources">Selected Sources</h2>
+  <ol class="source-list">
+    <li><a href="https://gis.atlantaga.gov/dpcd/rest/services/LandUsePlanning/LandUsePlanning/MapServer?f=pjson">City of Atlanta Land Use Planning GIS MapServer</a>: zoning, overlay, moratorium, historic, MRPA, FLU, rezoning, and SUP layers.</li>
+    <li><a href="https://gis.atlantaga.gov/dpcd/rest/services/OpenDataService1/MapServer?f=pjson">City of Atlanta Open Data GIS MapServer</a>: address points, city limits, council districts, neighborhoods, NPUs, overlays, and zoning layers.</li>
+    <li><a href="https://services1.arcgis.com/AQDHTHDrZzfsFsB5/ArcGIS/rest/services/Tax_Parcels/FeatureServer">Fulton County Tax Parcels FeatureServer</a>: parcel ownership, address, land area, and parcel identifiers.</li>
+    <li><a href="https://library.municode.com/ga/atlanta/codes/code_of_ordinances?nodeId=PTIIICOORANDECO_PT16ZO_CH16LIINDIRE_S16-16.010SI">Atlanta Code, I-1 Light Industrial district</a>: permitted-use and development-control baseline.</li>
+    <li><a href="https://citycouncil.atlantaga.gov/Home/Components/News/News/3928/175?arch=1">Atlanta City Council, September 2024 data-center restrictions</a>: adopted data-center definition and location restrictions.</li>
+    <li><a href="https://citycouncil.atlantaga.gov/Home/Components/News/News/4630/175">Atlanta City Council, August 2026 Data Center Task Force committee action</a>: city concerns around grid, water, noise, tax, ratepayer, and public-health impacts.</li>
+    <li><a href="https://citycouncil.atlantaga.gov/Home/Components/News/News/4634/175">Atlanta City Council, August 2026 full-council agenda notice</a>: task-force public-meeting and hearing structure.</li>
+    <li><a href="https://www.atlantaga.gov/government/channel-26/archived-meetings">ATL26 Archived City Meetings</a>: official meeting archive for Council and committee records.</li>
+    <li><a href="https://play.champds.com/atlantaga/event/1244">ATL26 / CHAMP event 1244</a>: August 17, 2026 Atlanta City Council record for 26-R-3853 and 26-O-1474.</li>
+    <li><a href="https://play.champds.com/atlantaga/event/1253">ATL26 / CHAMP event 1253</a>: August 25, 2026 City Utilities record for public comment, chair response, and data-center item handling.</li>
+    <li><a href="https://council.who-owns-atlanta.org/legislation/26-R-3853">Atlanta City Council Tracker, 26-R-3853</a>: task-force status, vote path, public-meeting requirements, and official portal links.</li>
+    <li><a href="https://council.who-owns-atlanta.org/legislation/26-O-1474">Atlanta City Council Tracker, 26-O-1474</a>: water-cooling ordinance status, referral path, and official portal links.</li>
+    <li><a href="https://council.who-owns-atlanta.org/meetings/2026-08-25/city-utilities">Atlanta City Council Tracker, August 25 City Utilities</a>: committee agenda/minute index showing 26-O-1474 and 26-R-3853 held.</li>
+    <li><a href="https://psc.ga.gov/">Georgia Public Service Commission</a>: Georgia Power large-load customer protections and ratepayer-cost policy context.</li>
+    <li><a href="https://www.georgiapower.com/about/customer-pledge/data-centers.html">Georgia Power data-center FAQ</a>: infrastructure cost, collateral, contracts, and large-load treatment.</li>
+    <li><a href="https://www.georgiapower.com/business/billing-and-rates/business-rates.html">Georgia Power business rates</a>: rate categories and demand thresholds.</li>
+    <li><a href="https://www.atlantaga.gov/government/departments/city-planning/neighborhood-planning-units/neighborhood-and-npu-contacts">City of Atlanta NPU contacts</a>: NPU-D, District 9, Riverside, and city planning contacts.</li>
+    <li><a href="https://www.atlantaga.gov/government/departments/city-planning/about-dcp/office-of-zoning-development">Atlanta Office of Zoning and Development</a>: zoning verification and zoning administration contacts.</li>
+    <li><a href="https://citycouncil.atlantaga.gov/standing-committees/zoning-committee/-toggle-all">Atlanta City Council Zoning Committee</a>: zoning committee scope and staff.</li>
+    <li><a href="https://www.wabe.org/atlanta-city-council-keeps-ban-on-data-centers-near-marta-stations-beltline/">WABE, December 2024 data-center zoning coverage</a>: local debate around MARTA, BeltLine, redevelopment, and neighborhood opposition.</li>
+  </ol>
+
+</main>
+</body>
+</html>
