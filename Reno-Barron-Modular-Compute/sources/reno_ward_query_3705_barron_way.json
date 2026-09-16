@@ -1,0 +1,12 @@
+{
+  "source": "Reno Wards GIS query",
+  "query_date": "2026-09-15",
+  "query_basis": "Point near parcel centroid, longitude -119.7628, latitude 39.4703",
+  "url": "https://services5.arcgis.com/RjM4BJrv5ZkqP4XC/ArcGIS/rest/services/Jurisdictions_Hub/FeatureServer/2",
+  "attributes": {
+    "WARD": "Ward Six",
+    "WARD_NUM": "6",
+    "REP": "Brandi Anderson",
+    "URLCOUNCIL": "https://www.reno.gov/government/city-council/city-council-members/ward-6-Brandi-Anderson"
+  }
+}

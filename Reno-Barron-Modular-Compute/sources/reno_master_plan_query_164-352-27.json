@@ -1,0 +1,15 @@
+{
+  "source": "City of Reno Master Plan land-use GIS layer",
+  "query_date": "2026-09-15",
+  "query_basis": "PIN 164-352-27",
+  "url": "https://citymaps.reno.gov/server/rest/services/Accela/Reno_Permits/MapServer/17",
+  "attributes": {
+    "PIN": "164-352-27",
+    "LU_Name": "Mixed-Employment",
+    "LU_Abbr": "ME",
+    "CASENAME": "Adoption of City Master Plan and Repeal of Existing Master Plan",
+    "RESOLUTION": "8475",
+    "RES_DATE": 1513123200000,
+    "ACRES": "5.6309833530993"
+  }
+}

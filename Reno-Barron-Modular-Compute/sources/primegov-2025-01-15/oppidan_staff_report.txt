@@ -1,0 +1,358 @@
+--- PAGE 1 ---
+PLANNING COMMISSION
+STAFF REPORT
+Date: January 15, 2025
+To: Reno City Planning Commission
+Subject: Staff Report (For Possible Action): Case No. LDC25-00022 (Oppidan 5MW
+Data Center) - A request has been made for a conditional use permit to allow:
+1) development of a data center, and 2) business operations between 11:00 p.m.
+and 6:00 a.m. The ±7.02 acre site is located on the north side of North Virginia
+Street ±2,470 feet east of its intersection with Stead Boulevard. The site is
+zoned Industrial Commercial (IC) and has a Master Plan land use designation
+of Industrial (I).
+From: Jeff Foster, Associate Planner
+Ward #: 4
+Case No.: LDC25-00022 (Oppidan 5MW Data Center)
+Applicant: CLOP Reno NV, LLC
+APN: 082-101-86
+Request: Conditional Use Permit: To allow 1) development of a data center and;
+2) business operations between 11:00 p.m. and 6:00 a.m.
+Location: See Case Maps (Exhibit A)
+Proposed Motion: Based upon compliance with the applicable findings, I move to approve
+the conditional use permit, subject to the conditions listed in the staff
+report.
+Summary: The ±7.02 acre site is located on the north side of North Virginia Street ±2,470 feet
+east of its intersection with Stead Boulevard. The proposed conditional use permit (CUP) would
+allow a data center with 24-hour operations. Key project issues include: 1) compatibility with
+surrounding uses and; 2) site design. These issues are mitigated through project design, code
+compliance, and/or conditions of approval. Staff recommends approval subject to all proposed
+conditions.
+1
+
+--- PAGE 2 ---
+Background: According to application materials, the parcel historically contained residential uses
+dating back to the 1950’s. From the early 2000’s through at least 2021, the western portion of the
+site was used for outdoor storage (primarily vehicles and trailers). By 2023, the last private
+residences were demolished, and the site is currently vacant.
+Discussion: The project proposes construction of a ±61,500 square-foot industrial building with
+supporting mechanical equipment to be used as a data center on the subject site. On January 25,
+2024, the definition of a data center was incorporated into the Reno Municipal Code (RMC)
+through an Administrative Interpretation/Decision (ADM24-00020) as “A facility used primarily
+for the storage, management, processing, and transmission of digital data, and which houses
+computer and/or network equipment, systems, servers, appliances, and other associated
+components related to digital data operations. Such facilities may also include air handlers, power
+generators, water cooling and storage facilities, utility substations, and other associated utility
+infrastructure to support sustained operations of a data center.”
+A data center is now recognized as a permitted use in the IC zoning district with approval of a
+CUP. It is acknowledged that there will be significantly less truck traffic, loading/unloading, and
+dock doors for a data center as opposed to a warehouse or distribution center. Since data centers
+typically do not require many dock doors, the data center use standards limit the number of dock
+doors to three per building. Required parking for a data center is the same as a warehouse or
+distribution center (one space per 3,300 square feet of building area).
+Analysis:
+Compatibility with Surrounding Uses: The general development pattern along North Virginia
+Street in the project vicinity is industrial in nature with some existing nonconforming residential
+uses occurring. Land uses immediately surrounding the site consist of warehouse or distribution
+center uses to the north and south, a mobile home park to the west, and an undeveloped parcel to
+the east being utilized for outdoor storage. The land uses immediately surrounding the site are
+summarized in the table below.
+Adjacent Properties
+Zoning Use
+North IC Warehouse or distribution center
+East MS Undeveloped parcel used for outdoor storage
+South IC Warehouse or distribution center
+West MS Mobile home park
+The applicant requests to allow indoor operations 24 hours a day. This geographic area is generally
+characterized by industrial zoning and uses that would allow for 24-hour indoor operations by
+2
+2
+7
+6
+2
+
+--- PAGE 3 ---
+right. The nearest residentially zoned property is ±1,435 feet away and separated from the site by
+a freeway and other industrial land uses. However, there is a mobile home park abutting the site to
+the west. As conditioned, the indoor operation is not anticipated to have impacts upon this
+residential use. Regarding exterior operations and the proposed location of the truck dock on the
+northwest corner near the mobile home park, staff recommends Condition 5 to limit the hours of
+truck arrivals/departures, idling, and on-site movement. For the western property line adjacent to
+the mobile home park, an acoustical study prepared for the project shows that the project should
+not exceed the maximum allowable noise level (49 dB for nighttime noise level between 10 p.m.
+and 7 a.m.) during the typical operational scenario (no more than 50% of the rooftop exhaust fans
+and condenser units running simultaneously per the design intent). However, the typical condition
+(48 dB) is close to the maximum allowable noise level. Therefore, the acoustical consultant
+recommended mitigations be added to account for reasonable error by either manufacturer noise
+data, the SoundPlan model, or field conditions (Conditions 6 and 7). Restricted construction hours
+will further reduce potential impacts on the existing residential use (Condition 8). Given all of the
+above, the proposed use is generally compatible with existing land uses in the area.
+Site Design: In addition to the data center building, the proposed site plan includes a backup
+generator yard on the northern side of the building with ±7 emergency generators (only used during
+a power failure and during necessary periodic daytime testing or maintenance per Condition 9),
+water tanks, parking, landscaping, security/screening fencing, and a stormwater detention basin
+(Exhibit B). Nineteen parking spaces are required and provided. A truck dock is proposed at the
+northwest corner of the building and is not visible from North Virginia Street. Two drive-in doors,
+which will only be used during buildout of the data halls, are located on the eastern side of the
+building. Proposed site lighting meets code requirements and no lighting is directed onto adjacent
+properties.
+The proposed generators on the northern side of the building will be screened from the mobile
+home park by architecturally compatible perforated metal screen panels and the ±8 foot tall
+perimeter security/screening fence (Exhibit C). The applicant proposed a change in the design of
+the security fence in response to a specific request made at the Ward 4 Neighborhood Advisory
+Board meeting on December 19, 2024 (Condition 10). The applicant also proposed adding a row
+of six evergreen trees along the western property boundary to provide improved screening
+(Condition 11). Water tanks on the southwestern corner of the building facing North Virginia
+Street, which are ±19 foot tall, are also proposed to be screened with architecturally compatible
+perforated metal screen panels. Rooftop mechanical equipment will be screened by parapet walls.
+Elevations for the proposed ±32/±39 foot tall (top of roof/top of tallest parapet), single story
+building are shown in Exhibit D. The south street facing façade appears to meet the required wall
+articulation per RMC 18.04.1103(c)(2)(a) for horizontal articulation and 18.04.1103(c)(2)(b)(2)
+for vertical articulation. For horizontal articulation, RMC 18.04.1103(c)(2)(a)(2) allows an
+3
+2
+7
+6
+2
+
+--- PAGE 4 ---
+alternative method to provide equal or greater architectural interest, including additional
+landscaping with shade trees and screening vegetation. Nine additional trees, primarily evergreen,
+are shown between North Virginia Street and the building, in addition to the required front yard
+landscape and street trees, to further screen the south elevation. To meet the vertical articulation
+requirement, perforated metal panels, which will be taller than the concrete parapet, are proposed
+along the south façade.
+The project proposes landscaping in compliance with the IC zone, which requires 100% of the
+front yard (driveways excepted) to be landscaped (Exhibit E). Landscaping to provide parking
+area screening from view of North Virginia Street has been included per code. In addition to
+meeting the horizontal articulation requirement, additional (enhanced) landscaping is provided
+above code between North Virginia Street and the building to help obscure the screening/security
+fence, water tank screening panels, and building (Condition 12).
+To further sustainability initiatives, the applicant has proposed Conditions 13-18 requiring design
+of the entire roof structure to support photovoltaic (PV) arrays, installation of ±5,500 square feet
+of PV arrays on the rooftop, installation of conduit to support future electric vehicle charging,
+installation of low flow domestics water fixtures, utilization of low volatile organic compound
+(VOC) materials, and best practices in source separation and diversion of construction debris from
+the landfill where possible during construction.
+Traffic, Access and Circulation: The proposed data center project is anticipated to generate 61
+daily trips, including six (6) P.M. peak hour trips. This trip generation is well below RMC
+requirements for a traffic entry and access study. With this very low trip generation, the proposed
+project is not expected to have any significant impact on local traffic operations or surrounding
+roadway infrastructure. The project will pay standard regional road impact fees that are used to
+mitigate impacts on the regional roadway network.
+The Regional Transportation Commission (RTC) classifies North Virginia Street as a Moderate
+Access Control Arterial in the 2050 Regional Transportation Plan. RTC has a roadway
+improvement project planned in this area that would widen North Virginia Street and provide a
+center left turn lane. The project proposes to provide a six foot sidewalk along the project frontage;
+the location of this sidewalk will be coordinated with RTC to minimize risk of it needing to be
+relocated in the future (Condition 19).
+Public Utilities: Sanitary sewer from the site will be treated at the Reno-Stead Water Reclamation
+Facility (RSWRF). There is limited sewer capacity remaining at RSWRF, which is connected to a
+short-term capacity project that diverts or “shaves” the raw sewage flow to a pipe that is used to
+pump sludge to the Truckee Meadows Water Reclamation Facility (TMWRF) for processing. The
+limit on sewer capacity was primarily to allow the remaining flow potential to be used to reduce
+4
+2
+7
+6
+2
+
+--- PAGE 5 ---
+the volume of effluent going to Swan Lake, which reduces the potential for flooding from this
+source. Since that time, a project was constructed to pump water directly out of Swan Lake during
+the irrigation months (April through October) and has been very effective in managing the water
+level at the lake. The long-term solution for increasing wastewater treatment capacity is the
+expansion of RSWRF from two million gallons per day (MGD) to four MGD and the Advanced
+Purified Water Facility and American Flat Aquifer Storage and Recovery project (LDC25-00013),
+which was recently approved by the Planning Commission.
+The applicant will be required to apply for a sewer will-serve and pay sewer connection fees prior
+to permit issuance consistent with the established sewer allocation program. The time frame for
+building permit application specified in Condition 2 has been adjusted in case the applicant is not
+able to secure a sewer will-serve in advance of the project as a result of the wastewater treatment
+capacity constraints.
+Water will be provided by Truckee Meadows Water Authority Water (TMWA). A will-serve from
+TMWA will be required prior to any permit requests to develop the site. Electricity and gas will
+be provided by NV Energy. Regarding power supply for the proposed data center, the applicant
+has provided a will serve letter from NV Energy to supply the necessary power to operate the data
+center. Existing overhead power lines along the site frontage are required to be undergrounded or
+a waiver obtained per RMC 18.04.503(c).
+Hydrology: The project is in the FEMA Flood Zone Unshaded X, an area of minimal flood hazard.
+Final design shall incorporate measures to ensure that there is no net increase in the regulatory
+100-year water surface elevation of Silver Lake. Volumetric mitigation shall be a minimum 1.3:1
+when located within watershed areas contributing to closed basins, based on the 100-year 10-day
+storm event. Volumetric mitigation is typically satisfied with an onsite retention basin(s); a
+retention/detention basin is proposed. A final drainage report will be required at the time of
+building permit to ensure the proposed facilities are adequate to serve the site.
+Master Plan Conformance: The subject site has a Master Plan land use designation of Industrial
+(I) and is located along a Suburban Corridor within the Industrial/Logistics Employment Areas per
+the Structure Plan Framework of the Reno Master Plan. The Industrial land use designation is
+intended to support industrial uses, including manufacturing/processing operations, maintenance
+and repair shops, and warehousing and distribution facilities. As proposed and with the
+recommended conditions, the proposed project is in substantial conformance with the Master Plan
+land use designation and the following applicable Master Plan goals and policies:
+• GP 1.1A: City-Focused Economic Development Strategy
+• GP 1.3E: Advanced Telecommunications Technologies
+• GP 1.4B: Culture of Innovation
+5
+2
+7
+6
+2
+
+--- PAGE 6 ---
+• C-SC.17: Infill and Redevelopment
+• DPEA-G.3: Parking, Loading and Storage
+• EA-ILA.1: Overall Mix
+• EA-ILA.7: Varied Design
+Public and Stakeholder Engagement: The proposed project was reviewed by various City
+divisions and partner agencies. Comments received were incorporated into this report (Exhibit F).
+A courtesy notice was sent out to surrounding property owners upon initial submittal of the project.
+One opposition comment was received regarding data center energy use and appropriateness of
+the proposed location for data center use. The applicant presented their project at the December
+19, 2024, Ward 4 Neighborhood Advisory Board meeting. Public comment cards were received
+with questions about wildfires, power outages and solar energy (Exhibit G). Any future comments
+will be forwarded to the Planning Commission as they are received.
+Recommended Conditions of Approval: All conditions shall be met to the satisfaction of
+Development Services Department staff, unless otherwise noted.
+1. The project shall comply with all applicable City codes, plans, reports, materials, etc., as
+submitted. In the event of a conflict between said plans, reports, materials and City codes,
+City codes in effect at the time the application is submitted shall prevail.
+2. The applicant shall apply for a building permit for the entire project within 36 months of
+the date of approval of the conditional use permit review application and maintain the
+validity of that permit, or the conditional use permit approval shall be null and void.
+3. Prior to the issuance of any building permit or business license associated with this project,
+the applicant shall attach a copy of the final approval letter. The approval letter shall
+accompany a narrative provided by the applicant that describes how the requested permit
+addresses each of the approved conditions of approval.
+4. The applicant, developer, builder, property owner, or business proprietor, as applicable,
+shall continuously maintain a copy of this approval letter on the project site during the
+construction and operation of the project/business. The project approval letter shall be
+posted or made readily available upon demand by City staff.
+5. Commercial truck arrival, departures, and on-site movement shall be limited to between
+the hours of 6:00 a.m. and 11:00 p.m. during standard operations. Commercial truck idling
+is prohibited on the site. Prior to the issuance of a building permit for vertical construction,
+the applicant shall have plans approved demonstrating that signage shall be installed
+6
+2
+7
+6
+2
+
+--- PAGE 7 ---
+adjacent to the dock and drive-up doors informing vehicle operators that idling is
+prohibited.
+6. Prior to approval of a building permit for site improvements, the applicant shall submit
+plans demonstrating that the 8-foot-tall perimeter security/screening fence on the west and
+north sides of the site on the preliminary site plan has been replaced with an 8-foot-tall
+solid metal wall in the same footprint/alignment.
+7. Prior to approval of a building permit for vertical construction, the applicant shall submit
+plans demonstrating a layer of 2-inch-thick fiberglass batt insulation will be installed above
+the ACT ceiling shown for the data halls to upgrade the isolation of data center noise
+through the roof.
+8. Hours of construction, including grading, shall be limited to between the hours of 7:00 a.m.
+and 6:00 p.m., Monday through Friday, and between 8:00 a.m. and 6:00 p.m. on Saturday.
+There shall be no construction on Sundays. This condition shall not apply to dust control
+or storm water management operations. A note to this effect shall be placed on the title
+sheet of all building permit plan sets. A sign with the approved construction hours shall be
+posted on site for the full duration of construction activity. If the construction hours need
+to be varied for the pouring of concrete slabs, interior construction hours or other
+modifications, a plan detailing the construction operations and provisions to minimize
+impacts on nearby residential areas shall be submitted and approved to the satisfaction of
+the Administrator.
+9. Emergency backup generators shall only be used during power failures and during
+necessary periodic testing or maintenance (to occur during the daytime only).
+10.Prior to approval of a building permit for site improvements, the applicant shall submit
+plans demonstrating that the security fence specification has been changed to eliminate the
+curved anti-climb feature.
+11.Prior to approval of a building permit for site improvements, final landscaping plans shall
+include a row of at least six evergreen trees along the western property boundary to provide
+enhanced screening.
+12.Prior to approval of a building permit for site improvements, final landscaping plans shall
+demonstrate enhanced landscaping (additional trees) along the south elevation as shown
+on the preliminary landscape plan. These shall be a mixture of deciduous and evergreen
+trees to provide year-round screening to the satisfaction of the Administrator.
+7
+2
+7
+6
+2
+
+--- PAGE 8 ---
+13.Prior to approval of a building permit for vertical construction, the applicant shall
+demonstrate that the entire roof structure has been designed with a load capacity that can
+support a photovoltaic (PV) system array.
+14.Prior to approval of a building permit for vertical construction, the applicant shall submit
+plans to install ±5,500 square feet of PV arrays on the rooftop.
+15.Prior to approval of a building permit for site improvements, the applicant shall submit
+plans demonstrating installation of conduit to support future electric vehicle (EV) charging.
+16.Prior to approval of a building permit for vertical construction, the applicant shall submit
+plans specifying installation of low flow domestics water fixtures for pantries, restrooms,
+and other areas of the building. This shall not apply to hose bibs serving exterior equipment
+areas.
+17.Prior to approval of a building permit for vertical construction, the applicant shall submit
+plans specifying utilization of low volatile organic compound (VOC) materials on the
+building shell and interior finishes of the building.
+18.Prior to approval of a building permit for vertical construction, the applicant shall submit
+plans with a note on the title page and in the construction notes requiring source separation
+and diversion of construction debris from the landfill where possible. This shall be
+incorporated into the General Contractor’s scope and shall be tracked as part of the project.
+19.The proposed frontage improvements shall be reviewed by RTC to ensure no conflict with
+proposed widening of North Virginia Street. Documentation clearly indicating this
+coordination has taken place shall be provided prior to approval of any permit for site
+improvements.
+Findings:
+General Review Criteria: The decision-making body shall review all development applications
+for compliance with the applicable general review criteria stated below.
+1) Consistency with the Reno Master Plan: The proposed development shall be consistent
+with the Reno Master Plan. The decision-making authority:
+a. Shall weigh competing plan goals, policies, and strategies; and
+b. May approve an application that provides a public benefit even if the development is
+contrary to some of the goals, policies, or strategies in the Reno Master Plan.
+8
+2
+7
+6
+2
+
+--- PAGE 9 ---
+2) Compliance with Title 18: The proposed development shall comply with all applicable
+standards in this Title, unless the standard is lawfully modified or varied. Compliance with
+these standards is applied at the level of detail required for the subject submittal.
+3) Mitigates Traffic Impacts: The project mitigates traffic impacts based on applicable
+standards of the City of Reno and the Regional Transportation Commission.
+4) Provides Safe Environment: The project provides a safe environment for pedestrians and
+people on bicycles.
+5) Rational Phasing Plan. If the application involves phases, each phase of the proposed
+development contains all of the required streets, utilities, landscaping, open space, and
+other improvements that are required to serve or otherwise accompany the completed
+phases of the project, and shall not depend on subsequent phases for those improvements.
+Conditional Use Permit: In addition to meeting the criteria in Section 18.08.304(e), Approval
+Criteria Applicable to all Applications, the following findings shall be made prior to granting a
+conditional use permit:
+1) The proposed location of the use is in accordance with the objectives of this Title and the
+purpose of the zoning district in which the site is located;
+2) The proposed land use and project design is compatible with surrounding development;
+3) The proposed land use and project design is consistent with applicable development
+standards;
+4) Public services and facilities are available to serve the project, or will be provided with
+development;
+5) The characteristics of the use as proposed and as may be conditioned are reasonably
+compatible with the types of use permitted in the surrounding area; and
+6) The granting of the conditional use permit will not be materially detrimental to the public
+health, safety, or welfare. The factors to be considered in evaluating this application shall
+include:
+a) Property damage or nuisance resulting from noise, smoke, odor, dust, vibration, or
+illumination; and
+b) Any hazard to persons and property.
+Attachments:
+Exhibit A - Case Maps
+Exhibit B - Preliminary Site Plan
+Exhibit C - Sightline Study
+Exhibit D - Preliminary Elevations
+Exhibit E - Preliminary Landscape Plan
+Exhibit F - Agency Comments
+Exhibit G - Public Comments
+9
+2
+7
+6
+2

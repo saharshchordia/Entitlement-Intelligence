@@ -1,0 +1,307 @@
+--- PAGE 1 ---
+PLANNING COMMISSION
+STAFF REPORT
+Date: January 15, 2025
+To: Reno City Planning Commission
+Subject: Staff Report (For Possible Action): Case No. LDC25-00026 (Keystone Data
+Center) - A request has been made for a conditional use permit to allow: 1)
+development of a data center; and 2) business operations between 11:00 p.m.
+and 6:00 a.m. The ±3.26 acre site is located on the west side of Keystone Avenue
+±335 feet north of its intersection with West Second Street. The site is zoned
+General Commercial (GC) and Industrial (I) and has Master Plan land use
+designations of Suburban Mixed-Use (SMU) and Mixed- Employment (ME).
+From: Jeff Foster, Associate Planner
+Ward #: 1
+Case No.: LDC25-00026 (Keystone Data Center)
+Applicant: Josh Hindo, Kimley-Horn and Associates
+APN: 010-610-17
+Request: Conditional Use Permit: To allow 1) development of a data center; and
+2) business operations between 11:00 p.m. and 6:00 a.m.
+Location: See Case Maps (Exhibit A)
+Proposed Motion: Based upon compliance with the applicable findings, I move to approve
+the conditional use permit, subject to the conditions listed in the staff
+report.
+Summary: The ±3.26 acre site is located on the west side of Keystone Avenue ±335 feet north of
+its intersection with West Second Street. The proposed conditional use permit (CUP) would allow
+a data center with 24-hour operations. Key project issues include: 1) compatibility with
+surrounding uses; and 2) site design. These issues are mitigated through project design, code
+compliance, and/or conditions of approval. Staff recommends approval of the CUP subject to all
+proposed conditions.
+Background: The site is currently developed with a ±19,064 square foot warehouse building,
+which will be demolished with construction of the proposed project along with existing overhead
+1
+
+--- PAGE 2 ---
+power lines that will be rerouted underground to facilitate new development. On April 6, 2022, the
+Planning Commission approved a conditional use permit to allow for: 1) amusement or recreation,
+outside; 2) live entertainment; and 3) a bar, lounge, or tavern to be operated in conjunction with
+an indoor/outdoor flex-space including general retail, art exhibits, and outdoor event space.
+Ultimately, the applicant opted not to move forward and the entitlement expired.
+Discussion: The project proposes construction of a ±91,200 square-foot industrial building with
+supporting mechanical equipment to be used as a data center on the subject site. On January 25,
+2024, the definition of a data center was incorporated into the Reno Municipal Code (RMC)
+through an Administrative Interpretation/Decision (ADM24-00020) as “A facility used primarily
+for the storage, management, processing, and transmission of digital data, and which houses
+computer and/or network equipment, systems, servers, appliances, and other associated
+components related to digital data operations. Such facilities may also include air handlers, power
+generators, water cooling and storage facilities, utility substations, and other associated utility
+infrastructure to support sustained operations of a data center.”
+A data center is now recognized as a permitted use in the GC and I zoning districts with approval
+of a CUP. It is acknowledged that there will be significantly less truck traffic, loading/unloading,
+and dock doors for a data center as opposed to a warehouse or distribution center. Since data
+centers typically do not require many dock doors, the data center use standards limit the number
+of dock doors to three per building. Required parking for a data center is the same as a warehouse
+or distribution center (one space per 3,300 square feet of building area).
+Analysis:
+Compatibility with Surrounding Uses: The general development pattern along Keystone Avenue
+and in the general project vicinity is commercial, industrial, and residential in nature with some
+existing nonconforming residential uses occurring. Land uses immediately surrounding the site
+consist of commercial and undeveloped (proposed residential) to the north across the Union Pacific
+Railroad tracks, an industrial building to the east across Keystone Avenue, an industrial building
+to the west, and various commercial and industrial uses to the south. The land uses immediately
+surrounding the site are summarized in the table below.
+Adjacent Properties
+Zoning Use
+North MU Gas station and proposed residential across UPRR tracks
+East MD-NWQ Industrial flex building across Keystone Avenue
+South I Various commercial and industrial buildings/uses
+West I Warehouse building
+2
+2
+8
+0
+2
+
+--- PAGE 3 ---
+The applicant requests to allow indoor operations 24 hours per day. This area is generally
+characterized by zoning that would allow 24-hour operations for certain industrial and indoor uses
+by right. The nearest residentially zoned property is ±350 feet to the west and separated from the
+site by industrial land uses. However, there are several closer residential and nonconforming
+residential uses to the south/southeast/southwest (Exhibit B) as well as a planned 10-unit
+intergenerational housing complex (for which building permits were recently issued) to the north
+across the UPRR tracks. As conditioned, the indoor operations are not anticipated to have impacts
+upon these residential uses. Regarding exterior operations and the proposed location of the loading
+dock on the northern side, across from the future housing project, staff recommends Condition 5
+to limit the hours of truck arrivals/departures, idling, and on-site movement.
+An acoustical study prepared for the project shows the ambient noise level measured on site
+exceeds the maximum allowable nighttime limit (49 dB between 10 p.m. and 7 a.m.). Per RMC
+18.04.1408(b), where existing ambient noise levels already exceed the standard(s), the subject
+source may not increase existing levels. In this case, the lowest measured nighttime ambient noise
+level is 53 dBA and noise levels from the data center would need to achieve ±43 dBA to not
+increase these levels. The acoustical study recommends a 15 foot tall acoustically absorptive
+barrier (with minimal undercut provided only for drainage) be placed on all sides around the
+rooftop chillers (Condition 6). In order to ensure the project complies with RMC noise standards,
+the acoustical study indicates ±24 decibels of additional attenuation are required for the DSP500
+chillers and ±19 decibels of additional attenuation are required for the MCV330 chillers
+(Condition 7). With these attenuation levels, the projected noise levels from the data center would
+be 10 points below the ambient noise levels in low and mid-frequency octave bands. Restricted
+construction hours will further reduce potential impacts on the existing and proposed residential
+uses (Condition 8). Given all of the above, the proposed use is generally compatible with existing
+land uses in the area.
+Site Design: In addition to the data center building, the proposed site plan includes backup
+generator yards on the western and eastern sides of the building with approximately five
+emergency generators (only used during a power failure and during necessary periodic
+testing/maintenance per Condition 9), vehicle and bicycle parking, landscaping, and ±8-foot-tall
+security/screening fencing (Exhibit C). Twenty-eight parking spaces are required and 42 are
+provided. A loading dock is proposed on the north side of the building and is not visible from
+Keystone Avenue. Proposed site lighting meets code requirements and no lighting is directed onto
+adjacent properties.
+The proposed generators on the western side of the building will be screened from view from
+adjacent properties by a ±15-foot-tall equipment screening wall; the proposed generators on the
+eastern side of the building will be screened from Keystone Avenue by a ±8.5-foot-tall equipment
+3
+2
+8
+0
+2
+
+--- PAGE 4 ---
+screening wall on top of a ±5 foot tall retaining wall (Exhibit D). Rooftop mechanical equipment
+will be screened by equipment screens.
+Elevations for the proposed ±43-foot tall, two-story building are shown in Exhibit E. The eastern
+street facing façade meets the ground floor transparency requirement per RMC 18.04.1003(c)(3)
+with a multi-level glass curtain wall highlighting the internal staircase, and also meets the required
+wall articulation per RMC 18.04.1003(c)(2)(b) with one additional articulation element requested
+by staff.
+The GC zone requires a minimum of 15% of the developed site to be landscaped and the I zone
+requires 100% of the front yard to be landscaped. As designed, the project includes ±11,804 square
+feet of formal landscaping (exceeds the minimum required 15% of the GC portion of the site),
+including the required front yard landscaping for the I zoned portion of the site (Exhibit F).
+To further sustainability initiatives, the applicant has proposed Conditions 10-14 requiring roof
+design ready to support PV arrays, installation of two onsite Level 2 electric vehicle (EV) chargers,
+installation of low flow domestics water fixtures, utilization of low volatile organic compound
+(VOC) materials, and best practices in source separation and diversion of construction debris from
+the landfill where possible during construction.
+Traffic, Access, and Circulation: The project site will be accessed with primary ingress and egress
+from Arletta Street and a right-turn-only exit on Keystone Avenue. The proposed data center
+project is anticipated to generate 90 daily trips, including 10 A.M. and 8 P.M. peak hour trips.
+With this very low trip generation, the proposed project is not expected to have any significant
+impact on local traffic operations or surrounding roadway infrastructure. The project will pay
+regional road impact fees that are used to mitigate impacts on the regional roadway network.
+Public Utilities: Electricity and gas will be provided by NV Energy. Regarding power supply for
+the proposed data center, the applicant has provided a will serve letter from NV Energy to supply
+the necessary power to operate the data center. New overhead power lines are required to be
+undergrounded or a waiver obtained per RMC 18.04.503(c).
+Sewer treatment for the project will be provided by the Truckee Meadows Water Reclamation
+Facility (TMWRF). Water will be provided by Truckee Meadows Water Authority Water
+(TMWA). A will-serve from TMWA will be required prior to any permit requests to develop the
+site. Infrastructure required to serve the site (i.e. sewer, storm drainage, water and power) will be
+further analyzed during the review of the permit requests to develop the site.
+Master Plan Conformance: The subject site has a Master Plan land use designations of Suburban
+Mixed-Use (SMU) and Mixed-Employment (ME) and is located within the Central Neighborhoods
+4
+2
+8
+0
+2
+
+--- PAGE 5 ---
+per the Structure Plan Framework of the Reno Master Plan. As proposed and with the
+recommended conditions, the proposed project is in substantial conformance with the Master Plan
+land use designation and the following applicable Master Plan goals and policies:
+• GP 1.1A: City-Focused Economic Development Strategy
+• GP 1.3E: Advanced Telecommunications Technologies
+• GP 1.4B: Culture of Innovation
+• GP 2.2B: Underutilized Properties
+• SD.22: Indoor Water Use
+• SD.25: Recycle Building Materials
+• SD.28: Electric Vehicle Charging Stations
+Public and Stakeholder Engagement: The proposed project was reviewed by various City
+divisions and partner agencies. Comments received were incorporated into this report (Exhibit G).
+A courtesy notice was sent out to surrounding property owners upon initial submittal of the project.
+Two comments in opposition were received (Exhibit H). The January 13, 2025, Ward 1
+Neighborhood Advisory Board meeting was cancelled. Any future comments will be forwarded to
+the Planning Commission as they are received.
+Recommended Conditions of Approval: All conditions shall be met to the satisfaction of
+Development Services Department staff, unless otherwise noted.
+1. The project shall comply with all applicable City codes, plans, reports, materials, etc., as
+submitted. In the event of a conflict between said plans, reports, materials and City codes,
+City codes in effect at the time the application is submitted shall prevail.
+2. The applicant shall apply for all building permits for the project within 18 months from the
+date of final approval, and continuously maintain the validity of those permits, or this
+approval shall be null and void.
+3. Prior to the issuance of any building permit or business license associated with this project,
+the applicant shall attach a copy of the final approval letter. The approval letter shall
+accompany a narrative provided by the applicant that describes how the requested permit
+addresses each of the approved conditions of approval.
+4. The applicant, developer, builder, property owner, or business proprietor, as applicable,
+shall continuously maintain a copy of this approval letter on the project site during the
+construction and operation of the project/business. The project approval letter shall be
+posted or made readily available upon demand by City staff.
+5
+2
+8
+0
+2
+
+--- PAGE 6 ---
+5. Commercial truck arrival, departures, and on-site movement shall be limited to between
+the hours of 6:00 a.m. and 11:00 p.m. during standard operations. Commercial truck idling
+is prohibited on the site. Prior to the issuance of a building permit for vertical construction,
+the applicant shall have plans approved demonstrating that signage shall be installed
+adjacent to the loading dock informing vehicle operators that idling is prohibited.
+6. Prior to approval of a building permit for vertical construction, the applicant shall submit
+plans demonstrating a 15 foot tall acoustically absorptive barrier (with minimal undercut
+provided only for drainage) will be placed on all sides around the rooftop chillers, in
+compliance with the acoustical study product recommendation or comparable, subject to
+the approval of the Administrator.
+7. Prior to approval of a building permit for vertical construction, the applicant shall submit
+plans demonstrating custom mitigation applied directly to the chillers to achieve the noise
+attenuation detailed in the acoustical study. This may include a full rooftop enclosure with
+silencers at the inlet and outlet of the chillers, or functionally comparable mitigation in
+consultation with the acoustical consultant of record and subject to the approval of the
+Administrator.
+8. Hours of construction, including grading, shall be limited to between the hours of 7:00 a.m.
+and 6:00 p.m., Monday through Friday, and between 8:00 a.m. and 6:00 p.m. on Saturday.
+There shall be no construction on Sundays. This condition shall not apply to dust control
+or storm water management operations. A note to this effect shall be placed on the title
+sheet of all building permit plan sets. A sign with the approved construction hours shall be
+posted on site for the full duration of construction activity. If the construction hours need
+to be varied for the pouring of concrete slabs, interior construction hours or other
+modifications, a plan detailing the construction operations and provisions to minimize
+impacts on nearby residential areas shall be submitted and approved to the satisfaction of
+the Administrator.
+9. The emergency backup generators shall only be used during power failures, and during
+necessary periodic testing or maintenance (to occur during the daytime only).
+10.Prior to approval of a building permit for vertical construction, the applicant shall
+demonstrate that the entire roof structure has been designed with a load capacity that can
+support a photovoltaic (PV) system array.
+11.Prior to approval of a building permit for site improvements, the applicant shall submit
+plans demonstrating a minimum of two onsite Level 2 electric vehicle (EV) chargers to be
+installed as part of the project.
+6
+2
+8
+0
+2
+
+--- PAGE 7 ---
+12.Prior to approval of a building permit for vertical construction, the applicant shall submit
+plans specifying installation of low flow domestics water fixtures for pantries, restrooms,
+and other areas of the building. This shall not apply to hose bibs serving exterior equipment
+areas.
+13.Prior to approval of a building permit for vertical construction, the applicant shall submit
+plans specifying utilization of low volatile organic compound (VOC) materials on the
+building shell and interior finishes of the building.
+14.Prior to approval of a building permit for vertical construction, the applicant shall submit
+plans with a note on the title page and in the construction notes requiring source separation
+and diversion of construction debris from the landfill where possible. This shall be
+incorporated into the General Contractor’s scope and shall be tracked as part of the project.
+Findings:
+General Review Criteria: The decision-making body shall review all development applications
+for compliance with the applicable general review criteria stated below.
+1) Consistency with the Reno Master Plan: The proposed development shall be consistent
+with the Reno Master Plan. The decision-making authority:
+a. Shall weigh competing plan goals, policies, and strategies; and
+b. May approve an application that provides a public benefit even if the development is
+contrary to some of the goals, policies, or strategies in the Reno Master Plan.
+2) Compliance with Title 18: The proposed development shall comply with all applicable
+standards in this Title, unless the standard is lawfully modified or varied. Compliance with
+these standards is applied at the level of detail required for the subject submittal.
+3) Mitigates Traffic Impacts: The project mitigates traffic impacts based on applicable
+standards of the City of Reno and the Regional Transportation Commission.
+4) Provides Safe Environment: The project provides a safe environment for pedestrians and
+people on bicycles.
+5) Rational Phasing Plan. If the application involves phases, each phase of the proposed
+development contains all of the required streets, utilities, landscaping, open space, and
+other improvements that are required to serve or otherwise accompany the completed
+phases of the project, and shall not depend on subsequent phases for those improvements.
+Conditional Use Permit: In addition to meeting the criteria in Section 18.08.304(e), Approval
+Criteria Applicable to all Applications, the following findings shall be made prior to granting a
+conditional use permit:
+7
+2
+8
+0
+2
+
+--- PAGE 8 ---
+1) The proposed location of the use is in accordance with the objectives of this Title and the
+purpose of the zoning district in which the site is located;
+2) The proposed land use and project design is compatible with surrounding development;
+3) The proposed land use and project design is consistent with applicable development
+standards;
+4) Public services and facilities are available to serve the project, or will be provided with
+development;
+5) The characteristics of the use as proposed and as may be conditioned are reasonably
+compatible with the types of use permitted in the surrounding area; and
+6) The granting of the conditional use permit will not be materially detrimental to the public
+health, safety, or welfare. The factors to be considered in evaluating this application shall
+include:
+a. Property damage or nuisance resulting from noise, smoke, odor, dust, vibration, or
+illumination; and
+b. Any hazard to persons and property.
+Attachments:
+Exhibit A. Case Maps
+Exhibit B. Residential Proximity Exhibit
+Exhibit C. Preliminary Site Plan
+Exhibit D. Sightline Study
+Exhibit E. Preliminary Elevations
+Exhibit F. Preliminary Landscape Plan
+Exhibit G. Agency Comments
+Exhibit H. Public Comments
+8
+2
+8
+0
+2

@@ -1,0 +1,17 @@
+{
+  "source": "City of Reno Zoning Designations MapServer layer 0",
+  "query_date": "2026-09-15",
+  "query_basis": "3705 Barron Way / PIN 164-352-27",
+  "url": "https://citymaps.reno.gov/server/rest/services/Planning/Zoning_Designations/MapServer/0",
+  "attributes": {
+    "PIN": "164-352-27",
+    "ADDRESS": "3705 BARRON WAY",
+    "CITY": "RENO",
+    "USZIP": "89511",
+    "NEW_Zoning": "Industrial Commercial",
+    "NEW_Z_ABBR": "IC",
+    "NEW_OVERLA": "AIRPORT NOISE EXPOSURE",
+    "NEW_OV_AB": "ANE",
+    "ACRES": "5.63098335309551"
+  }
+}

@@ -1,0 +1,10 @@
+gap_id,gap,status,severity,next_gap_to_close,orr_allowed
+G-001,Current owner/title and tenant occupancy,Open,Major,"Pull Washoe Assessor/Recorder records and sponsor-provided lease/title package before outreach.",No
+G-002,Exact modular-compute operating envelope,Open,Critical-to-next-step,"Prepare one-page operating facts: MW by phase, modules/racks, cooling, water, generators, batteries, staff, trips, noise.",No
+G-003,Reno staff use classification,Open,Critical-to-next-step,"Request written zoning verification or documented staff classification meeting using exact operating envelope.",No
+G-004,NV Energy available service and upgrade scope,Open,Major,"Request preliminary service-capacity and upgrade-cost allocation screen from NV Energy for 1 MW, 2 MW, and 3 MW scenarios; do not make public power claims until this is grounded.",No
+G-005,Noise baseline and receiver map,Open,Major,"Commission acoustic screen covering continuous equipment, transformers, HVAC, and generator testing.",No
+G-006,Water/sewer/fire demand,Open,Major,"Prepare utility demand table distinguishing domestic, fire, landscape, and cooling/process demand.",No
+G-007,Site-specific Reno meeting intelligence,No record found,Major,"Recheck PrimeGov, City YouTube, land development newsletters/map, and public-record search before any filing.",No
+G-008,Floodplain/environmental/civil constraints,Partial,Major,"Verify FEMA, drainage, grading, fire access, hazardous materials, and building-code constraints through civil due diligence.",No
+G-009,Post-moratorium code text,Open,Critical-to-filing,"Track Reno/TMRPA regulation amendments through adoption; update memo once draft/final standards are available.",No
