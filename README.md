@@ -6,6 +6,7 @@ Open `index.html` for the published memo index.
 
 Published pages:
 
+- Conley, Georgia 4441 Bowman Industrial Court three-use entitlement record
 - Fort Worth, Texas 4401 Deen Road Modular Compute Zoning Feasibility Memo
 - Atlanta, Georgia 2770 Peyton Road NW Modular Compute Zoning Feasibility Memo
 - Jackson County, Georgia I-85 Industrial Entitlement Landscape

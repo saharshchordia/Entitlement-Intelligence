@@ -1,0 +1,16 @@
+source_id,title,url,source_type,legal_status
+S01,DeKalb parcel GIS,"https://dcgis.dekalbcountyga.gov/mapping/rest/services/TaxParcels/FeatureServer/0/query?where=PARCELID%20%3D%20%2715%20014%2001%20021%27&outFields=*&returnGeometry=false&f=json",official GIS,current parcel record
+S02,Bouldercrest-Cedar Grove-Moreland overlay division 39,https://www.dekalbcountyga.gov/sites/default/files/user317/BOULDERCREST_CEDAR_GROVE_MORELAND_OVERLAY_DISTRICT_27_3.39_DIVISION_39.pdf,county code PDF,operative code publication subject to amendment check
+S03,December 2025 data center moratorium resolution,https://www.dekalbcountyga.gov/sites/default/files/2025-12/2025-1694%20Data%20Center%20Moratorium%20Extension.pdf,adopted resolution,operative definition and moratorium language as extended
+S04,June 9 2026 BOC moratorium summary,"https://dekalbcountyga.legistar.com/MeetingDetail.aspx?GUID=2FA045E1-BD95-4396-986D-18473376ECC4&ID=1352423&Options=info%7C&Search=",official meeting summary,adopted extension through September 30 2026
+S05,Data center text amendment official update,https://engagedekalb.dekalbcountyga.gov/data-center-text-amendment?tool=news_feed,planning department update,June 23 2026 proposal denied
+S06,Data center text amendment legislative record,"https://dekalbcountyga.legistar.com/LegislationDetail.aspx?GUID=2E9B85F8-FEC2-4536-A21A-CED67508DF75&ID=7732796",official docket,staff and commission record not enacted law
+S07,EV charging substitute adoption minutes,"https://dekalbcountyga.legistar.com/View.ashx?GUID=8514CB92-D684-4251-B90B-75DBE4A53D22&ID=1146841&M=M",official minutes,approved substitute August 27 2024
+S08,EV charging text amendment,https://www.dekalbcountyga.gov/sites/default/files/2024-07/N10-2024-0652%20Dir.%20P%26S%20Electric%20Vehicle%20Charging%20Stations%20TA-24-12470932.pdf,county ordinance packet,verify final substitute wording against codified text
+S09,PCC-DeKalb data center SLUP docket,"https://dekalbcountyga.legistar.com/LegislationDetail.aspx?GUID=B62C1E88-CFD7-4267-91D7-F59541B0D017&ID=8122029",official case record,staff denial and planning commission denial not final BOC disposition
+S10,2026-1109 proposed moratorium extension,"https://dekalbcountyga.legistar.com/LegislationDetail.aspx?GUID=885481A2-03E8-4D33-A099-9C50BC485DCD&ID=8123112",official docket,preliminary item with no recorded final action
+S11,DeKalb public hearing portal,https://dekalbcountyga.gov/departments/planning-and-sustainability/public-hearings-agenda-and-minutes,official portal,meeting search source
+S12,Georgia Power architects and engineers portal,https://www.georgiapower.com/business/industry-services/construction/architects-and-engineers.html,utility process,no site-specific capacity statement
+S13,DeKalb permitting portal,https://dekalbcountyga.gov/departments/planning-and-sustainability/permits-plan-review-and-inspections,official process,administrative guidance
+S14,2020-1175 Bowman overlay proposal,"https://dekalbcountyga.legistar.com/LegislationDetail.aspx?GUID=0EAED434-273A-4728-A6FE-59786A088B84&ID=4836392",official docket,withdrawn proposal not operative
+S15,4490 Bowman Industrial Court staff report,https://www.dekalbcountyga.gov/sites/default/files/2021-08/N2.%204490%20Bowman%20Industrial%20Court%20A-21-1245095.pdf,county staff report,nearby case not same parcel
