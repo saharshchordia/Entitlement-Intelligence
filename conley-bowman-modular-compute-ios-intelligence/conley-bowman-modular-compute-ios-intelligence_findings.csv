@@ -2,8 +2,8 @@ id,claim,source_id,status
 F01,Parcel 15 014 01 021 is unincorporated DeKalb with M zoning LIND land use and BVT4 overlay,S01,verified
 F02,Overlay use table prevails over conflicting base zoning and unlisted uses are not allowed,S02,verified
 F03,Data-center moratorium reaches unincorporated county and uses a facility-based definition without a MW threshold,S03,verified
-F04,Board extended moratorium through September 30 2026,S04,verified
+F04,Board approved 2026-1109 by 6-1 on July 7 2026 extending the moratorium through March 30 2027,S30,verified with date in S31
 F05,Board denied proposed permanent data-center text amendment on June 23 2026,S05,verified
 F06,Tier 4 storage yard is special permit while truck stop or terminal and transportation equipment storage are table-listed YES,S02,verified with classification open
-F07,EV charging amendment was approved as substitute in August 2024,S07,verified
+F07,EV charging section 27-4.2.61 is codified and treats stations as accessory structures in listed districts including M,S32,verified; principal-use treatment unresolved
 F08,No site-specific utility capacity statement has been located,S12,open

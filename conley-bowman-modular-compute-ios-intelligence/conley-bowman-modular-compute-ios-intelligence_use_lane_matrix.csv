@@ -1,4 +1,5 @@
 lens,status,basis_source_id,unresolved_question
-modular_compute,Applications paused if county classifies use within moratorium definition; overlay primary-use classification unresolved,S03,Does stated facility meet moratorium definition and which overlay row applies
+modular_compute,Applications paused through March 30 2027 if county classifies use within moratorium definition; overlay primary-use classification unresolved,S31,Does stated facility meet moratorium definition and which overlay row applies
 ios_ev_trucking,Classification-dependent: Tier 4 storage yard SLUP versus listed truck or vehicle storage categories; charging amendment does not establish principal yard use,S02,What are primary use truck movements storage duration and charging program
+ev_charging,Codified accessory charging standards apply but do not authorize a principal truck yard,S32,Is charging accessory to a lawful principal use or itself a principal activity
 combined_use,Separate classifications required; data-center component may trigger moratorium,S02,Can county recognize both uses and how is each classified on a shared site
