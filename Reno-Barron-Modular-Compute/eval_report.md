@@ -1,49 +1,21 @@
-# Eval Report - 3705 Barron Way Reno Modular Compute
+# Eval report: Reno jurisdiction entitlement brief
 
-Run date: September 15, 2026.
+Run date: 2026-09-23. Memo: `reno_barron_modular_compute_memo.html`. Skill: `zoning-deep-dive`, jurisdiction entitlement brief mode. Mechanical result: `PASS: jurisdiction brief structure` from `scripts/eval_jurisdiction_memo.py` after the citation repair. Human rubric review below.
 
-Mechanical check:
+| Check | Severity | Result and evidence | Fix / remaining limit |
+| --- | --- | --- | --- |
+| Jurisdiction correctness | Critical | Pass. City of Reno, Washoe County, Reno Planning Commission/Council; parcel's Ward 6 is separated from jurisdictionwide rules. | None. |
+| Parcel and zoning evidence | Critical | Pass. Archived City GIS gives APN 164-352-27, 5.63 acres, IC, ANE and ME plan designation. | GIS extract dated 2026-09-15, not a permit verification. |
+| Meeting intelligence exhaustion | Critical | Pass for scoped public sources. Reno PrimeGov/City calendar/YouTube and five-year use-synonym search documented in research log and shared search log. Actual auto-captions and timestamped excerpts saved for Webb, Oppidan, Keystone, IOS and accessory EV/code meetings. | January PC minutes link returned 404; July 2026 IOS video unavailable. No recording-derived conclusions assigned to unreviewed cases. |
+| Entitlement status discipline | Critical | Pass. City status establishes the active moratorium; written January 2025 Council minutes verify Webb appeal result. Other PC/Council motions are described as recorded motions, not signed permit orders. PSC construction contract is not EV zoning approval. | Signed permit documents for other 2025 cases not independently retrieved. |
+| Use classification and three lanes | Critical | Pass. Data-center CUP gate, IC outdoor storage versus truck terminal/stop, and accessory versus principal EV charging are separately stated, with technical permits distinct from land use. | Principal charging-yard classification remains undetermined by public examples. |
+| Data-center definition and moratorium | Critical | Pass. 2024 interpretation/codification, functional definition, 2025 CUP, June 2026 moratorium and pending amendment are distinguished. | Future adopted rule not predicted. |
+| Jurisdiction-position attribution | Critical | Pass. Staff, applicant, commenter, commissioner and Council statements are attributed; concerns are not generalized into a citywide sentiment. | Auto-captions are research aids, not official transcripts. |
+| No recommendations / confidentiality | Critical | Pass. No use, power, filing, outreach or investment recommendation; no customer or load assumptions. | Older CSVs and pre-refresh records remain historical; this eval covers the new public memo. |
+| Source traceability | Critical | Pass. Cases link to City agenda/packets and timestamped City video; operative rule to City/Municode page; parcel to archived GIS; EV installation to the City's indexed 2024 annual report via its live sustainability page. | The direct City report PDF returned 404, so the memo links to the live report index. |
+| Local planning signal | Major | Pass with documented limit. Seven rows, type column, case-specific disposition, attributed sentiment/requirements and comparability limits. Webb's 5-2 appeal outcome is supported by written Council minutes. | No verified stand-alone heavy-truck EV zoning case; July 2026 IOS leads not elevated to final outcomes. |
+| Utility and operating impacts | Major | Pass. Covers electric service, water/sewer, sound, truck access/idling, screening, stormwater, fire/building and airport overlay as applicable. | No site-specific NV Energy letter for Barron Way. |
+| Date and gap discipline | Major | Pass. Exact hearing/moratorium dates; uncertain signed-action and media status in log and memo notes. | No ORR submitted, consistent with user direction. |
+| HTML structure and scanability | Minor | Pass. Parcel first, three lanes, evidence table, rule/offices/sources, mobile/print CSS, internal anchors. | No known issue. |
 
-- Initial run: `PASS`: `eval_memo.py` structural memo checks passed for `reno_barron_modular_compute_memo.html`.
-- Revision run after user-directed removal of the standalone meeting-intelligence section: `CRITICAL: missing required section: Mandatory Meeting Intelligence`.
-- Disposition: intentional user-directed memo-format exception. Meeting diligence remains documented in `research_log.md`, `reno_barron_modular_compute_source_audit.csv`, `reno_barron_modular_compute_gap_matrix.csv`, `meeting-intelligence/meeting_ledger.csv`, and the local PrimeGov source folders. The visible memo now folds the substantive meeting-derived insights into `Local Planning Evidence`.
-
-## Critical Checks
-
-| Check | Result | Evidence | Fix action |
-|---|---|---|---|
-| Jurisdiction correctness | Pass | Memo identifies City of Reno, Washoe County, Reno Planning/Development Services, Planning Commission/Council CUP context, and Ward Six. | None. |
-| Zoning and parcel evidence | Pass | Reno GIS query records PIN 164-352-27, IC zoning, ANE overlay, acreage; Reno Master Plan layer records ME land use. | Saved source JSON extracts. |
-| Meeting intelligence exhaustion | Pass for workflow; intentional memo-format exception | Research log, source audit, meeting ledger, and source folders document Reno PrimeGov, City YouTube routing, Development Services, TMRPA, policy consortium, address/APN/road/use search terms, no site-specific meeting record, and official Jan. 15 / Feb. 26 Reno data-center packets. | Standalone memo section removed at user request; local planning evidence rewritten to use meeting-packet insights. |
-| Entitlement status discipline | Pass | Memo does not treat zoning compatibility or policy records as final approval; it distinguishes moratorium, classification, CUP, utility review, and open gaps. | None. |
-| Use classification | Pass | Memo separates modular-compute operating facts from Reno data-center classification and recommends written staff classification. | None. |
-| Source traceability | Pass | Material claims are tied to source-audit rows, official URLs, or analyst inference labels in findings. | Source-audit local-file references cleaned up. |
-
-## Major Checks
-
-| Check | Result | Evidence | Fix action |
-|---|---|---|---|
-| Date discipline | Pass | June 1, 2026 moratorium approval; August 31, 2027 moratorium endpoint; September 15, 2026 research date. | None. |
-| Gap honesty | Pass | Gap matrix gives concrete next step for each open/partial/no-record gap. | None. |
-| Local planning signal | Pass | Memo now draws investor-strategy implications from January 15, 2025 Oppidan/Keystone staff packets and public comments, February 26, 2025 Council data-center presentation, TMRPA work, and the 2026 moratorium. | Revised `Local Planning Evidence`. |
-| Utility and operating impact | Pass | Memo addresses power, water, sewer/fire as an open item, traffic, noise, lighting, generators, screening, and clean-energy path. | None. |
-| ORR candidate quality | Pass with constraint | User instructed no open-record request; memo and gap matrix do not propose submitting one. | None. |
-
-## Minor Checks
-
-| Check | Result | Evidence | Fix action |
-|---|---|---|---|
-| HTML structure | Pass | Responsive viewport, print CSS, tables, source links, title. | None. |
-| Writing quality | Pass | Recommendation is clear: classification now, post-moratorium CUP if data-center classification applies. | None. |
-| Workbook hygiene | Not applicable | No workbook created for this single-address memo. | None. |
-
-## Remaining Open Issues
-
-- Current title/tenant facts are open.
-- Exact modular-compute operating envelope is open.
-- Reno staff classification is open.
-- NV Energy service capacity and upgrade scope are open; packet now recommends screening 1 MW, 2 MW, and 3 MW scenarios before public power claims.
-- Acoustic/noise and utility demand studies are open.
-- Mechanical memo checker will continue to flag the missing standalone meeting-intelligence section unless the checker is updated to allow the user-preferred memo format.
-
-These are documented in `reno_barron_modular_compute_gap_matrix.csv` and the memo's Open Items section.
+Final delivery status: all critical checks pass. The remaining limits are the unavailable January 2025 PC minutes PDF and some signed permits, unavailable July 2026 IOS media, no verified stand-alone heavy-truck EV precedent, and no parcel-specific utility response. The Webb appeal has written Council minutes. These limits do not change the current City-published moratorium or the separation of the three use lanes.

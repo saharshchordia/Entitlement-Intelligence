@@ -1,44 +1,28 @@
-# Research Log - 3705 Barron Way Reno Modular Compute
+# Reno jurisdiction entitlement brief: research log
 
-Prepared September 15, 2026.
+Refreshed 2026-09-23. Scope: City of Reno, with 3705 Barron Way (APN 164-352-27) as parcel context; independent data-center, industrial outdoor-storage/trucking, and EV-charging lanes. This replaces the 2026-09-15 recommendation-led modular-compute memo. No project load, customer, charging count, operating pattern or investment recommendation is assumed. No open-record request was made.
 
-## Inputs
+## Official rules and geography
 
-- Address: 3705 Barron Way, Reno, NV 89511.
-- Target use: modular compute.
-- Requested format: match Atlanta / Fort Worth memo pattern.
-- Open records: no open-record request.
-- Key question: easiest path to approval from power, entitlement, noise, and neighborhood-support perspective.
+- Reused archived 2026-09-15 Reno zoning, master-plan and ward GIS responses in `sources/`. The zoning response states IC, ANE, 5.630983 acres; the master-plan response states ME. These are map extracts, not a current parcel permit or infrastructure verification.
+- Rechecked Reno Development Services `https://reno.gov/business-development/development-services/initiatives-and-updates.php` on 2026-09-23. The City states Council approved a final data-center moratorium 2026-06-01, effective until 2027-08-31 or earlier adoption of adequate regulations, with no new data-center CUP intake. A data-center text amendment was initiated 2026-04-22; no replacement rule was treated as adopted.
+- Reviewed Reno Title 18 use table and standards: `https://library.municode.com/nv/reno/codes/land_development_code?nodeId=CH18.03USRE_ART3UECST_18.03.304COUS`. Data center is C in IC, outdoor storage P in IC, truck terminal C in IC. Data-center standards appear at 18.03.306(b)(1); outdoor-storage standards at 18.03.306(b)(4); truck-stop/travel-plaza criteria at 18.03.304(h)(7). No separate principal EV-charging use was established in the reviewed table. Administrative interpretation ADM24-00020's data-center definition is reproduced in the 2025 Oppidan staff report, saved in `sources/primegov-2025-01-15/`.
+- Checked `https://www.reno.gov/business-development/development-services/building-permits.php`: the City says the 2024 building codes and 2023 NEC were adopted 2025-07-01 and are the only plan editions accepted from 2026-01-01. Meeting staff discussion about EV installation is not substituted for adopted code text.
 
-## Searches And Checks Completed
+## Meeting and case search
 
-1. Queried City of Reno zoning GIS by address/APN. Result: PIN/APN 164-352-27, Industrial Commercial (IC), Airport Noise Exposure (ANE), 5.630983 acres.
-2. Queried City of Reno Master Plan land-use GIS by APN. Result: Mixed-Employment (ME).
-3. Queried Reno ward GIS by site centroid. Result: Ward Six, Councilmember Brandi Anderson.
-4. Checked Reno Development Services initiatives page. Result: City states data-center moratorium approved June 1, 2026, in effect through August 31, 2027 or until adequate regulations are adopted; City will not accept data-center CUP requests during this period; all new Reno data centers require CUP approval.
-5. Checked Reno Land Development Code Chapter 18.03 for data-center use table and standards. Result: data centers have specific standards including dock-door limits and loading/staging/noise/screening controls.
-6. Checked Reno PrimeGov public meeting portal, City Council / Planning Commission meeting routing, City YouTube routing, and land-development project page.
-7. Searched by address, APN/PIN, road name, target use, "data center", "modular compute", "conditional use permit", "moratorium", and Reno policy terms.
-8. Checked TMRPA energy/data-center and data-center engagement pages and Truckee Meadows Data Center Policy Consortium page.
-9. Checked NV Energy IRP and GreenEnergy Rider pages for large-load and clean-energy context.
-10. Checked DRI Nevada data-center water/electricity report page for public concern context.
-11. Downloaded official Reno Planning Commission January 15, 2025 PrimeGov attachments for Oppidan 5MW Data Center and Keystone Data Center, including staff reports and public-comment packets.
-12. Extracted text from January 15, 2025 staff reports and public-comment packets.
-13. Downloaded official Reno City Council February 26, 2025 PrimeGov attachments for the data-center policy discussion, including data-center presentation and public-comment packets.
-14. Extracted text from the February 26, 2025 data-center presentation and public-comment packets. Two large/image-heavy attachments were downloaded but not fully text-extracted within the working session; they remain in the local source folder.
+Searched Reno PrimeGov, City event-calendar agenda/minute links, the City YouTube archive, land-development project listings, Council/Planning Commission meeting pages, City building and climate pages, and TMRPA policy pages. Terms included Barron Way, APN 164-352-27, IC, data center, modular compute, Oppidan, Keystone, Webb, L&H, outdoor storage, equipment/trailer storage, truck terminal, trucking yard, truck stop, electric vehicle charging, EV charger, charging station, Public Safety Center, Title 14, moratorium, and case numbers. Window: September 2021-September 2026. Searched by applicant, site and case number as well as use synonyms.
 
-## Meeting-Intelligence Outcome
+The 2025-01-15 PC PrimeGov agenda `https://reno.primegov.com/Portal/Meeting?meetingTemplateId=6832` and saved packets cover LDC25-00022 Oppidan, LDC25-00026 Keystone, and LDC25-00023 L&H. The City recording `https://www.youtube.com/watch?v=sXXU7vZapy8` was caption-extracted in full, with IOS and data-center hearing excerpts saved under `meeting-intelligence/transcripts/reno-barron-modular-compute-intelligence/`. The recording announces L&H approval with modified conditions, Oppidan denial of an approval motion, and Keystone approval with added condition. The City calendar links January minutes, but its linked PDF returned HTTP 404 at research time; those PC dispositions are described as recorded motions, not verified signed permit documents.
 
-No site-specific meeting record was located for 3705 Barron Way, PIN 164-352-27, or Barron Way modular compute/data-center use. Relevant citywide and comparable-case meeting intelligence exists around the 2025-2026 Reno data-center controversy, CUP requirements, and the June 1, 2026 final moratorium action.
+The 2025-03-12 Council video `https://www.youtube.com/watch?v=kzPxoMhJgv0` records the Oppidan appeal and the unanimous motion to reverse the PC denial and approve subject to further conditions at 7:28-7:31. A separate signed Council order was not retrieved. The 2025-02-26 Council data-center policy packet is saved locally; the 2026-06-01 Council recording `https://www.youtube.com/watch?v=0EWw86_4lcM` supplies staff's account of the evolving code. The City's current moratorium page is the controlling final-action source.
 
-No open-record request was prepared or submitted because the user instructed no open records request.
+Webb Data Center (LDC25-00014) was heard by the PC on 2024-12-18 and appealed to Council on 2025-01-22. City PC video `https://www.youtube.com/watch?v=PI1tvn_Qrik` and Council video `https://www.youtube.com/watch?v=R_gCnhX7Ono` were caption-extracted, with timestamped excerpts saved alongside the other cases. The PC recording announces a 4-2 approval motion with one abstention and additional sustainability conditions. The 2025-02-26 PrimeGov agenda `https://reno.primegov.com/Portal/Meeting?meetingTemplateId=6878` attaches written January 22 Council minutes (saved as `sources/primegov-2025-02-26/minutes_rcc_2025-01-22.pdf`). Item I.3 records a 5-2 vote to affirm the PC decision and deny both appeals. The minutes attribute ratepayer and energy concerns to Duerr and Ebert and applicant-funded distribution upgrades to the applicant, not to NV Energy. This written outcome is stronger than the recorded-only dispositions for the other 2025 cases. The Webb decision arose under the prior code/intake regime and does not displace the 2026 moratorium.
 
-At the user's direction on the revision pass, the visible memo no longer contains a standalone meeting-intelligence section. Meeting diligence is retained in this research log, the source audit, the gap matrix, the meeting ledger, and the meeting-intelligence source/transcript folders.
+For EV, inspected the 2022-10-26 City Council Public Safety Center Phase 2 recording `https://www.youtube.com/watch?v=3y6k_BYxzsA`, which lists EV charging in a civic-facility construction contract; the later 2024 City climate action report linked from `https://reno.gov/community/environmental-services/index.php` lists installed public chargers at that facility. The old direct report PDF URL returned 404 on 2026-09-23, though the report was indexed in search and remains linked from the live City page. Inspected the 2025-05-21 Council Title 14 hearing `https://www.youtube.com/watch?v=2BS_Nm5J9o0` for staff/member discussion of EV installation and EV-ready policy. Keystone's 2025-01-15 hearing describes two accessory charging spaces. None is a stand-alone heavy-truck charging zoning action.
 
-## Analyst Read
+Searched 2026 IOS leads including LDC26-00077 (2401 E Fifth), LDC26-00090/91 (0 N Virginia) and the July 15 PC meeting. City project-notice material establishes proposals and hearing dates, but the available official video URL for July 15 was unavailable and official outcome/conditions were not independently retrieved. Those leads were not assigned a final disposition in the memo. No Barron Way site-specific hearing was located. No site-specific NV Energy will-serve or power-cost letter was found. These are research limits, not an assertion that records cannot exist.
 
-The site is physically and land-use plausible for a small industrial/commercial compute concept, but the approval clock is controlled by Reno's data-center moratorium if the use is classified as data center. The fastest defensible route is written classification guidance first; if data-center classification applies, use the moratorium period to build a low-impact post-moratorium CUP record.
+## Transcript method and legal weight
 
-The deeper meeting-packet read changes the memo's investor strategy: Reno staff previously tried to make data centers approvable through project-specific conditions, but the Council and public record moved the city toward broader standards and a moratorium. Barron should therefore be framed as a low-impact, capped first phase rather than a conventional data-center entitlement.
-
-Power-packet addendum: Recommended starting posture is a 1-2 MW phase-one cap, with 3 MW used only as a utility-diligence sensitivity. The packet should avoid leading with 5 MW or higher because Reno's February 26, 2025 Council presentation already used 7 MW Keystone, 8 MW Oppidan, and 28.5 MW Webb as local comparison points in the data-center policy discussion. No site-specific NV Energy feedback has been obtained for 3705 Barron Way; request a service-capacity and upgrade-allocation screen for 1 MW, 2 MW, and 3 MW before making public claims.
+Downloaded City YouTube auto-caption JSON3 for the December Webb PC, January Webb Council, January PC, March Council, October PSC, May EV-code and June moratorium sessions. Local `caption_windows.py` grouped captions by recording clock; human-read excerpt files accompany raw caption JSON3. The caption text may mishear names, numbers and motions. Memo insights were checked against the relevant video timestamps and official agenda/packets; Webb's appeal disposition was cross-checked against written Council minutes. City status and adopted-code pages control current law. Recorded motions are not relabeled as signed orders, and applicant claims about utility service or fiscal benefit are attributed to applicants. No open-record request was prepared or submitted.
