@@ -1,533 +1,95 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>4401 Deen Road Modular Compute Entitlement Memo</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --navy: #17324d;
-      --navy-deep: #10263b;
-      --teal: #0f766e;
-      --teal-soft: #eaf7f4;
-      --amber: #a85d09;
-      --amber-soft: #fff7e8;
-      --red: #b42318;
-      --red-soft: #fff1f0;
-      --ink: #1c2733;
-      --muted: #607080;
-      --line: #d7e0e7;
-      --soft: #f4f7f9;
-      --paper: #ffffff;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      color: var(--ink);
-      font-family: Aptos, "Segoe UI", Arial, sans-serif;
-      font-size: 15px;
-      line-height: 1.58;
-      background: #edf2f5;
-    }
-    main {
-      width: min(980px, calc(100% - 40px));
-      margin: 28px auto 64px;
-      padding: 0 54px 64px;
-      background: var(--paper);
-      box-shadow: 0 12px 38px rgba(16, 38, 59, .09);
-      counter-reset: memo-section;
-    }
-    .masthead {
-      margin: 0 -54px;
-      padding: 42px 54px 34px;
-      color: #fff;
-      background: var(--navy-deep);
-      border-bottom: 5px solid var(--teal);
-    }
-    .eyebrow {
-      margin: 0 0 13px;
-      color: #a9d9d4;
-      font-size: 12px;
-      font-weight: 800;
-      line-height: 1.2;
-      text-transform: uppercase;
-      letter-spacing: .12em;
-    }
-    h1 {
-      margin: 0;
-      color: #fff;
-      font-size: 38px;
-      line-height: 1.08;
-      letter-spacing: 0;
-    }
-    .subtitle { margin: 8px 0 0; color: #d8e5ec; font-size: 18px; }
-    .meta-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 18px;
-      margin: 26px 0 0;
-    }
-    .meta-grid div { border-top: 1px solid rgba(255,255,255,.22); padding-top: 10px; }
-    .meta-grid dt { margin: 0 0 3px; color: #9fb3c2; font-size: 11px; font-weight: 700; text-transform: uppercase; }
-    .meta-grid dd { margin: 0; color: #fff; font-size: 13px; font-weight: 650; }
-    .contents {
-      position: sticky;
-      top: 0;
-      z-index: 5;
-      display: flex;
-      gap: 4px;
-      margin: 0 -54px 34px;
-      padding: 9px 48px;
-      overflow-x: auto;
-      background: rgba(255,255,255,.97);
-      border-bottom: 1px solid var(--line);
-      box-shadow: 0 4px 12px rgba(16,38,59,.05);
-      scrollbar-width: thin;
-    }
-    .contents a {
-      flex: 0 0 auto;
-      padding: 6px 8px;
-      color: var(--muted);
-      font-size: 11px;
-      font-weight: 750;
-      text-transform: uppercase;
-      text-decoration: none;
-    }
-    .contents a:hover { color: var(--teal); background: var(--teal-soft); }
-    h2 {
-      counter-increment: memo-section;
-      margin: 42px 0 15px;
-      padding-top: 17px;
-      border-top: 1px solid var(--line);
-      color: var(--navy-deep);
-      font-size: 21px;
-      line-height: 1.25;
-      letter-spacing: 0;
-    }
-    h2::before {
-      content: counter(memo-section, decimal-leading-zero) "  ";
-      color: var(--teal);
-      font-size: 12px;
-      font-weight: 850;
-      vertical-align: 3px;
-    }
-    h3 { margin: 25px 0 9px; color: var(--navy); font-size: 17px; }
-    p { margin: 0 0 14px; }
-    a { color: #0b5f8a; text-decoration-thickness: 1px; text-underline-offset: 2px; overflow-wrap: anywhere; }
-    code { padding: 1px 5px; background: #eef3f6; border: 1px solid #d8e2e9; border-radius: 3px; font-family: Consolas, Monaco, monospace; }
-    .decision-panel {
-      margin: 14px 0 24px;
-      overflow: hidden;
-      border: 1px solid #bfd5d2;
-      border-top: 4px solid var(--teal);
-      background: #fbfefd;
-    }
-    .decision-title {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      padding: 13px 16px;
-      background: var(--teal-soft);
-      color: var(--navy-deep);
-      font-weight: 800;
-    }
-    .decision-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    .decision-item { padding: 15px 16px 17px; border-right: 1px solid var(--line); }
-    .decision-item:last-child { border-right: 0; }
-    .decision-label { display: block; margin-bottom: 5px; color: var(--muted); font-size: 10px; font-weight: 800; text-transform: uppercase; }
-    .decision-value { display: block; color: var(--navy-deep); font-size: 13px; font-weight: 750; line-height: 1.35; }
-    .status { display: inline-block; padding: 3px 7px; border-radius: 3px; font-size: 11px; font-weight: 800; line-height: 1.2; }
-    .status.favorable { color: #075e55; background: #d9f2ed; }
-    .status.confirm { color: #804300; background: #ffebc5; }
-    .status.blocker { color: #8f1d14; background: #ffdeda; }
-    .good { color: #08705f; font-weight: 750; }
-    .watch { color: var(--amber); font-weight: 750; }
-    .bad { color: var(--red); font-weight: 750; }
-    .small { color: var(--muted); font-size: 12px; }
-    table { width: 100%; margin: 16px 0 25px; border-collapse: collapse; font-size: 13px; line-height: 1.45; }
-    thead { display: table-header-group; }
-    th, td { padding: 10px 11px; vertical-align: top; text-align: left; border-bottom: 1px solid var(--line); }
-    th { color: var(--navy-deep); background: #edf3f6; border-top: 1px solid #c5d2dc; font-size: 11px; font-weight: 850; text-transform: uppercase; }
-    tbody tr:nth-child(even) td { background: #fafcfd; }
-    tbody tr { break-inside: avoid; page-break-inside: avoid; }
-    ul, ol { margin: 9px 0 20px 22px; padding: 0; }
-    li { margin: 6px 0; padding-left: 2px; }
-    ol li::marker { color: var(--teal); font-weight: 800; }
-    .source-list { font-size: 12px; color: var(--muted); }
-    .source-list li { margin-bottom: 8px; }
-    @media (max-width: 760px) {
-      body { background: #fff; }
-      main { width: 100%; margin: 0; padding: 0 20px 44px; box-shadow: none; }
-      .masthead { margin: 0 -20px; padding: 30px 20px 26px; }
-      h1 { font-size: 32px; }
-      .meta-grid, .decision-grid { grid-template-columns: 1fr 1fr; }
-      .decision-item:nth-child(2) { border-right: 0; }
-      .decision-item:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
-      .contents { margin: 0 -20px 28px; padding: 8px 14px; }
-      table { display: block; overflow-x: auto; white-space: normal; }
-    }
-    @media (max-width: 480px) {
-      .meta-grid, .decision-grid { grid-template-columns: 1fr; }
-      .decision-item { border-right: 0; border-bottom: 1px solid var(--line); }
-      .decision-item:last-child { border-bottom: 0; }
-    }
-    @page { size: Letter; margin: .58in; }
-    @media print {
-      body { background: #fff; font-size: 10.5pt; }
-      main { width: auto; max-width: none; margin: 0; padding: 0; box-shadow: none; }
-      .masthead { margin: 0 0 26px; padding: 28px 32px 23px; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
-      .contents { display: none; }
-      h2 { break-after: avoid; page-break-after: avoid; }
-      h2, h3, .decision-panel { break-inside: avoid; page-break-inside: avoid; }
-      a { color: var(--ink); text-decoration: none; }
-      .source-list a::after { content: ""; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fort Worth | Entitlement Brief</title>
+<style>
+:root{--paper:#fff;--bg:#eef2f3;--ink:#172b36;--muted:#52636c;--line:#cbd6d9;--navy:#193746;--teal:#087486;--pale:#e8f2f2;--red:#99443c;--redbg:#f9ece8;--gold:#77591e;--goldbg:#f9f2dc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 Arial,Helvetica,sans-serif}a{color:#086b80;text-underline-offset:2px}.wrap{width:min(1080px,100%);margin:auto;padding:0 28px}header{background:var(--navy);color:#fff;border-bottom:4px solid #9fb84d}header .wrap{padding-top:25px;padding-bottom:22px}.eyebrow{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#bfe5e5}h1{font-size:29px;line-height:1.16;margin:6px 0}h2{font-size:20px;line-height:1.24;margin:0 0 10px}h3{font-size:14px;margin:0 0 7px}header p{margin:0;color:#dbe8e9}nav{background:#fff;border-bottom:1px solid var(--line)}nav .wrap{display:flex;gap:2px;overflow:auto}nav a{padding:10px 12px;color:var(--ink);font-weight:700;font-size:12px;white-space:nowrap;text-decoration:none;border-bottom:2px solid transparent}nav a:hover,nav a:focus-visible{border-color:var(--teal)}main{background:var(--paper);padding-bottom:40px}section{border-top:1px solid var(--line);padding-top:25px;margin-top:23px}section:first-child{border:0;margin-top:0}.lede{color:var(--muted);max-width:88ch;margin:0 0 15px}.scope{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 16px}.scope span{border:1px solid var(--line);font-size:11px;padding:4px 8px}.lane-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.lane{border:1px solid var(--line);border-radius:6px;padding:15px;min-width:0}.lane h3{font-size:16px;margin:0 0 8px}.lane p{font-size:12.5px;margin:9px 0}.label{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;padding:3px 6px;border-radius:3px}.paused{color:var(--red);background:var(--redbg)}.conditional{color:var(--gold);background:var(--goldbg)}.standard{color:#155c58;background:var(--pale)}.lane dl{display:grid;grid-template-columns:64px 1fr;gap:4px 7px;font-size:12px;margin:12px 0 0;border-top:1px solid var(--line);padding-top:9px}.lane dt{color:var(--muted)}.lane dd{margin:0}.detail{display:grid;grid-template-columns:145px 1fr;gap:8px 16px;margin:10px 0}.detail dt{font-weight:700;color:#34505d}.detail dd{margin:0}.context{background:#f2f7f7;border-left:3px solid var(--teal);padding:12px 16px;margin:0 0 14px}.context p{margin:5px 0}.context strong{color:#214757}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:720px;font-size:12.5px}th,td{text-align:left;vertical-align:top;border-bottom:1px solid var(--line);padding:9px 10px}th{font-size:10px;text-transform:uppercase;background:var(--pale);color:#2b4d58}tbody tr:last-child td{border:0}.evidence{min-width:980px}.evidence td:first-child{width:20%}.evidence td:nth-child(2){width:15%}.evidence td:nth-child(3){width:43%}.parcel-read{min-width:760px}.parcel-read td:first-child{width:19%}.small{font-size:11px;color:var(--muted)}.note{border-left:3px solid var(--teal);padding:9px 12px;background:#f0f6f6;margin:12px 0}.sources{columns:2;font-size:11px;padding-left:20px}.sources li{break-inside:avoid;margin-bottom:7px}footer{border-top:1px solid var(--line);margin-top:30px;padding-top:13px;color:var(--muted);font-size:10px}@media(max-width:760px){.wrap{padding-left:17px;padding-right:17px}.lane-grid{grid-template-columns:1fr}.detail{grid-template-columns:1fr;gap:2px}.detail dd{margin-bottom:9px}h1{font-size:25px}.sources{columns:1}}@media print{body{background:#fff}header{-webkit-print-color-adjust:exact;print-color-adjust:exact}nav{display:none}.wrap{width:100%}.lane,tr{break-inside:avoid}a{color:var(--ink)}}
+</style>
 </head>
 <body>
-<main>
-<header class="masthead">
-  <p class="eyebrow">Modular Compute Zoning Feasibility</p>
-  <h1 id="deen-road-modular-compute-entitlement-memo">4401 Deen Road</h1>
-  <p class="subtitle">Fort Worth, Texas</p>
-  <dl class="meta-grid">
-    <div><dt>Prepared</dt><dd>August 31, 2026</dd></div>
-    <div><dt>Parcel</dt><dd>TAXPIN 8877H-1-1R</dd></div>
-    <div><dt>Use Case</dt><dd>Lower-impact modular compute</dd></div>
-    <div><dt>Review Stage</dt><dd>Preliminary due diligence</dd></div>
-  </dl>
-</header>
-<nav class="contents" aria-label="Memo sections">
-  <a href="#executive-read">Executive</a><a href="#site-snapshot">Site</a><a href="#modular-compute-classification">Classification</a><a href="#local-rules-that-matter">Rules</a><a href="#moratorium-and-application-gate">Application Gate</a><a href="#power-and-utility-path">Power</a><a href="#noise-and-water">Noise &amp; Water</a><a href="#local-planning-evidence">Planning Evidence</a><a href="#key-local-players-to-talk-to">Local Players</a><a href="#recommended-filing-posture">Filing Posture</a><a href="#selected-sources">Sources</a>
-</nav>
-<h2 id="executive-read">Executive Read</h2>
-<div class="decision-panel">
-  <div class="decision-title"><span>Executive Assessment</span><span class="status confirm">Favorable with timing risk</span></div>
-  <div class="decision-grid">
-    <div class="decision-item"><span class="decision-label">Base Zoning</span><span class="decision-value">K Heavy Industrial</span></div>
-    <div class="decision-item"><span class="decision-label">Use Permission</span><span class="decision-value">Data center currently permitted by right</span></div>
-    <div class="decision-item"><span class="decision-label">Primary Gate</span><span class="decision-value">Grid documentation and moratorium timing</span></div>
-    <div class="decision-item"><span class="decision-label">Power Posture</span><span class="decision-value">Sub-25 MW, distribution-first concept</span></div>
-  </div>
-</div>
-<p>4401 Deen Road is in Fort Worth, in Council District 2, and is zoned <code>K</code> Heavy Industrial. Under the current Fort Worth zoning table, &quot;Data center&quot; is a permitted use in industrial districts <code>I</code>, <code>J</code>, and <code>K</code>. That is the site's biggest advantage.</p>
-<p>The risk is not classic zoning use permission. The risk is timing, classification, and political optics. Fort Worth is actively rewriting its data-center rules, has initiated a moratorium process, and now requires data-center applications to show grid-approval documentation before key city development applications can be processed. The City says the moratorium would not apply to vested, approved, or already-submitted zoning applications, but 4401 Deen has no public data-center filing found yet.</p>
-<p>For modular compute, the best posture is not to argue that the site is &quot;not a data center&quot; by label. The better posture is factual: lower maximum load, no evaporative or water cooling, limited/no generators, low employee count, no crypto mining, small footprint, and compliance with emerging noise/screening standards even if not yet mandatory. If the equipment still houses servers, storage, networking, or compute infrastructure, Fort Worth may still classify it as a data center.</p>
-<h2 id="site-snapshot">Site Snapshot</h2>
-<table>
-<thead>
-<tr>
-<th>Field</th>
-<th>Finding</th>
-<th>Zoning Feasibility Takeaway</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Jurisdiction</td>
-<td>City of Fort Worth, Tarrant County</td>
-<td>Fort Worth zoning, development, and emerging data-center rules control the local path.</td>
-</tr>
-<tr>
-<td>Council district</td>
-<td>District 2 - Carlos Flores</td>
-<td>District 2 is the primary political and neighborhood-engagement channel.</td>
-</tr>
-<tr>
-<td>Neighborhood org</td>
-<td>Diamond Hill-Jarvis</td>
-<td>Early outreach should emphasize low noise, no water cooling, screening, and limited traffic.</td>
-</tr>
-<tr>
-<td>Parcel/account</td>
-<td>TAXPIN 8877H-1-1R; Account 41504763</td>
-<td>Use this identifier in all zoning-verification, utility, and title diligence.</td>
-</tr>
-<tr>
-<td>Site size</td>
-<td>8.053 land acres</td>
-<td>Large enough for a modest phased concept, subject to setbacks, buffers, and equipment layout.</td>
-</tr>
-<tr>
-<td>Existing building</td>
-<td>18,200 SF; built 1998</td>
-<td>Adaptive reuse may help reduce the visible profile, but building and fire review still apply.</td>
-</tr>
-<tr>
-<td>Owner in city parcel data</td>
-<td>Fleetpark Deen TX LLC</td>
-<td>Confirm ownership and site control against current title before relying on public parcel data.</td>
-</tr>
-<tr>
-<td>Current zoning</td>
-<td><code>K</code> Heavy Industrial</td>
-<td><span class="good">Favorable baseline.</span> Data centers are currently permitted in the district.</td>
-</tr>
-<tr>
-<td>Future land use</td>
-<td><code>IGC</code>; growth center &quot;IGC MEACHAM&quot;</td>
-<td>Industrial growth-center context supports the general use character.</td>
-</tr>
-<tr>
-<td>Floodplain at site point</td>
-<td>No FEMA flood hazard feature intersected at target point</td>
-<td>No point-level floodplain conflict appeared; confirm against the full survey boundary.</td>
-</tr>
-<tr>
-<td>Airport review</td>
-<td>Intersects Meacham and NASJRB airport height review zones</td>
-<td><span class="watch">Requires confirmation.</span> Equipment, stacks, cranes, and structures may trigger height review.</td>
-</tr>
-<tr>
-<td>Public permits found</td>
-<td>Four plumbing permits from 2022-2023; no data-center or modular-compute permit found</td>
-<td>No public filing appears to preserve a position against future moratorium rules.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="modular-compute-classification">Modular Compute Classification</h2>
-<p>Fort Worth defines a data center functionally: a physical facility that houses IT infrastructure including servers, storage devices, and networking equipment used to store, process, and manage digital operations and data. That definition does not turn on campus size, water cooling, or a specific MW threshold.</p>
-<p>Implication: a small modular compute installation can be a much lower-impact data center, but it may still be a data center. The use-determination package should describe the actual operating facts:</p>
-<ul>
-<li>Maximum coincident load in kW/MW and phased ramp schedule.</li>
-<li>Number and type of modules, racks, cabinets, and exterior equipment.</li>
-<li>Cooling method, with explicit confirmation of no water cooling.</li>
-<li>Generator, battery, UPS, transformer, and switchgear details.</li>
-<li>Noise profile at the property line and nearest residential uses.</li>
-<li>Water/sewer demand, including confirmation that no process cooling water or industrial wastewater discharge is expected.</li>
-<li>Whether the compute use includes crypto mining; current Fort Worth proposals would prohibit crypto mining as a primary use.</li>
-</ul>
-<h2 id="local-rules-that-matter">Local Rules That Matter</h2>
-<p>Current zoning is favorable because <code>K</code> Heavy Industrial allows data centers by right under the existing use table. Current industrial standards still apply, including setbacks, height, landscaping, urban forestry, lighting, building, fire, stormwater, airport-height, utility, and permit review.</p>
-<p>Pending Fort Worth rules are aimed at hyperscale-style impacts but would likely apply by use category. The major proposed standards include a 250-foot building setback from residential districts and uses, a 300-foot residential separation for standby generators, screening, acoustic barriers for rooftop cooling equipment, lighting controls near residential uses, 50-foot residential landscape buffers, closed-loop cooling, and data-center wastewater pretreatment controls.</p>
-<p>The modular-compute opportunity is to be materially cleaner than the concern case:</p>
-<table>
-<thead>
-<tr>
-<th>Concern in local debate</th>
-<th>Modular-compute response to document</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>High grid load</td>
-<td>State exact peak demand, ramp schedule, and whether below ERCOT large-load thresholds</td>
-</tr>
-<tr>
-<td>Water cooling</td>
-<td>State no water cooling and expected domestic-only water/sewer demand</td>
-</tr>
-<tr>
-<td>Generator emissions/noise</td>
-<td>Avoid generators if feasible; otherwise limit to backup/testing and model property-line sound</td>
-</tr>
-<tr>
-<td>Industrial noise/hum</td>
-<td>Provide vendor sound data and modeled dBA at property lines</td>
-</tr>
-<tr>
-<td>Neighborhood impact</td>
-<td>Show small footprint, screening, traffic, lighting, and no outdoor industrial activity</td>
-</tr>
-<tr>
-<td>Moratorium exposure</td>
-<td>File truthfully and early only after counsel confirms vesting strategy</td>
-</tr>
-</tbody>
-</table>
-<h2 id="moratorium-and-application-gate">Moratorium And Application Gate</h2>
-<p>Fort Worth has not yet adopted the 90-day data-center moratorium. On August 11, 2026, Council initiated the Texas Local Government Code Chapter 212 process. City staff stated that the August 11 vote did not impose the moratorium immediately; it started the notice, hearing, written-findings, and ordinance-reading process. The City's published timeline points to a first public hearing no later than November 10, 2026 and tentative final adoption on February 16, 2027. Final adoption would require a Council supermajority.</p>
-<p>If adopted, the moratorium is described as a pause on accepting, processing, and approving new data-center applications or rezonings. City staff stated that the moratorium would not apply to vested projects, approved projects, or projects with zoning applications already submitted. For 4401 Deen, the zoning feasibility hinge is therefore not just &quot;is <code>K</code> zoning permissive?&quot; It is &quot;what filing, if submitted before any moratorium is adopted, is sufficient to be treated as already submitted or vested?&quot;</p>
-<p>Separate from the future moratorium, Fort Worth adopted an immediate Chapter 14 application filing requirement on August 11. Staff described the requirement as applying to pre-development conferences, platting, replatting, building permits, and infrastructure plan review. It does not apply to annexation or pre-annexation requests. The rule requires a data-center development to provide proof of approval from the Public Utility Commission of Texas, ERCOT, or the relevant utility/grid-review process before the City processes the covered local applications.</p>
-<p>Investor zoning read: the best near-term protective move is not a casual zoning question. It is a complete written use/classification and filing strategy that asks Fort Worth which bucket modular compute falls into and which filing preserves position before any moratorium. If the City treats the project as a data center, the Chapter 14 grid-approval gate may be the practical blocker even though <code>K</code> zoning allows the use.</p>
-<h2 id="power-and-utility-path">Power And Utility Path</h2>
-<p>There is no Fort Worth MW/kW safe harbor in the data-center rules I found. Power thresholds matter mainly at the ERCOT/PUC/Oncor layer, not as a local zoning exemption.</p>
-<table>
-<thead>
-<tr>
-<th>Power band</th>
-<th>Utility/regulatory read</th>
-<th>Practical speed read</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Below 1 MW</td>
-<td>Usually ordinary commercial service if local distribution capacity exists.</td>
-<td>Oncor says a project manager should contact new-service applicants within two business days after submittal; schedule depends on required poles, wire, transformer, easements, inspections, and meter setup.</td>
-</tr>
-<tr>
-<td>1-10 MW</td>
-<td>Likely a larger commercial/distribution-capacity question. If onsite generation or DER is involved, Oncor's large DG/resource path becomes relevant.</td>
-<td>Oncor says large DG/grid-resource projects generally take 9-12 months, varying by project size. Impact studies may take 6-8 weeks and can identify upgrades with long-lead equipment.</td>
-</tr>
-<tr>
-<td>10-25 MW</td>
-<td>Potentially custom feeder, transformer, switchgear, or substation work depending on nearby capacity.</td>
-<td>No published Oncor fixed timeline found. Expect prescreen, engineering study, cost estimate, easements/site work, equipment lead times, and possible outage-clearance windows.</td>
-</tr>
-<tr>
-<td>25-74.9 MW</td>
-<td>ERCOT describes this as &quot;medium-sized load&quot; for certain load-forecast visibility. It is not the formal 75 MW large-load threshold under current PUCT large-load forecasting rule.</td>
-<td>Faster than 75 MW-plus only if Oncor has deliverable capacity nearby. Still politically sensitive because ERCOT tracks medium-sized loads in forecasting.</td>
-</tr>
-<tr>
-<td>75 MW and above</td>
-<td>PUCT rule 16 TAC 25.370 defines a large load customer as expected non-coincident peak demand at a single site of at least 75 MW. ERCOT's Large Load Integration / Batch Zero framework applies at this scale.</td>
-<td>Slowest and most exposed. Expect ERCOT/TSP study, interconnection agreement, disclosures, financial security, direct interconnection costs, and possible transmission upgrades.</td>
-</tr>
-</tbody>
-</table>
-<p>How they determine &quot;data center power&quot;: ERCOT/PUC do not appear to classify a site as a data center based on zoning. They look at electrical load: contracted peak demand, expected non-coincident peak demand at the site, point of interconnection/service delivery, load ramp, modeling data, backup/curtailment capability, and whether the serving TDSP can attest to the load for ERCOT planning. Fort Worth, by contrast, looks at land use and facility function.</p>
-<p>For 4401 Deen, a sub-25 MW, no-water-cooling, no-dedicated-substation concept is materially easier to explain than a hyperscale data center. It is not immune from local data-center regulation if the use is still compute infrastructure.</p>
-<h2 id="noise-and-water">Noise And Water</h2>
-<p>Current Fort Worth industrial districts are described by the City as exempt from maximum sound levels. The pending data-center package would change that by requiring a 72-hour pre-development ambient noise study within 250 feet of residential districts or uses, limiting sound to no more than 5 dBA above ambient, requiring operator-funded mitigation, limiting routine generator testing to weekdays 8 a.m. to 5 p.m., and exempting emergency generator operation.</p>
-<p>For modular compute, noise diligence should come before filing. The memo package should include module/HVAC sound data, transformer or switchgear sound if applicable, battery/UPS equipment details, generator specs if any, and a property-line acoustic model. Committing voluntarily to the emerging &quot;ambient + 5 dBA&quot; framework would directly answer the concern heard in Fort Worth meetings.</p>
-<p>Water is the easier story if there is truly no water cooling. Fort Worth's proposed rules focus on closed-loop cooling and wastewater pretreatment because the public concern is evaporative cooling, chemical treatment, and discharge. A no-water-cooling project should provide a water memo showing domestic-only demand, no process cooling water, no cooling-tower chemicals, and no industrial wastewater discharge.</p>
-<h2 id="local-planning-evidence">Local Planning Evidence</h2>
-<p>Looking back before the moratorium push, Fort Worth's record is not a straight anti-data-center pattern. Council repeatedly approved data-center entitlements when applicants narrowed the use, accepted site-plan and operating conditions, added buffers, and made an economic-benefit case. The pressure points that harden opposition are residential proximity, height and box form, generators and noise, water, dedicated substations, power-cap uncertainty, and perceived rush ahead of new rules. For 4401 Deen, the cleanest modular-compute strategy is to preserve the by-right <code>K</code> zoning advantage while voluntarily making the record look smaller, quieter, lower-load, and more constrained than the hyperscale cases.</p>
-<table>
-<thead><tr><th>Planning Record</th><th>Local Signal</th><th>Implication For Modular Compute</th></tr></thead>
-<tbody>
-<tr><td>September 17, 2024 Council review of ZC-24-031, Rock Creek Ranch / Chisholm Trail Parkway</td><td>Council approved the data-center zoning case as amended after Zoning Commission had recommended denial. The formal minutes show a 7-2 approval with added conditions: Bitcoin mining and industrial-use exclusions, construction-traffic routing, a 15-foot generator wall, generator placement south of each building, tree/perimeter buffers, 35% open space, and site plan required.</td><td>A contested data-center case can still pass when the applicant narrows the use and accepts physical, traffic, generator, open-space, and site-plan controls. Modular compute should offer comparable controls up front.</td></tr>
-<tr><td>January 14, 2025 Council approval of ZC-24-153, Black Mountain Lon Stephenson / Forest Hill</td><td>Official Legistar record shows approval of a 141.7-acre PD/SU for data center and limited civic/commercial fallback uses, developed to <code>I</code> Light Industrial standards, with an 80-foot Lon Stephenson building setback, no tree removal within a 25-foot roadway buffer, canopy planting credits, Forest Hill primary access, and site plan waiver. Local reporting captured nearby concerns over traffic, noise, and power reliability.</td><td>Fort Worth accepted a data-center entitlement where the applicant framed it as lower-impact than other possible development and accepted corridor-facing buffers/access commitments. A Deen filing should make the lower-impact comparison explicit, not implied.</td></tr>
-<tr><td>June 10 and September 30, 2025 Council approvals of ZC-25-070, ZC-25-131, and ZC-25-132</td><td>Fort Worth kept approving Black Mountain expansion acreage as PD/I or PD/SU limited to data center and relatively benign fallback uses, with increased residential setbacks, 70-foot data-center height, Forest Hill access, and, for later phases, site plan required.</td><td>The pre-moratorium pattern was conditional allowance, not a categorical bar. The modular-compute play is to look like a controlled industrial equipment use with hard limits, not an open-ended data-center campus.</td></tr>
-<tr><td>2026 review of ZC-26-041, Black Mountain substation and amended site plan</td><td>The official case sought to add an electrical substation, increase maximum building height to 70 feet, increase maximum building setback to 150 feet, and reduce parking to one space per four employees. The August 25 Council transcript shows the item was framed as an amendment to already-entitled data-center acreage, while public testimony focused on substation scale, lack of a power cap, and whether Council should wait for the DCIC/moratorium process.</td><td>Dedicated power infrastructure and undefined electrical scale are now the clearest political tripwires. A modular project should avoid a dedicated substation if possible and state a hard maximum load, phase schedule, and no-water-cooling profile.</td></tr>
-<tr><td>June 2, 2026 City Council work session on data-center standards</td><td>Staff identified that current rules had no data-center-specific standards and that industrial districts were exempt from maximum sound levels. Proposed controls included 250-foot residential building setbacks, 300-foot generator separation and screening, acoustic barriers for rooftop cooling equipment, residential lighting limits, 50-foot residential landscape buffers, ambient-plus-5-dBA noise limits, closed-loop cooling, water loading studies, and wastewater pretreatment.</td><td>Even if not yet fully adopted, these are the standards staff and residents will use as the measuring stick. The modular concept should voluntarily benchmark against them.</td></tr>
-<tr><td>June 30 to July 8, 2026 public engagement and Zoning Commission review</td><td>The City held an open house and survey process, then reported that Zoning Commission supported stronger regulations but voted 7-4 to deny the draft amendments because there was no consensus. Local reporting described residents criticizing the proposal as insufficient on water, electricity, zoning, and noise.</td><td>Public pressure is for stronger conditions, not just code compliance. The lowest-pushback posture is a small, quantified package with no water cooling, modeled sound, limited generators, and a written power ceiling.</td></tr>
-<tr><td>August 11, 2026 City Council action on moratorium path, DCIC, and application requirement</td><td>Council initiated the process for a 90-day data-center moratorium, created the Data Center and Infrastructure Commission, and adopted an immediate application requirement tied to PUC/ERCOT/utility approval for covered local development applications.</td><td>Zoning permission alone is no longer the full feasibility answer. The filing strategy needs to address vesting/status before a moratorium and the utility-approval gate if Fort Worth classifies the use as a data center.</td></tr>
-</tbody>
-</table>
-<h2 id="key-local-players-to-talk-to">Key Local Players To Talk To</h2>
-<table>
-<thead>
-<tr>
-<th>Local Player</th>
-<th>Role / Relevance</th>
-<th>Diligence Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Carlos Flores, District 2 Councilmember</td>
-<td>Represents 4401 Deen Road district</td>
-<td>Direct political read on CD2 industrial compatibility and data-center sensitivity.</td>
-</tr>
-<tr>
-<td>Maira Camacho and Marysol Heimpel</td>
-<td>District 2 directors</td>
-<td>Practical route into neighborhood concerns, meeting expectations, and council-office feedback.</td>
-</tr>
-<tr>
-<td>D.J. Harrell</td>
-<td>Fort Worth Director of Development Services</td>
-<td>Department lead for zoning, permitting, development coordination, plan review, and inspections.</td>
-</tr>
-<tr>
-<td>Fort Worth Zoning / Land Use staff</td>
-<td>Zoning verification and use-determination channel</td>
-<td>Needed for written classification: data center, modular compute, telecommunications, warehouse/equipment, or other use.</td>
-</tr>
-<tr>
-<td>Jesica McEachern</td>
-<td>Assistant City Manager over Development Services, Transportation &amp; Public Works, and Water</td>
-<td>Useful for cross-department read on development, infrastructure, and water issues.</td>
-</tr>
-<tr>
-<td>Jessica Rogers</td>
-<td>Economic Development Director</td>
-<td>Good read on how Fort Worth views data-center investment, incentives, fiscal benefit, and community priority fit.</td>
-</tr>
-<tr>
-<td>Wilson Peppard / Oncor Economic Development</td>
-<td>Oncor Director of Economic Development</td>
-<td>Starting point for site-level power feasibility, load narrative, and fast prescreen routing.</td>
-</tr>
-<tr>
-<td>Heather Ledbetter / Victor Valle / Sherry Crenshaw</td>
-<td>Oncor economic development team</td>
-<td>Additional Oncor contacts for site selection, power availability, and economic development coordination.</td>
-</tr>
-<tr>
-<td>Dr. Mike Slattery, TCU</td>
-<td>Chair of Fort Worth Data Center &amp; Infrastructure Commission</td>
-<td>Central adviser for the emerging policy recommendations due to Council.</td>
-</tr>
-<tr>
-<td>Diamond Hill-Jarvis Neighborhood Association / Inter-District 2 Alliance</td>
-<td>Local neighborhood stakeholders</td>
-<td>Best early read on whether a quiet, no-water-cooling modular project can be distinguished from hyperscale data-center concerns.</td>
-</tr>
-<tr>
-<td>Parvathi Sreekumaran Unnithan / John Kasavich</td>
-<td>Fort Worth water/sewer project managers active in Diamond Hill-Jarvis infrastructure projects</td>
-<td>Boots-on-ground context for nearby water/sewer construction and neighborhood infrastructure timing.</td>
-</tr>
-<tr>
-<td>Bob Riley, Halff</td>
-<td>Planning consultant active on major Fort Worth data-center cases</td>
-<td>Knows how Fort Worth staff, Zoning Commission, and Council have processed data-center site-plan issues.</td>
-</tr>
-<tr>
-<td>Rhett Bennett / Black Mountain</td>
-<td>Local data-center developer active in Fort Worth proceedings</td>
-<td>Useful market/process intelligence, though not a neutral source.</td>
-</tr>
-<tr>
-<td>Fort Worth Report / KERA local government reporters</td>
-<td>Local reporting bench covering data-center proceedings</td>
-<td>Useful for reading public narrative and identifying active resident voices.</td>
-</tr>
-<tr>
-<td>Fort Worth DSA / Alexander Montalvo and resident advocates</td>
-<td>Organized opposition / moratorium advocacy</td>
-<td>Important for understanding the strongest arguments against data centers: water, energy, noise, pollution, equity, and incentives.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="recommended-filing-posture">Recommended Filing Posture</h2>
-<table>
-<thead><tr><th>Action</th><th>Owner</th><th>Required Output</th><th>Decision Unlocked</th></tr></thead>
-<tbody>
-<tr><td>Request zoning verification using the true equipment and operating facts.</td><td>Zoning counsel / project team</td><td>Written use determination</td><td>Confirms whether the project is treated as a data center.</td></tr>
-<tr><td>Ask what minimum application would count as submitted or vested.</td><td>Zoning counsel / Development Services</td><td>Written filing and vesting guidance</td><td>Defines the moratorium-protection strategy.</td></tr>
-<tr><td>Document maximum load, ramp, point of service, and review path.</td><td>Project sponsor / Oncor</td><td>Utility screening memo</td><td>Tests the Chapter 14 grid-documentation gate.</td></tr>
-<tr><td>Document no water cooling and domestic-only demand.</td><td>MEP / water consultant</td><td>Water and sewer statement</td><td>Addresses the principal resource-use concern.</td></tr>
-<tr><td>Benchmark sound against the proposed standard.</td><td>Acoustic consultant</td><td>Property-line acoustic memo</td><td>Supports neighborhood and permit discussions.</td></tr>
-<tr><td>Use a consistent lower-impact modular-compute narrative.</td><td>Project sponsor / counsel</td><td>Approved external description</td><td>Protects credibility across city, utility, and neighborhood discussions.</td></tr>
-</tbody>
-</table>
-<h2 id="selected-sources">Selected Sources</h2>
-<ol class="source-list">
-<li>City of Fort Worth data-center resource page: <a href="https://www.fortworthtexas.gov/departments/city-manager/datacenters">https://www.fortworthtexas.gov/departments/city-manager/datacenters</a></li>
-<li>Fort Worth Development Services: <a href="https://www.fortworthtexas.gov/departments/development-services">https://www.fortworthtexas.gov/departments/development-services</a></li>
-<li>Fort Worth zoning page: <a href="https://www.fortworthtexas.gov/departments/development-services/zoning">https://www.fortworthtexas.gov/departments/development-services/zoning</a></li>
-<li>Fort Worth Councilmember Carlos Flores: <a href="https://www.fortworthtexas.gov/government/elected-officials/carlos-flores">https://www.fortworthtexas.gov/government/elected-officials/carlos-flores</a></li>
-<li>ZC-24-031 / Rock Creek Ranch City Council minutes: <a href="https://fortworthgov.legistar.com/View.ashx?GUID=03733011-E865-40FA-AA8A-401A2D4B255F&amp;ID=1207234&amp;M=M">https://fortworthgov.legistar.com/View.ashx?GUID=03733011-E865-40FA-AA8A-401A2D4B255F&amp;ID=1207234&amp;M=M</a></li>
-<li>ZC-24-031 / Rock Creek Ranch Legistar record: <a href="https://fortworthgov.legistar.com/LegislationDetail.aspx?GUID=28E0D24E-8A40-4F91-A965-6AFC198FFAA6&amp;ID=6859871&amp;Options=ID%7CText%7C&amp;Search=">https://fortworthgov.legistar.com/LegislationDetail.aspx?GUID=28E0D24E-8A40-4F91-A965-6AFC198FFAA6&amp;ID=6859871&amp;Options=ID%7CText%7C&amp;Search=</a></li>
-<li>KERA / Fort Worth Report September 18, 2024 Rock Creek coverage: <a href="https://www.keranews.org/business-economy/2024-09-18/controversial-southwest-fort-worth-data-center-gets-approval-but-more-steps-remain">https://www.keranews.org/business-economy/2024-09-18/controversial-southwest-fort-worth-data-center-gets-approval-but-more-steps-remain</a></li>
-<li>ZC-24-153 / Black Mountain Legistar record: <a href="https://fortworthgov.legistar.com/LegislationDetail.aspx?GUID=C5FF067B-0D4B-4C1F-AD7C-0684F0B9270E&amp;ID=7087876">https://fortworthgov.legistar.com/LegislationDetail.aspx?GUID=C5FF067B-0D4B-4C1F-AD7C-0684F0B9270E&amp;ID=7087876</a></li>
-<li>ZC-25-070 / Black Mountain Legistar record: <a href="https://fortworthgov.legistar.com/LegislationDetail.aspx?GUID=7970AE9D-8F3C-44FD-A21E-04601403CC9D&amp;ID=7428139">https://fortworthgov.legistar.com/LegislationDetail.aspx?GUID=7970AE9D-8F3C-44FD-A21E-04601403CC9D&amp;ID=7428139</a></li>
-<li>ZC-25-131 / Black Mountain Legistar record: <a href="https://fortworthgov.legistar.com/LegislationDetail.aspx?GUID=A3293B76-5E51-4A25-89EB-CBC8B7D8D119&amp;ID=7681254&amp;Options=&amp;Search=">https://fortworthgov.legistar.com/LegislationDetail.aspx?GUID=A3293B76-5E51-4A25-89EB-CBC8B7D8D119&amp;ID=7681254&amp;Options=&amp;Search=</a></li>
-<li>ZC-25-132 / Black Mountain Legistar record: <a href="https://fortworthgov.legistar.com/LegislationDetail.aspx?G=5D78EE16-987A-40AB-8FB5-726D3DBA5713&amp;GUID=EB261B31-B6E4-4F29-BC3D-1058F3EDC8F9&amp;ID=7681256&amp;Options=&amp;Search=">https://fortworthgov.legistar.com/LegislationDetail.aspx?G=5D78EE16-987A-40AB-8FB5-726D3DBA5713&amp;GUID=EB261B31-B6E4-4F29-BC3D-1058F3EDC8F9&amp;ID=7681256&amp;Options=&amp;Search=</a></li>
-<li>August 11, 2026 City Council transcript: <a href="https://fortworthgov.granicus.com/TranscriptViewer.php?clip_id=6335&amp;view_id=2">https://fortworthgov.granicus.com/TranscriptViewer.php?clip_id=6335&amp;view_id=2</a></li>
-<li>August 11, 2026 City Council minutes placeholder: <a href="https://fortworthgov.granicus.com/MinutesViewer.php?view_id=2&amp;clip_id=6335">https://fortworthgov.granicus.com/MinutesViewer.php?view_id=2&amp;clip_id=6335</a></li>
-<li>KERA / Fort Worth Report August 12, 2026 moratorium coverage: <a href="https://www.keranews.org/news/2026-08-12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote">https://www.keranews.org/news/2026-08-12/data-center-moratorium-takes-first-steps-after-fort-worth-city-councils-unanimous-vote</a></li>
-<li>Oncor new construction: <a href="https://www.oncor.com/content/oncorwww/us/en/home/constructionanddevelopment/new-construction.html">https://www.oncor.com/content/oncorwww/us/en/home/constructionanddevelopment/new-construction.html</a></li>
-<li>Oncor energy system developers: <a href="https://www.oncor.com/content/oncorwww/us/en/home/smart-energy/renewables-solar-and-more/energy-system-developers.html">https://www.oncor.com/content/oncorwww/us/en/home/smart-energy/renewables-solar-and-more/energy-system-developers.html</a></li>
-<li>Oncor economic development: <a href="https://www.oncor.com/content/oncorwww/us/en/home/about-us/economic-development.html">https://www.oncor.com/content/oncorwww/us/en/home/about-us/economic-development.html</a></li>
-<li>ERCOT Large Load Integration: <a href="https://www.ercot.com/services/rq/large-load-integration/">https://www.ercot.com/services/rq/large-load-integration/</a></li>
-<li>ERCOT NPRR1234 large-load requirements: <a href="https://www.ercot.com/mktrules/issues/NPRR1234">https://www.ercot.com/mktrules/issues/NPRR1234</a></li>
-<li>ERCOT Batch Zero / PUCT approval release: <a href="https://www.ercot.com/news/release/06182026-puct-approves-ercots">https://www.ercot.com/news/release/06182026-puct-approves-ercots</a></li>
-<li>PUCT / Texas Register 16 TAC 25.370 large-load forecasting: <a href="https://www.sos.texas.gov/texreg/archive/February202026/Adopted%20Rules/16.ECONOMIC%20REGULATION.html">https://www.sos.texas.gov/texreg/archive/February202026/Adopted%20Rules/16.ECONOMIC%20REGULATION.html</a></li>
-<li>PUCT / Texas Register proposed 16 TAC 25.194 large-load interconnection standards: <a href="https://www.sos.state.tx.us/texreg/archive/March272026/Proposed%20Rules/16.ECONOMIC%20REGULATION.html">https://www.sos.state.tx.us/texreg/archive/March272026/Proposed%20Rules/16.ECONOMIC%20REGULATION.html</a></li>
-<li>PUCT / Texas Register proposed 16 TAC 25.252 large-load customer tariffs: <a href="https://www.sos.state.tx.us/texreg/archive/July242026/Proposed%20Rules/16.ECONOMIC%20REGULATION.html">https://www.sos.state.tx.us/texreg/archive/July242026/Proposed%20Rules/16.ECONOMIC%20REGULATION.html</a></li>
-<li>August 25, 2026 City Council transcript: <a href="https://fortworthgov.granicus.com/TranscriptViewer.php?clip_id=6367&amp;view_id=9">https://fortworthgov.granicus.com/TranscriptViewer.php?clip_id=6367&amp;view_id=9</a></li>
-<li>KERA / Fort Worth Report August 26, 2026 Black Mountain coverage: <a href="https://www.keranews.org/news/2026-08-26/fort-worth-oks-10b-data-center-site-plan-with-more-green-space-distance-from-homes">https://www.keranews.org/news/2026-08-26/fort-worth-oks-10b-data-center-site-plan-with-more-green-space-distance-from-homes</a></li>
-</ol>
-</main>
-</body>
-</html>
+<header><div class="wrap"><div class="eyebrow">Entitlement intelligence / jurisdiction brief / 23 September 2026</div><h1>Fort Worth, Texas</h1><p>Data centers &nbsp;|&nbsp; Industrial outdoor storage &nbsp;|&nbsp; EV charging</p></div></header>
+<nav aria-label="Memo sections"><div class="wrap"><a href="#parcel">Parcel context</a><a href="#lanes">Approval lanes</a><a href="#evidence">Planning evidence</a><a href="#rules">Rule detail</a><a href="#offices">Decision-makers</a><a href="#sources">Sources</a></div></nav>
+<main><div class="wrap">
+<section id="parcel"><h2>Parcel Context</h2><div class="context"><p><strong>4401 Deen Road, Fort Worth, TX 76106:</strong> city GIS research extract identifies Tarrant County parcel <strong>8877H-1-1R</strong>, account <strong>41504763</strong>, about <strong>8.053 acres</strong>, <strong>K Heavy Industrial</strong> zoning, and <strong>IGC Meacham</strong> future land use. The parcel is in Council District 2 and the Diamond Hill-Jarvis neighborhood boundary. <a href="#s1">Parcel GIS</a>, <a href="#s2">zoning GIS</a>, <a href="#s3">future-land-use GIS</a>.</p><p>This parcel shows how K zoning affects the three citywide use questions; it is not evidence of a proposed project. The archived GIS query was collected in August 2026, and no newer parcel-specific zoning action was verified. Airport height review may affect construction design; a point query showed no FEMA flood hazard feature, which is not a parcel-wide floodplain determination.</p></div>
+<div class="table-wrap"><table class="parcel-read"><thead><tr><th>Use</th><th>How current zoning helps</th><th>How current zoning constrains approval</th></tr></thead><tbody>
+<tr><td><strong>Data centers</strong></td><td>The <a href="#s4">Fort Worth use table</a> lists data center as permitted in I, J, and K. K therefore has a stated use-table route without a data-center rezoning.</td><td>Use-table permission does not remove the adopted data-center application documentation gate, water policy, building/site review, or future rule changes. A separately classified electric substation must satisfy its own use row. <a href="#s9">City status page</a>; <a href="#s4">use table</a>.</td></tr>
+<tr><td><strong>Industrial outdoor storage</strong></td><td>K lists outdoor sales/storage and truck/freight terminals. A lawful primary industrial operation can have accessory storage subject to the actual use classification. <a href="#s4">Use table</a>.</td><td>Non-accessory outside storage requires a Council CUP for up to five years and screening, security, and drainage conditions. Truck terminals require an approved traffic flow plan, private-property maneuvering, and 200-foot separation from residential districts. <a href="#s6">Storage rule</a>; <a href="#s7">terminal rule</a>.</td></tr>
+<tr><td><strong>EV charging</strong></td><td>K's industrial setting and lawful parking/vehicle operations may accommodate chargers associated with an approved principal use, subject to City classification. The City has approved charging-related electrical easements elsewhere. <a href="#s23">Meacham record</a>.</td><td>The reviewed <a href="#s4">use table</a> has no named stand-alone EV-charging row. An easement or electrical permit does not classify a principal truck-charging yard or authorize outdoor storage/terminal activity. Site, electrical, fire, access, and utility review remain distinct.</td></tr>
+</tbody></table></div></section>
+<section id="lanes"><h2>Approval Lanes</h2><p class="lede">These are land-use categories, not three versions of one entitlement. Citywide rules apply to property within Fort Worth; the parcel-specific K read does not establish an approval for any unstated operation.</p><div class="scope"><span>Jurisdiction: City of Fort Worth</span><span>Parcel example: K Heavy Industrial</span><span>CUP: conditional use permit</span></div>
+<div class="lane-grid">
+<article class="lane"><h3>Data centers</h3><span class="label standard">Use listed in I / J / K</span><p><strong>Current path:</strong> the industrial use table permits data centers in I, J, and K; ordinary development approvals still apply. The adopted August 11 application rule requires grid-approval documentation for covered City filings. The City also says its updated water policy governs new data centers in its water service area.</p><p><strong>Policy gate:</strong> Council initiated a moratorium process but had <em>not</em> adopted a 90-day pause as of this review. The July draft data-center zoning standards were not enacted; the Zoning Commission recommended denial 7-4. A later adopted moratorium or code amendment would change this lane.</p><dl><dt>Scope</dt><dd>City limits for zoning; Fort Worth water service area for stated water policy</dd><dt>Authority</dt><dd>Development Services; City Council for zoning changes and any moratorium</dd><dt>Evidence</dt><dd><a href="#s4">Use table</a>, <a href="#s9">City policy status</a>, <a href="#s18">Council record</a></dd></dl></article>
+<article class="lane"><h3>Industrial outdoor storage</h3><span class="label conditional">Classification dependent</span><p><strong>Current path:</strong> K allows the table's outdoor-storage and terminal uses, but stand-alone/non-accessory outside storage requires a Council CUP limited to five years. Where actual activity is a truck terminal, section 5.139 supplies traffic and separation conditions.</p><p><strong>Limit:</strong> parking trucks or trailers is not automatically the same as a terminal, and a permitted storage row does not waive the non-accessory CUP rule. The site's primary operation and relationship between storage, parking, and charging control the classification.</p><dl><dt>Scope</dt><dd>District-specific use table; K example here</dd><dt>Authority</dt><dd>City zoning review; Zoning Commission advisory; Council for CUP</dd><dt>Evidence</dt><dd><a href="#s4">Use table</a>, <a href="#s6">storage</a>, <a href="#s7">terminal</a></dd></dl></article>
+<article class="lane"><h3>EV charging</h3><span class="label conditional">Principal use unresolved</span><p><strong>Current path:</strong> chargers accessory to a lawful site activity are reviewed with that activity and applicable electrical/site permits. Fort Worth's published table does not name stand-alone EV charging as a principal use, so this record does not establish a by-right charging-yard path even in K.</p><p><strong>Limit:</strong> a truck-charging campus with dwell time, staging, storage, or retail service may implicate different use rows. The 2025 Meacham action conveyed an Oncor easement for airport-lot chargers; it was not a zoning determination for an independent truck-charging yard.</p><dl><dt>Scope</dt><dd>Citywide classification; parcel zoning controls the associated use</dd><dt>Authority</dt><dd>Development Services zoning and electrical/site review</dd><dt>Evidence</dt><dd><a href="#s4">Use table</a>, <a href="#s11">electrical permit</a>, <a href="#s23">Meacham action</a></dd></dl></article>
+</div></section>
+<section id="evidence"><h2>Local Planning Evidence</h2><p class="lede">The table separates use approvals, CUPs, policy actions, and utility/land actions. Hearing remarks are attributed to their speakers, not treated as adopted findings or a poll of residents. Times are approximate video clocks; where the City supplied no transcript, a local machine transcript was used as a research aid and checked against the linked recording. Written City actions control each disposition.</p>
+<div class="table-wrap"><table class="evidence"><thead><tr><th>Proceeding / result</th><th>Entitlement type</th><th>Recorded discussion and sentiment</th><th>Entitlement significance</th></tr></thead><tbody>
+<tr><td><strong>Rock Creek Ranch</strong><br>ZC-24-031; 17 Sep. 2024<br>Approved 7-2 in <a href="#s12">Council minutes</a></td><td>Data-center rezoning / planned development</td><td>At <a href="#s28">Zoning Commission hearing</a>, the applicant said neighborhood feedback focused on traffic, generator noise, and height and offered a construction route, generator enclosure, and later site plan (<strong>0:57:36-1:00:42</strong>). Opponents disputed cumulative noise and residential proximity (<strong>1:01:30-1:06:38</strong>). Staff warned that a separate neighborhood MOU would not be enforceable unless its terms entered the PD (<strong>1:18:49-1:19:08</strong>); the amended approval motion failed 3-5 (<strong>1:19:23-1:20:22</strong>). Council later approved 7-2 with written generator, buffer, traffic, use-exclusion, and site-plan conditions in <a href="#s12">final minutes</a>.</td><td>A contested case moved from advisory denial to conditional Council approval. The hearing highlights why commitments and enforceable PD text are distinct; its conditions are case-specific, not citywide code.</td></tr>
+<tr><td><strong>Black Mountain, initial tract</strong><br>ZC-24-153; 14 Jan. 2025<br><a href="#s13">Council approved</a></td><td>Data-center PD/SU</td><td>At <a href="#s29">Council hearing 2:08:52-2:11:57</a>, the applicant described access, an 80-foot north setback, and neighbor outreach, then withdrew its site-plan-waiver request. A community speaker said neighbors were <em>not categorically opposed</em> but wanted a site plan for assurance (<strong>2:15:15-2:16:29</strong>; the signature count is an unverified speaker claim). Council's motion required a site plan (<strong>2:18:37-2:19:15</strong>).</td><td>The recorded disagreement was about design certainty and adjacency, not a blanket rejection of data centers. Staff's <a href="#s13">packet</a> had also recommended approval with a site plan.</td></tr>
+<tr><td><strong>Black Mountain, June expansion</strong><br>ZC-25-070; 10 Jun. 2025<br><a href="#s14">Council approved</a></td><td>Data-center PD expansion</td><td>At <a href="#s30">Council hearing 1:21:13-1:21:49</a>, the applicant representative offered to speak if opposed; the district member said he knew of none and moved approval. The indexed segment contains no substantive opposition or technical debate.</td><td>An approved expansion, but the short hearing is weak evidence of wider public sentiment.</td></tr>
+<tr><td><strong>Black Mountain, September expansions</strong><br>ZC-25-131 / 132; 30 Sep. 2025<br><a href="#s39">Council approved both</a></td><td>Separate data-center PD expansions</td><td>At <a href="#s31">Council hearing</a>, residents and a neighboring venue raised water, continuous noise, loss of housing opportunity, and historic-setting concerns (about <strong>1:39-1:50; 2:10-2:12</strong>). City water staff explained the development water-loading study and developer-funded upgrade process (<strong>2:02:49-2:03:37</strong>). For <strong>131</strong>, the district member acknowledged concerns but moved approval with a <em>site-plan waiver</em> (<strong>2:04-2:06:44</strong>); other members called for a broader data-center study (<strong>2:12:20-2:15:48</strong>); the motion carried at <strong>2:16:31</strong>. For <strong>132</strong>, the applicant said a site plan was required (<strong>2:17:01-2:17:12</strong>); a speaker sought delay over water information (<strong>2:18-2:21</strong>), and Council approved at <strong>2:21:43</strong>.</td><td>Approval and concern coexisted. The <a href="#s39">final minutes</a> confirm the 131 waiver and 132 site-plan requirement; neither is citywide practice. Public water-use figures in testimony are allegations, not verified engineering findings.</td></tr>
+<tr><td><strong>Black Mountain, Anglin Circle proposal</strong><br>ZC-25-205; pending as of 23 Sep. 2026</td><td>Proposed PD/I rezoning limited to data center and other specified uses</td><td>At <a href="#s32">Zoning Commission hearing</a>, the applicant described a 300-foot setback near Weston Gardens and proposed noise/tree/traffic measures (<strong>2:33:22-2:36:15</strong>). Neighboring speakers appreciated engagement yet feared being surrounded by data centers and asked to retain mature perimeter trees (<strong>2:41:09-2:44:54</strong>). Commissioners expressly amended the motion to <em>require a site plan</em>; the advisory vote was 11-0 (<strong>2:48:21-2:50:42</strong>). The <a href="#s27">Council docket</a> records a continuance to 8 Dec. 2026, not approval.</td><td>Shows conditional, design-focused support at the advisory stage; neither a 300-foot setback nor the favorable recommendation grants the pending land-use change.</td></tr>
+<tr><td><strong>Black Mountain amendment</strong><br>ZC-26-041; 25 Aug. 2026<br>Recorded Council motion carried</td><td>Amendment to existing data-center PD/site plan; substation, height, setbacks, parking</td><td>Staff explained the existing data-center entitlement and the narrower amendment at about <strong>45:09</strong>. An applicant representative described jobs and tax benefits at about <strong>56:27-56:43</strong>; a public speaker challenged the absence of a stated substation capacity at <strong>1:11:40-1:12:22</strong>; another speaker asked Council to wait for the policy committee at about <strong>1:24:04-1:24:37</strong>. Council discussed a 300-foot site-plan setback at <strong>3:10:29-3:12:55</strong>, then the chair announced the motion carried. <a href="#s15">City transcript</a>; <a href="#s16">timestamp aid</a>.</td><td>The debate concerned an already-entitled campus. The <a href="#s25">older docket view</a> still shows a continuance; the recorded Council action supports a carried motion but is not represented here as an independently located final written order.</td></tr>
+<tr><td><strong>Citywide data-center rule review</strong><br>2 Jun.-11 Aug. 2026<br>Moratorium process initiated</td><td>Proposed zoning/noise standards; adopted application and water-policy actions</td><td>At the <a href="#s17">June 2 work session</a>, staff distinguished primary stand-alone data centers from accessory IT facilities at about <strong>1:42:35-1:42:56</strong> and outlined proposed siting/generator controls at <strong>2:03:24-2:03:48</strong>. The Zoning Commission later voted 7-4 to recommend denial of the draft. At the <a href="#s18">August 11 Council hearing</a>, staff said the moratorium vote would start a process, not impose a pause that day (<strong>1:21:15-1:21:29</strong>), and described the grid-documentation rule (<strong>1:33:34-1:34:12</strong>). A public commenter questioned water quantity and grid demand at about <strong>30:23-31:02</strong>. <a href="#s9">City status</a>.</td><td>The debated 250-foot building and 300-foot generator separations and ambient-plus-5-dBA standard were proposals, not operative zoning. The application requirement and water policy are separately identified by the City as adopted.</td></tr>
+<tr><td><strong>1100 Haltom Road</strong><br>ZC-23-042; 8 Aug. 2023<br><a href="#s19">Council approved</a></td><td>Five-year CUP for truck/trailer/vehicle parking and non-accessory outside storage in K</td><td>At the <a href="#s38">initial Zoning Commission hearing 1:09:11-1:14:17</a>, commissioners said the revised site plan was missing, staff had found a future-land-use inconsistency, and proximity to the Trinity River/floodplain raised material-storage concerns; they voted an 8-0 continuance, not a denial. At <a href="#s33">Council hearing 3:22:40-3:26:36</a>, applicant-side speakers argued K-district compatibility and asserted neighbor support; no opposition speaker appeared in that indexed segment. Council approved. The <a href="#s19">written case record</a> records the intervening Zoning Commission recommendation removing pallets and rejecting requested waivers.</td><td>Direct K-district IOS comparison requiring a Council CUP, resolved site-plan scope, and environmental/screening scrutiny. Claimed support is not an independent neighborhood survey.</td></tr>
+<tr><td><strong>5022/5028 Sun Valley Drive</strong><br>ZC-24-037; 11 Jun. 2024<br><a href="#s22">Council approved</a></td><td>Outdoor-storage CUP in I Light Industrial</td><td>At <a href="#s34">Council hearing 3:27:11-3:29:15</a>, one speaker urged the district member to keep industrialization in its proper place and put constituents before developers; the comment was broad rather than a technical objection to this parcel. Council approved shortly afterward.</td><td>Shows the CUP channel and a recorded neighborhood/industrial-boundary concern, without turning one speaker's view into a City finding.</td></tr>
+<tr><td><strong>5433 Dallas / 5456 E Lancaster</strong><br>ZC-24-050; 17 Sep. 2024<br><a href="#s21">Denied with prejudice 9-0</a></td><td>PD/FR with outdoor storage and auto repair by residential zoning</td><td>At <a href="#s35">Zoning Commission hearing</a>, the applicant described parking demand and a claimed 24-neighbor petition (<strong>1:06:29-1:11:01</strong>). A neighborhood-association representative opposed conversion of residential Dallas Avenue lots, questioned petition geography, and invoked East Lancaster revitalization (<strong>1:15:33-1:21:09</strong>). A commissioner cited that corridor plan and staff denial recommendation before the 9-1 advisory denial (<strong>1:22:52-1:23:42</strong>). Council later denied with prejudice, 9-0, per <a href="#s21">final minutes</a>.</td><td>The conflict was residential encroachment and corridor policy, not a categorical rejection of storage in K. Competing signature counts are speaker claims.</td></tr>
+<tr><td><strong>800/804 Southway Circle</strong><br>ZC-25-187; 13 Jan. 2026<br><a href="#s20">Council approved</a></td><td>Five-year outdoor-storage CUP in K</td><td>The <a href="#s36">Council recording 2:29:09-2:29:26</a> contains a call, motion, vote, and approval but no substantive discussion in the indexed segment. The <a href="#s20">docket</a> supplies the K zoning, site plan, and five-year CUP terms.</td><td>Recent K-district approval through a time-limited CUP; the quiet hearing cannot establish affirmative neighborhood sentiment.</td></tr>
+<tr><td><strong>4001 Ohio Garden</strong><br>ZC-26-005; 28 Apr. 2026<br><a href="#s24">Approved as amended</a></td><td>PD/I change retaining outdoor storage with site-design deviations</td><td>At <a href="#s37">Council hearing 2:04:05-2:04:37</a>, the motion expressly added inward-facing exterior lights and a maximum three-minute motion-sensor shutoff before approval. The <a href="#s24">written docket</a> details storage layout/screening deviations and excludes data centers from this PD. The short indexed hearing supplies conditions, not broader speaker sentiment.</td><td>Outdoor-storage design controls and a data-center exclusion can coexist in a PD; the lighting condition was part of this case's action.</td></tr>
+<tr><td><strong>Meacham airport parking-lot chargers</strong><br>M&amp;C 25-0045; 14 Jan. 2025<br><a href="#s23">Oncor easement approved</a></td><td>EV-charging-related utility easement, not a zoning use approval</td><td>Final Council minutes approve conveyance of a small easement for electrical equipment serving planned airport-lot chargers. The consent record gives no debate or zoning-use determination.</td><td>Documents utility landwork for accessory charging. It cannot establish a principal-use path for a stand-alone heavy-truck charging yard.</td></tr>
+</tbody></table></div><p class="small">The comparison search covered 2021-26 records. Case-specific City recordings were retrieved for the cases linked above; local machine transcripts support timestamp review but are not official City transcripts. The Meacham easement was handled on consent, with no case-specific debate identified. No transcript-derived public sentiment is assigned to that row, and no comparison case substitutes for current code.</p></section>
+<section id="rules"><h2>Operative Rules And Approval Sequence</h2><dl class="detail"><dt>Data-center definition</dt><dd><a href="#s5">Code section 9.101</a> defines a data center by buildings/structures designed or modified for networked computers, data processing, and support equipment, serving third parties or a single user. It states no MW, water-cooling, or minimum-size threshold. The City's <a href="#s9">FAQ</a> offers a shorter description; the codified definition governs the zoning read.</dd><dt>Data-center use and gate</dt><dd><a href="#s4">Section 4.803</a> lists data centers P in I, J, and K. Council's August 11 application requirement is in force for covered local development filings; staff described PUCT/ERCOT proof for pre-development conferences, plats/replats, building permits, and infrastructure plan review, with annexation requests excluded. <a href="#s18">Council transcript</a>; <a href="#s9">City status</a>. This does not prove actual grid capacity at Deen Road.</dd><dt>Moratorium and drafts</dt><dd>The <a href="#s9">City's current status page</a> says Council initiated, but had not yet enacted, the legal process for a 90-day data-center moratorium. First hearing is scheduled by November 10, 2026; tentative adoption is February 16, 2027, subject to hearings and a Council supermajority. June/July zoning and noise controls are proposed only.</dd><dt>Water and operating impacts</dt><dd>The <a href="#s9">City status page</a> labels the August 11 water-policy update adopted for new data centers in the Fort Worth Water Utility service area, including closed-loop cooling and NSIU wastewater permitting. The same page calls for water loading and wastewater studies as applicable. Industrial districts currently lack a data-center-specific maximum sound level; the proposed ambient-plus-5-dBA standard is not current law.</dd><dt>IOS use and CUP</dt><dd><a href="#s4">Section 4.803</a> lists outdoor storage P* in I/J/K; <a href="#s6">section 5.133</a> requires a Council CUP for non-accessory outside storage, limited to five years, with security, six-foot opaque screening, and drainage conditions. A truck terminal in K is listed P, subject to <a href="#s7">section 5.139</a> traffic-plan, private maneuvering, and 200-foot residential separation rules. Operational classification determines the lane.</dd><dt>EV charging</dt><dd>The reviewed <a href="#s4">use table</a> does not name EV charging as a principal use. Charger installation at an otherwise lawful activity is distinct from permission for a dedicated charging/truck-staging yard. The City's <a href="#s11">electrical permit process</a> addresses equipment, not principal-use classification; applicable site, parking, accessibility, fire, utility, and electrical reviews remain.</dd></dl>
+<p class="note">No customer, power amount, charger count, truck count, or cooling method is assumed. ERCOT/PUCT and utility review concern electrical service; they do not replace the City's land-use classification. The City's grid-documentation gate does not itself confer a connection approval.</p></section>
+<section id="offices"><h2>Decision-Makers And Review Offices</h2><div class="table-wrap"><table><thead><tr><th>Person, body, or office</th><th>Recorded role</th><th>Public source</th></tr></thead><tbody>
+<tr><td>Fort Worth Development Services; D.J. Harrell, director</td><td>Administers zoning, development coordination, building permits, and inspections; use classification and technical review start with the department.</td><td><a href="#s10">Development Services</a></td></tr>
+<tr><td>Zoning Commission</td><td>Advisory recommendation on zoning changes and CUP cases before Council action.</td><td><a href="#s26">City zoning process</a></td></tr>
+<tr><td>City Council; District 2 seat for the illustrative parcel</td><td>Decides rezonings/CUPs, moratorium ordinances, and citywide code actions. The parcel's mapped district does not imply its member's view of an unfiled use.</td><td><a href="#s26">City zoning process</a>; <a href="#s9">policy status</a></td></tr>
+<tr><td>Fort Worth Water Utility; transportation, fire, and building review</td><td>Water/wastewater policy and infrastructure; access, life-safety, building, and electrical permits as applicable.</td><td><a href="#s9">Water policy</a>; <a href="#s10">development review</a></td></tr>
+<tr><td>PUCT / ERCOT / serving electric utility</td><td>Grid/interconnection and service review separate from local land-use approval. Site-specific deliverable capacity was not established in this record.</td><td><a href="#s9">City division of authority</a></td></tr>
+</tbody></table></div></section>
+<section id="sources"><h2>Selected Sources</h2><ol class="sources">
+<li id="s1"><a href="https://mapit.fortworthtexas.gov/ags/rest/services/CIVIC/CIVIC_BASEMAP_Simple/MapServer/5">Fort Worth parcel GIS layer; archived 4401 Deen query in research packet</a></li>
+<li id="s2"><a href="https://mapit.fortworthtexas.gov/ags/rest/services/CIVIC/CIVIC_ZONING/MapServer/0">Fort Worth zoning GIS layer; archived point query in research packet</a></li>
+<li id="s3"><a href="https://mapit.fortworthtexas.gov/ags/rest/services/Planning_Development/LND_COMP_PLAN_CACHE/MapServer/0">Fort Worth future-land-use GIS layer; archived point query in research packet</a></li>
+<li id="s4"><a href="https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-35392">Zoning section 4.803, nonresidential use table</a></li>
+<li id="s5"><a href="https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-39271">Zoning section 9.101, defined terms</a></li>
+<li id="s6"><a href="https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-37229">Zoning section 5.133, non-accessory outside storage</a></li>
+<li id="s7"><a href="https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-37385">Zoning section 5.139, truck/freight terminal</a></li>
+<li id="s8"><a href="https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-37852">Zoning section 5.302, accessory uses on nonresidential lots</a></li>
+<li id="s9"><a href="https://www.fortworthtexas.gov/departments/city-manager/datacenters">City data-center policy, moratorium, and water status</a></li>
+<li id="s10"><a href="https://www.fortworthtexas.gov/departments/development-services">Development Services department</a></li>
+<li id="s11"><a href="https://www.fortworthtexas.gov/files/assets/public/v/5/development-services/documents/electrical-permit-application.pdf">Fort Worth electrical permit application</a></li>
+<li id="s12"><a href="https://fortworthgov.legistar.com/View.ashx?GUID=03733011-E865-40FA-AA8A-401A2D4B255F&amp;ID=1207234&amp;M=M">September 17 2024 Council minutes, Rock Creek and Dallas Avenue</a></li>
+<li id="s13"><a href="https://fortworthgov.legistar.com/LegislationDetail.aspx?GUID=C5FF067B-0D4B-4C1F-AD7C-0684F0B9270E&amp;ID=7087876">Black Mountain ZC-24-153 docket</a></li>
+<li id="s14"><a href="https://fortworthgov.legistar.com/LegislationDetail.aspx?GUID=7970AE9D-8F3C-44FD-A21E-04601403CC9D&amp;ID=7428139">Black Mountain ZC-25-070 expansion docket</a>; <a href="https://fortworthgov.legistar.com/LegislationDetail.aspx?GUID=A3293B76-5E51-4A25-89EB-CBC8B7D8D119&amp;ID=7681254">ZC-25-131</a>; <a href="https://fortworthgov.legistar.com/LegislationDetail.aspx?GUID=EB261B31-B6E4-4F29-BC3D-1058F3EDC8F9&amp;ID=7681256">ZC-25-132</a></li>
+<li id="s15"><a href="https://fortworthgov.granicus.com/TranscriptViewer.php?clip_id=6367&amp;view_id=9">August 25 2026 official Council transcript, Black Mountain amendment</a></li>
+<li id="s16"><a href="https://fort-worth.myopentexas.org/meetings/2026-08-25-council-approves-controversial-data-center-site-plan-despite-community-pushback-2ed69909-de9c-4f0b-97ff-5e6164ed97b7">August 25 timestamped transcript aid, checked against City transcript</a></li>
+<li id="s17"><a href="https://fortworthgov.granicus.com/TranscriptViewer.php?clip_id=6277&amp;view_id=9">June 2 2026 Council work-session transcript</a></li>
+<li id="s18"><a href="https://fortworthgov.granicus.com/TranscriptViewer.php?clip_id=6335&amp;view_id=2">August 11 2026 Council transcript</a></li>
+<li id="s19"><a href="https://fortworthgov.legistar.com/ViewReport.ashx?Extra=WithText&amp;GID=696&amp;GUID=179D5C67-0898-4103-A251-E31028B640EE&amp;ID=6268976&amp;M=R&amp;N=Master&amp;Title=Legislation+Details+%28With+Text%29">1100 Haltom Road ZC-23-042 action record</a></li>
+<li id="s20"><a href="https://fortworthgov.legistar.com/LegislationDetail.aspx?GUID=6D73303C-D6DF-4B66-BD57-563B7A3229ED&amp;ID=7796145">800/804 Southway Circle ZC-25-187 action record</a></li>
+<li id="s21"><a href="https://fortworthgov.legistar.com/LegislationDetail.aspx?GUID=13DEC83F-645C-4438-9918-29721FAC4F0A&amp;ID=6861726">Dallas Avenue ZC-24-050 docket</a>; <a href="#s12">September 2024 final minutes</a></li>
+<li id="s22"><a href="https://fortworthgov.legistar.com/ViewReport.ashx?Extra=WithText&amp;GID=696&amp;GUID=3F8A7C54-1A09-434C-97A0-20BAEF2E835E&amp;ID=6717931&amp;M=R&amp;N=Master&amp;Title=Legislation+Details+%28With+Text%29">Sun Valley Drive ZC-24-037 action record</a></li>
+<li id="s23"><a href="https://fortworthgov.legistar.com/View.ashx?GUID=BD9A3426-B0BF-4C76-84C4-36481E1C0D8D&amp;ID=13714017&amp;M=F">January 14 2025 Council final minutes, Meacham EV easement</a></li>
+<li id="s24"><a href="https://fortworthgov.legistar.com/MeetingDetail.aspx?GUID=8C921A30-6348-4A00-B89D-11E5E3A629AC&amp;ID=1386692&amp;Search=">April 28 2026 Council docket, ZC-26-005 Ohio Garden</a></li>
+<li id="s25"><a href="https://fortworthgov.legistar.com/LegislationDetail.aspx?G=5D78EE16-987A-40AB-8FB5-726D3DBA5713&amp;GUID=188ED0F1-2F02-4897-A98A-500F4751A8D4&amp;ID=8005904">ZC-26-041 docket showing earlier continuance</a></li>
+<li id="s26"><a href="https://www.fortworthtexas.gov/departments/development-services/zoning">Fort Worth zoning process and hearing portal</a></li>
+<li id="s27"><a href="https://fortworthgov.legistar.com/LegislationDetail.aspx?GUID=03D58485-324F-4D25-B5A1-EE7172804860&amp;ID=7868377">ZC-25-205 Anglin Circle pending case docket</a></li>
+<li id="s28"><a href="https://fortworthgov.granicus.com/player/clip/5573?redirect=true&amp;view_id=5">Rock Creek ZC-24-031 Zoning Commission video</a></li>
+<li id="s29"><a href="https://fortworthgov.granicus.com/player/clip/5711?redirect=true&amp;view_id=9">Black Mountain ZC-24-153 Council video</a></li>
+<li id="s30"><a href="https://fortworthgov.granicus.com/player/clip/5840?redirect=true&amp;view_id=9">Black Mountain ZC-25-070 Council video</a></li>
+<li id="s31"><a href="https://fortworthgov.granicus.com/player/clip/5964?redirect=true&amp;view_id=9">Black Mountain ZC-25-131/132 Council video</a></li>
+<li id="s32"><a href="https://fortworthgov.granicus.com/player/clip/6068?redirect=true&amp;view_id=5">Anglin Circle ZC-25-205 Zoning Commission video</a></li>
+<li id="s33"><a href="https://fortworthgov.granicus.com/player/clip/5233?redirect=true&amp;view_id=9">Haltom Road ZC-23-042 Council video</a></li>
+<li id="s34"><a href="https://fortworthgov.granicus.com/player/clip/5553?redirect=true&amp;view_id=9">Sun Valley ZC-24-037 Council video</a></li>
+<li id="s35"><a href="https://fortworthgov.granicus.com/player/clip/5599?redirect=true&amp;view_id=5">Dallas Avenue ZC-24-050 Zoning Commission video</a></li>
+<li id="s36"><a href="https://fortworthgov.granicus.com/player/clip/6066?redirect=true&amp;view_id=9">Southway ZC-25-187 Council video</a></li>
+<li id="s37"><a href="https://fortworthgov.granicus.com/player/clip/6217?redirect=true&amp;view_id=9">Ohio Garden ZC-26-005 Council video</a></li>
+<li id="s38"><a href="https://fortworthgov.granicus.com/player/clip/5145?redirect=true&amp;view_id=5">Haltom Road ZC-23-042 initial Zoning Commission video</a></li>
+<li id="s39"><a href="https://fortworthgov.legistar.com/View.ashx?GUID=6AA9E5A4-F0D5-41C5-9404-D93957C3D017&amp;ID=1330066&amp;M=M">September 30 2025 Council final minutes, ZC-25-131/132</a></li>
+</ol></section>
+<footer>Public-record jurisdiction summary as of 23 September 2026. It is not a permit decision or legal opinion. Council and Zoning Commission votes apply to their particular cases. Approximate recording clocks are research aids; official action records control legal disposition. No customer or electric load is assumed.</footer>
+</div></main></body></html>
